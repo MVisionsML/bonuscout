@@ -8,8 +8,7 @@ export default function Footer() {
 
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="bg-[#F5A623] text-black font-black text-sm px-3 py-1.5 rounded-lg">BONUS</div>
-              <span className="font-black text-white text-lg">scout<span className="text-[#F5A623]">.com</span></span>
+              <span className="font-black text-white text-xl">Bonu<span className="text-[#F5A623]">$</span>cout<span className="text-gray-500 font-normal text-base">.com</span></span>
             </div>
             <p className="text-gray-500 text-xs leading-relaxed">
               Independent casino bonus reviews. We test every bonus before we recommend it.
