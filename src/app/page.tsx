@@ -2,6 +2,7 @@ import Link from 'next/link'
 import CasinoCard from '@/components/casino/CasinoCard'
 import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
+import { WebsiteSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Best Casino Bonuses & Reviews 2026 | BonusScout',
@@ -10,7 +11,9 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div>
+    <>
+      <WebsiteSchema />
+      <div>
       {/* Hero */}
       <section className="bg-[#161820] border-b border-[#252830] py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
@@ -120,5 +123,6 @@ export default function HomePage() {
 
       </div>
     </div>
+    </>
   )
 }
