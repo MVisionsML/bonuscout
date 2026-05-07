@@ -3,8 +3,8 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Casino Cashback Bonuses 2026 — Best Cashback Offers',
-  description: 'Casino cashback bonuses return a percentage of your losses. The fairest bonus type — often with the lowest wagering requirements.',
+  title: 'Best Casino Cashback Bonus 2026 — Get 25% of Losses Back | BonusScout',
+  description: 'Claim the best casino cashback bonuses in 2026. Get 25% of your losses returned at top-rated casinos. 1x wagering — withdraw almost immediately. Tested May 2026.',
 }
 
 export default function CashbackPage() {
