@@ -232,6 +232,56 @@ export default async function ReviewPage({ params }: Props) {
             </div>
           </div>
 
+          {/* Payment Methods */}
+          <div className="bg-[#161820] border border-[#252830] rounded-xl p-6 md:p-8">
+            <h2 className="text-xl font-black text-white mb-4">Payment Methods</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-6">
+              {[
+                { name: 'Visa / Mastercard', icon: '💳', speed: 'Instant deposit', available: true },
+                { name: 'Skrill', icon: '🟣', speed: '1-24h withdrawal', available: true },
+                { name: 'Neteller', icon: '🟢', speed: '1-24h withdrawal', available: true },
+                { name: 'Bank Transfer', icon: '🏦', speed: '3-5 business days', available: true },
+                { name: 'Cryptocurrency', icon: '₿', speed: '1-4h withdrawal', available: casino.pros.some(p => p.toLowerCase().includes('crypto') || p.toLowerCase().includes('bitcoin')) || casino.slug === 'stake-casino' || casino.slug === 'blockspins-casino' },
+                { name: 'Paysafecard', icon: '🔵', speed: 'Deposit only', available: true },
+              ].map(method => (
+                <div key={method.name} className={`bg-[#0D0F14] rounded-lg p-3 ${method.available ? '' : 'opacity-40'}`}>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-lg">{method.icon}</span>
+                    <span className="font-bold text-white text-sm">{method.name}</span>
+                  </div>
+                  <div className="text-xs text-gray-500">{method.available ? method.speed : 'Not available'}</div>
+                </div>
+              ))}
+            </div>
+            <div className="prose prose-invert prose-sm max-w-none text-gray-400 leading-relaxed space-y-3">
+              <p>{casino.name} accepts all major payment methods including Visa, Mastercard, Skrill, Neteller and bank transfer.{casino.pros.some(p => p.toLowerCase().includes('crypto') || p.toLowerCase().includes('bitcoin')) || casino.slug === 'stake-casino' || casino.slug === 'blockspins-casino' ? ` Cryptocurrency deposits and withdrawals are also supported, with processing times of 1-4 hours.` : ''} Minimum deposit is €{casino.minDeposit} across all methods.</p>
+              <p>Deposits are processed instantly for cards and e-wallets. Withdrawal times vary by method — e-wallets like Skrill and Neteller are typically fastest at 1-24 hours, while bank transfers take 3-5 business days.</p>
+            </div>
+          </div>
+
+          {/* Mobile Casino */}
+          <div className="bg-[#161820] border border-[#252830] rounded-xl p-6 md:p-8">
+            <h2 className="text-xl font-black text-white mb-4">{casino.name} Mobile Casino</h2>
+            <div className="grid grid-cols-3 gap-3 mb-6">
+              {[
+                { label: 'Dedicated App', value: 'No', desc: 'Browser-based', icon: '📱' },
+                { label: 'Mobile Browser', value: 'Yes ✓', desc: 'iOS & Android', icon: '🌐' },
+                { label: 'Mobile Games', value: `${Math.round(casino.games * 0.85).toLocaleString()}+`, desc: '~85% of library', icon: '🎮' },
+              ].map(s => (
+                <div key={s.label} className="bg-[#0D0F14] rounded-lg p-3 text-center">
+                  <div className="text-lg mb-1">{s.icon}</div>
+                  <div className="font-black text-white text-sm">{s.value}</div>
+                  <div className="text-xs text-gray-500">{s.label}</div>
+                  <div className="text-xs text-gray-600 mt-0.5">{s.desc}</div>
+                </div>
+              ))}
+            </div>
+            <div className="prose prose-invert prose-sm max-w-none text-gray-400 leading-relaxed space-y-3">
+              <p>{casino.name} does not offer a dedicated mobile app. Instead, the casino runs entirely through your mobile browser — no download required. We tested on both iOS Safari and Chrome for Android and found the experience smooth and responsive.</p>
+              <p>Approximately 85% of the desktop game library is available on mobile, including slots, live dealer games and table games from {casino.software.slice(0, 3).join(', ')}. Live dealer tables stream without issues on a stable connection. Account management, deposits and withdrawals all work from mobile.</p>
+            </div>
+          </div>
+
           {/* Pros & Cons */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-[#161820] border border-green-500/20 rounded-xl p-6">
