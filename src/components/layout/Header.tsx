@@ -37,6 +37,9 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
+            <Link href="/de" className="text-xs font-bold border border-gray-600 px-2 py-1 rounded hover:border-[#F5A623] hover:text-[#F5A623] text-gray-400 transition-colors">
+              DE
+            </Link>
             <Link href="/bonuses/no-deposit" className="hidden sm:block bg-[#F5A623] hover:bg-[#E09520] text-black font-black text-sm px-4 py-2 rounded-lg transition-colors">
               No Deposit Bonuses
             </Link>
