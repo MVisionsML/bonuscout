@@ -12,8 +12,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const casino = casinos.find(c => c.slug === slug)
   if (!casino) return {}
+  const title = casino.slug === 'luckywins-casino'
+    ? 'LuckyWins Casino Review 2026 — Is It Legit? Tested Bonus & Rating | BonusScout'
+    : `${casino.name} Review 2026 — Bonus, Wagering & Safety | BonusScout`
   return {
-    title: `${casino.name} Review 2026 — Bonus, Wagering & Safety | BonusScout`,
+    title,
     description: `Independent ${casino.name} review. We tested the bonus, withdrawals and support. ${casino.bonus}. Wagering: ${casino.wagering}x. Is it worth it?`,
     alternates: { canonical: `https://www.bonuscout.com/reviews/${casino.slug}` }
   }
