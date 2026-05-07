@@ -9,7 +9,9 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.bonuscout.com/best-casino-bonus' }
 }
 
+const luckywins = casinos.find(c => c.slug === 'luckywins-casino')!
 const sorted = [...casinos].sort((a, b) => b.rating - a.rating)
+const top3 = [luckywins, ...sorted.filter(c => c.slug !== 'luckywins-casino')].slice(0, 3)
 
 const faqs = [
   { q: 'What is the best casino bonus right now?', a: 'LuckyWins Casino offers the biggest bonus at €8,000 + 500 Free Spins, while Winningz Casino offers €5,000 + 500 Free Spins at a lower 35x wagering. For pure value vs wagering, Winningz is our top pick.' },
@@ -41,7 +43,7 @@ export default function BestCasinoBonusPage() {
 
         {/* Top 3 highlight */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
-          {sorted.slice(0, 3).map((casino, index) => (
+          {top3.map((casino, index) => (
             <div key={casino.id} className="bg-[#161820] border border-[#F5A623]/20 rounded-xl p-5">
               <div className="text-xs text-[#F5A623] font-bold mb-2">#{index + 1} {index === 0 ? 'Best Overall' : index === 1 ? 'Runner Up' : 'Third Pick'}</div>
               <div className="text-2xl mb-2">{casino.logo}</div>
@@ -49,9 +51,12 @@ export default function BestCasinoBonusPage() {
               <div className="text-[#F5A623] font-bold text-sm mb-3">{casino.bonus}</div>
               <div className="text-xs text-gray-500 mb-3">Wagering: <span className={casino.wagering <= 30 ? 'text-green-400 font-bold' : 'text-yellow-400 font-bold'}>{casino.wagering}x</span></div>
               <a href={casino.affiliateLink} target="_blank" rel="nofollow noopener noreferrer"
-                className="block w-full bg-[#F5A623] hover:bg-[#E09520] text-black font-black text-sm py-2.5 rounded-lg transition-colors text-center">
+                className="block w-full bg-[#F5A623] hover:bg-[#E09520] text-black font-black text-sm py-2.5 rounded-lg transition-colors text-center mb-2">
                 Claim Bonus
               </a>
+              <Link href={`/reviews/${casino.slug}`} className="block text-center text-xs text-gray-500 hover:text-[#F5A623]">
+                Read Full Review →
+              </Link>
             </div>
           ))}
         </div>
