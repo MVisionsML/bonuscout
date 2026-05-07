@@ -3,8 +3,8 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'No Deposit Casino Bonuses 2026 — Free Bonus Without Depositing',
-  description: 'Claim a casino bonus without making a deposit. Play with real money for free at verified, licensed casinos. Updated April 2026.',
+  title: 'No Deposit Casino Bonus 2026 — Free Bonus Without Depositing | BonusScout',
+  description: 'Best no deposit casino bonuses 2026. Get free bonus funds or free spins just for registering — no deposit required. All offers verified and tested. Updated May 2026.',
 }
 
 export default function NoDepositPage() {
