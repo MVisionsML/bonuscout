@@ -3,6 +3,7 @@ import CasinoCard from '@/components/casino/CasinoCard'
 import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 import { WebsiteSchema } from '@/components/seo/SchemaMarkup'
+import HeroSection from '@/components/home/HeroSection'
 
 export const metadata: Metadata = {
   title: 'Best Casino Bonuses & Reviews 2026 | BonusScout',
@@ -14,56 +15,9 @@ export default function HomePage() {
     <>
       <WebsiteSchema />
       <div>
-      {/* Hero */}
-      <section className="bg-[#161820] border-b border-[#252830] py-16 px-4">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="inline-block bg-[#F5A623]/10 border border-[#F5A623]/20 text-[#F5A623] text-xs font-bold px-3 py-1 rounded-full mb-5 uppercase tracking-widest">
-            Updated April 2026
-          </div>
-          <h1 className="text-4xl md:text-6xl font-black text-white mb-4 leading-tight">
-            Best Online Casino Reviews<br />
-            <span className="text-[#F5A623]">&amp; Bonus Offers</span>
-          </h1>
-          <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
-            We test casinos for bonuses, withdrawals, support, and terms before we rank them.
-          </p>
+      <HeroSection />
 
-          {/* Trust bar */}
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-500 mb-10">
-            {[
-              { icon: '💳', label: 'Real deposit testing' },
-              { icon: '⚡', label: 'Withdrawal checks' },
-              { icon: '📋', label: 'Terms reviewed manually' },
-              { icon: '🔄', label: 'Updated monthly' },
-            ].map(item => (
-              <div key={item.label} className="flex items-center gap-2">
-                <span>{item.icon}</span>
-                <span>{item.label}</span>
-              </div>
-            ))}
-          </div>
-
-          {/* Bonus type pills */}
-          <div className="flex flex-wrap justify-center gap-3">
-            {[
-              { label: 'No Deposit Bonuses', href: '/bonuses/no-deposit' },
-              { label: 'Free Spins', href: '/bonuses/free-spins' },
-              { label: 'Welcome Bonuses', href: '/bonuses/welcome' },
-              { label: 'Cashback Offers', href: '/bonuses/cashback' },
-            ].map(b => (
-              <Link
-                key={b.label}
-                href={b.href}
-                className="bg-[#252830] hover:bg-[#2E3040] border border-[#2E3040] hover:border-[#F5A623]/30 text-gray-300 hover:text-[#F5A623] text-sm font-medium px-4 py-2 rounded-full transition-all"
-              >
-                {b.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div id="casinos" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
         {/* Methodology note */}
         <div className="bg-[#161820] border border-[#252830] rounded-xl p-4 mb-8 flex items-start gap-3">
