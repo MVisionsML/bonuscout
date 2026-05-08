@@ -35,6 +35,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/best-hacksaw-gaming-casinos`, priority: 0.8 },
     { url: `${base}/luckywins-vs-winningz`, priority: 0.8 },
     { url: `${base}/stake-vs-blockspins`, priority: 0.8 },
+    { url: `${base}/billionaire-spin-vs-chancer`, priority: 0.8 },
+    { url: `${base}/luckymax-vs-jackpoty`, priority: 0.8 },
   ].map(p => ({ ...p, lastModified: now, changeFrequency: 'monthly' as const }))
 
   const dePages = [
@@ -49,6 +51,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/de/niedrigste-umsatzbedingungen`, priority: 0.9 },
     { url: `${base}/de/kein-wager-casino`, priority: 0.9 },
     { url: `${base}/de/krypto-casino-bonus`, priority: 0.85 },
+    { url: `${base}/de/ratgeber`, priority: 0.8 },
+    { url: `${base}/de/ratgeber/umsatzbedingungen-erklaert`, priority: 0.85 },
+    { url: `${base}/de/ratgeber/krypto-casino-guide`, priority: 0.85 },
   ].map(p => ({ ...p, lastModified: now, changeFrequency: 'monthly' as const }))
 
   const enReviews = casinos.map(c => ({
