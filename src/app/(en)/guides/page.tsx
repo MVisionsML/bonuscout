@@ -11,6 +11,7 @@ const guides = [
   { title: 'How to Claim a No Deposit Bonus', slug: 'how-to-claim-no-deposit-bonus', desc: 'Step-by-step guide to claiming free bonus funds without making a deposit.', readTime: '4 min read' },
   { title: 'Free Spins Guide', slug: 'free-spins-guide', desc: 'Everything about free spins — value per spin, wagering on winnings, expiry and how to find the best offers.', readTime: '5 min read' },
   { title: 'Casino Bonus Terms Decoded', slug: 'casino-bonus-terms', desc: 'Every bonus term explained in plain English. Wagering, max bet, game weighting, withdrawal caps and more.', readTime: '6 min read' },
+  { title: 'Crypto Casino Guide', slug: 'crypto-casino-guide', desc: 'Bitcoin, Ethereum and crypto gambling explained. Advantages, how to deposit and the best crypto bonuses.', readTime: '10 min read' },
 ]
 
 export default function GuidesPage() {

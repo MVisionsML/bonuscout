@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/guides/how-to-claim-no-deposit-bonus`, priority: 0.85 },
     { url: `${base}/guides/free-spins-guide`, priority: 0.85 },
     { url: `${base}/guides/casino-bonus-terms`, priority: 0.8 },
+    { url: `${base}/guides/crypto-casino-guide`, priority: 0.85 },
     { url: `${base}/methodology`, priority: 0.6 },
     { url: `${base}/about`, priority: 0.5 },
     { url: `${base}/responsible-gambling`, priority: 0.5 },
