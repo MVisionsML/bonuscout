@@ -50,7 +50,7 @@ export default function HomePage() {
         {/* Casino list */}
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-black text-white">
-            Best Casino Bonuses — April 2026
+            Best Casino Bonuses — May 2026
           </h2>
           <Link href="/casinos" className="text-[#F5A623] text-sm font-bold hover:underline">
             View all →

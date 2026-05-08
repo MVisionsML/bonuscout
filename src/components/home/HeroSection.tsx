@@ -138,7 +138,7 @@ export default function HeroSection() {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 mb-8">
             <Link href="#casinos"
-              className="bg-[#F5A623] hover:bg-[#E09520] text-black font-black text-sm uppercase tracking-wider px-8 py-3.5 rounded-xl transition-colors">
+              className="border border-[#F5A623] hover:bg-[#F5A623]/10 text-[#F5A623] font-black text-sm uppercase tracking-wider px-8 py-3.5 rounded-xl transition-colors">
               View Top Bonuses
             </Link>
             <Link href="/reviews"
@@ -151,7 +151,7 @@ export default function HeroSection() {
           <div className="flex flex-wrap justify-center gap-8 sm:gap-12">
             {STATS.map(stat => (
               <div key={stat.label} className="text-center">
-                <div className="text-2xl sm:text-3xl font-black text-white">{stat.value}</div>
+                <div className="text-2xl sm:text-3xl font-black text-[#F5A623]">{stat.value}</div>
                 <div className="text-[10px] uppercase tracking-[0.2em] text-gray-600 mt-1">{stat.label}</div>
               </div>
             ))}
