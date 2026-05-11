@@ -9,7 +9,7 @@ interface Props {
 }
 
 const customTitles: Record<string, string> = {
-  'luckywins-casino': 'LuckyWins Casino Review 2026 — Is It Legit? Bonus & Full Rating',
+  'luckywins-casino': 'LuckyWins Casino Review 2026 — €8,000 Bonus Tested. Is It Legit?',
   'luckymax-casino': 'LuckyMax Casino Review 2026 — €4,000 Bonus Tested & Rated',
   'billionaire-spin': 'Billionaire Spin Review 2026 — 25% Cashback + €450 Bonus Tested',
   'binobet-casino': 'BinoBet Casino Review 2026 — €1,500 Bonus & 24/7 Support Tested',
@@ -26,16 +26,17 @@ const customTitles: Record<string, string> = {
   'talismania': 'TalisMania Review 2026 — €500 + 200 Free Spins & Bonus Crab Tested',
   'wonaco-casino': 'Wonaco Casino Review 2026 — €500 + 200 Spins Tested',
   'luck-nation-casino': 'Luck Nation Casino Review 2026 — €200 Bonus Tested',
-  'vegashero-casino': 'VegasHero Casino Review 2026 — MGA Licensed & €500 Bonus Tested',
+  'vegashero-casino': 'VegasHero Casino Review 2026 — Legit or Not? Bonus & Full Rating',
   'emirbet-casino': 'EmirBet Casino Review 2026 — €500 Bonus & Fast Withdrawals Tested',
 }
 
 const customDescriptions: Record<string, string> = {
-  'luckywins-casino': 'Full LuckyWins Casino review. We tested the €8,000 bonus, withdrawals and support. Is LuckyWins legit? Rating: 4.4/5. 40x wagering explained.',
+  'luckywins-casino': 'Full LuckyWins Casino review 2026. We tested the €8,000 + 500 Free Spins bonus with a real deposit. 40x wagering explained. Verdict: is LuckyWins worth it?',
   'luckymax-casino': 'Full LuckyMax Casino review. €4,000 + 300 Free Spins tested by our team. 35x wagering, Hacksaw Gaming slots. Is LuckyMax worth it?',
   'stake-casino': 'Full Stake Casino review. 0x wagering on promos, crypto withdrawals in 1-4h. Is Stake Casino legit? Our team tested everything.',
   'winningz-casino': 'Full Winningz Casino review. €5,000 + 500 Free Spins at 35x wagering tested. Is Winningz legit? Read our verdict before depositing.',
   'crocoslots': 'Full Crocoslots review. 6,000+ games and €1,000 bonus tested. 45x wagering — is it worth it? Our team deposits and withdraws to find out.',
+  'vegashero-casino': 'Full VegasHero Casino review 2026. MGA licensed casino tested by our team. €500 bonus, real withdrawal tested. Is VegasHero safe? Read before depositing.',
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
