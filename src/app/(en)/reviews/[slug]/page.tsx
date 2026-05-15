@@ -1,5 +1,6 @@
 import { casinos } from '@/data/casinos'
 import { notFound } from 'next/navigation'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { ReviewSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup'
@@ -94,8 +95,12 @@ export default async function ReviewPage({ params }: Props) {
         {/* Header */}
         <div className="bg-[#161820] border border-[#252830] rounded-2xl p-6 md:p-8 mb-6">
           <div className="flex items-start gap-6 flex-wrap">
-            <div className="w-20 h-20 bg-[#252830] rounded-xl flex items-center justify-center text-4xl border border-[#2E3040] flex-shrink-0">
-              {casino.logo}
+            <div className="w-20 h-20 bg-[#252830] rounded-xl flex items-center justify-center text-4xl border border-[#2E3040] flex-shrink-0 overflow-hidden">
+              {casino.logoUrl ? (
+                <Image src={casino.logoUrl} alt={casino.name} width={72} height={72} className="rounded-xl object-contain" />
+              ) : (
+                casino.logo
+              )}
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-3 flex-wrap mb-2">

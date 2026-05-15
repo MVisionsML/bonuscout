@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { Casino } from '@/types'
 
@@ -28,8 +29,12 @@ export default function CasinoCard({ casino, rank }: CasinoCardProps) {
         </div>
 
         {/* Logo */}
-        <div className="flex-shrink-0 w-14 h-14 bg-[#252830] rounded-xl flex items-center justify-center text-3xl border border-[#2E3040]">
-          {casino.logo}
+        <div className="flex-shrink-0 w-14 h-14 bg-[#252830] rounded-xl flex items-center justify-center text-3xl border border-[#2E3040] overflow-hidden">
+          {casino.logoUrl ? (
+            <Image src={casino.logoUrl} alt={casino.name} width={48} height={48} className="rounded-xl object-contain" />
+          ) : (
+            casino.logo
+          )}
         </div>
 
         {/* Info */}

@@ -2,7 +2,7 @@ import { Casino } from '@/types'
 
 export const casinos: Casino[] = [
   {
-    id: '1', name: 'LuckyWins Casino', slug: 'luckywins-casino', logo: '🍀',
+    id: '1', name: 'LuckyWins Casino', slug: 'luckywins-casino', logo: '🍀', logoUrl: '/logos/luckywins.png',
     rating: 4.4, ratingMax: 5.0,
     bonus: '€8,000 + 500 Free Spins',
     bonusType: 'welcome',
@@ -19,7 +19,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2020
   },
   {
-    id: '17', name: 'Winningz Casino', slug: 'winningz-casino', logo: '🏆',
+    id: '17', name: 'Winningz Casino', slug: 'winningz-casino', logo: '🏆', logoUrl: '/logos/winningz.png',
     rating: 4.1, ratingMax: 5.0,
     bonus: '€5,000 + 500 Free Spins',
     bonusType: 'welcome',
@@ -36,7 +36,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2022
   },
   {
-    id: '5', name: 'Rooli Casino', slug: 'rooli-casino', logo: '🎰',
+    id: '5', name: 'Rooli Casino', slug: 'rooli-casino', logo: '🎰', logoUrl: '/logos/rooli.png',
     rating: 4.0, ratingMax: 5.0,
     bonus: '€500 + 200 Free Spins',
     bonusType: 'welcome',
@@ -53,7 +53,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2021
   },
   {
-    id: '6', name: 'VegasHero Casino', slug: 'vegashero-casino', logo: '🦸',
+    id: '6', name: 'VegasHero Casino', slug: 'vegashero-casino', logo: '🦸', logoUrl: '/logos/vegashero.png',
     rating: 4.0, ratingMax: 5.0,
     bonus: '€500 + 200 Free Spins',
     bonusType: 'welcome',
@@ -70,7 +70,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'high', markets: ['global'], founded: 2018
   },
   {
-    id: '4', name: 'BinoBet Casino', slug: 'binobet-casino', logo: '🎲',
+    id: '4', name: 'BinoBet Casino', slug: 'binobet-casino', logo: '🎲', logoUrl: '/logos/binobet.png',
     rating: 4.1, ratingMax: 5.0,
     bonus: '€1,500 + 150 Free Spins',
     bonusType: 'welcome',
@@ -87,7 +87,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2020
   },
   {
-    id: '2', name: 'LuckyMax Casino', slug: 'luckymax-casino', logo: '🎯',
+    id: '2', name: 'LuckyMax Casino', slug: 'luckymax-casino', logo: '🎯', logoUrl: '/logos/luckymax.png',
     rating: 4.3, ratingMax: 5.0,
     bonus: '€4,000 + 300 Free Spins',
     bonusType: 'welcome',
@@ -104,7 +104,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2021
   },
   {
-    id: '8', name: 'Chancer Casino', slug: 'chancer-casino', logo: '🍀',
+    id: '8', name: 'Chancer Casino', slug: 'chancer-casino', logo: '🍀', logoUrl: '/logos/chancer.png',
     rating: 3.9, ratingMax: 5.0,
     bonus: '300% Welcome Package',
     bonusType: 'welcome',
@@ -121,7 +121,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2022
   },
   {
-    id: '3', name: 'Billionaire Spin', slug: 'billionaire-spin', logo: '💎',
+    id: '3', name: 'Billionaire Spin', slug: 'billionaire-spin', logo: '💎', logoUrl: '/logos/billionaire-spin.png',
     rating: 4.2, ratingMax: 5.0,
     bonus: '€450 + 250 Free Spins + 25% Cashback',
     bonusType: 'cashback',
@@ -138,7 +138,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2021
   },
   {
-    id: '10', name: 'Crocoslots', slug: 'crocoslots', logo: '🐊',
+    id: '10', name: 'Crocoslots', slug: 'crocoslots', logo: '🐊', logoUrl: '/logos/crocoslots.png',
     rating: 3.9, ratingMax: 5.0,
     bonus: '€1,000 + 100 Free Spins',
     bonusType: 'welcome',
@@ -155,7 +155,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2020
   },
   {
-    id: '15', name: 'Stake Casino', slug: 'stake-casino', logo: '⚡',
+    id: '15', name: 'Stake Casino', slug: 'stake-casino', logo: '⚡', logoUrl: '/logos/stake.png',
     rating: 4.3, ratingMax: 5.0,
     bonus: 'Choose your offer',
     bonusType: 'welcome',
@@ -172,7 +172,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2017
   },
   {
-    id: '9', name: 'Blockspins Casino', slug: 'blockspins-casino', logo: '₿',
+    id: '9', name: 'Blockspins Casino', slug: 'blockspins-casino', logo: '₿', logoUrl: '/logos/blockspins.png',
     rating: 3.8, ratingMax: 5.0,
     bonus: '100% First Deposit Bonus',
     bonusType: 'welcome',
@@ -189,7 +189,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2022
   },
   {
-    id: '7', name: 'EmirBet Casino', slug: 'emirbet-casino', logo: '👑',
+    id: '7', name: 'EmirBet Casino', slug: 'emirbet-casino', logo: '👑', logoUrl: '/logos/emirbet.png',
     rating: 3.9, ratingMax: 5.0,
     bonus: '€500 + 200 Free Spins',
     bonusType: 'welcome',
@@ -206,7 +206,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2021
   },
   {
-    id: '11', name: 'Jackpoty', slug: 'jackpoty', logo: '🎳',
+    id: '11', name: 'Jackpoty', slug: 'jackpoty', logo: '🎳', logoUrl: '/logos/jackpoty.png',
     rating: 4.0, ratingMax: 5.0,
     bonus: '€2,000 + 100 Free Spins',
     bonusType: 'welcome',
@@ -223,7 +223,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2021
   },
   {
-    id: '12', name: 'Luck Nation Casino', slug: 'luck-nation-casino', logo: '🌟',
+    id: '12', name: 'Luck Nation Casino', slug: 'luck-nation-casino', logo: '🌟', logoUrl: '/logos/luck-nation.png',
     rating: 3.8, ratingMax: 5.0,
     bonus: '100% up to €200 + Free Spins',
     bonusType: 'welcome',
@@ -240,7 +240,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2022
   },
   {
-    id: '13', name: 'Playio', slug: 'playio', logo: '🎮',
+    id: '13', name: 'Playio', slug: 'playio', logo: '🎮', logoUrl: '/logos/playio.png',
     rating: 3.9, ratingMax: 5.0,
     bonus: '100% up to €500 + 200 FS + 1 Bonus Crab',
     bonusType: 'welcome',
@@ -257,7 +257,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2023
   },
   {
-    id: '14', name: 'Rooster.bet', slug: 'rooster-bet', logo: '🐓',
+    id: '14', name: 'Rooster.bet', slug: 'rooster-bet', logo: '🐓', logoUrl: '/logos/rooster.png',
     rating: 4.0, ratingMax: 5.0,
     bonus: 'Welcome Package up to $5,000 + 300 FS',
     bonusType: 'welcome',
@@ -274,7 +274,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2022
   },
   {
-    id: '16', name: 'TalisMania', slug: 'talismania', logo: '🔮',
+    id: '16', name: 'TalisMania', slug: 'talismania', logo: '🔮', logoUrl: '/logos/talismania.png',
     rating: 3.9, ratingMax: 5.0,
     bonus: '100% up to €500 + 200 FS + 1 Bonus Crab',
     bonusType: 'welcome',
@@ -291,7 +291,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2023
   },
   {
-    id: '18', name: 'Wonaco Casino', slug: 'wonaco-casino', logo: '🎪',
+    id: '18', name: 'Wonaco Casino', slug: 'wonaco-casino', logo: '🎪', logoUrl: '/logos/wonaco.png',
     rating: 3.8, ratingMax: 5.0,
     bonus: '100% up to €500 + 200 Free Spins',
     bonusType: 'welcome',
@@ -308,7 +308,7 @@ export const casinos: Casino[] = [
     safetyIndex: 'medium', markets: ['global'], founded: 2022
   },
   {
-    id: '19', name: 'Spin Fever Casino', slug: 'spin-fever-casino', logo: '🌡️',
+    id: '19', name: 'Spin Fever Casino', slug: 'spin-fever-casino', logo: '🌡️', logoUrl: '/logos/spin-fever.png',
     rating: 4.0, ratingMax: 5.0,
     bonus: 'UP TO €4,000 + 4 Gold Spins',
     bonusType: 'welcome',

@@ -3,6 +3,7 @@ export interface Casino {
   name: string
   slug: string
   logo: string
+  logoUrl?: string
   rating: number
   ratingMax: number
   bonus: string
