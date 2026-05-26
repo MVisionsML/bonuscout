@@ -15,7 +15,7 @@ const customTitles: Record<string, string> = {
   'billionaire-spin': 'Billionaire Spin Review 2026 — 25% Cashback + €450 Bonus Tested',
   'binobet-casino': 'BinoBet Casino Review 2026 — €1,500 Bonus & 24/7 Support Tested',
   'stake-casino': 'Stake Casino Review 2026 — 0x Wagering & Crypto Tested',
-  'winningz-casino': 'Winningz Casino Review 2026 — €5,000 + 500 Spins Tested',
+  'winningz-casino': 'Winningz Casino Review 2026 — €5,000 + 500 Spins, Is It Legit?',
   'crocoslots': 'Crocoslots Review 2026 — 6,000+ Games & €1,000 Bonus Tested',
   'rooli-casino': 'Rooli Casino Review 2026 — €500 Bonus & 35x Wagering Tested',
   'jackpoty': 'Jackpoty Review 2026 — €2,000 + 100 Free Spins Tested',
@@ -27,7 +27,7 @@ const customTitles: Record<string, string> = {
   'talismania': 'TalisMania Review 2026 — €500 + 200 Free Spins & Bonus Crab Tested',
   'wonaco-casino': 'Wonaco Casino Review 2026 — €500 + 200 Spins Tested',
   'luck-nation-casino': 'Luck Nation Casino Review 2026 — €200 Bonus Tested',
-  'vegashero-casino': 'VegasHero Casino Review 2026 — Legit or Not? Bonus & Full Rating',
+  'vegashero-casino': 'VegasHero Casino Review 2026 — MGA Licensed, €500 Bonus Tested',
   'emirbet-casino': 'EmirBet Casino Review 2026 — €500 Bonus & Fast Withdrawals Tested',
 }
 
