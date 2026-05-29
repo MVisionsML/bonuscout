@@ -27,6 +27,21 @@ export default function DeKeinWagerPage() {
         <p className="text-gray-400 text-lg max-w-2xl">Behalten Sie alles, was Sie gewinnen. Casinos ohne Umsatzbedingungen ermöglichen sofortige Auszahlungen von Bonusgewinnen.</p>
       </div>
 
+      <div className="bg-[#161820] border border-[#252830] rounded-2xl p-6 md:p-8 mb-8">
+        <h2 className="text-white font-black text-xl mb-4">Wie 0x Umsatzbedingungen den Markt verändern</h2>
+        <div className="space-y-4 text-sm text-gray-400 leading-relaxed">
+          <p>Ein Kein-Wager-Casino zahlt Bonusgewinne ohne jegliche Umsatzbedingungen direkt als Echtgeld aus. Was nach einer Selbstverständlichkeit klingt, ist im Online-Glücksspielmarkt eine echte Seltenheit – mehr als 95% aller Casino-Boni in Europa verlangen mindestens 30-fachen, oft sogar 50-fachen Umsatz. Bei einem €100-Bonus mit 40x Wagering müssten Sie €4.000 umsetzen, bevor eine Auszahlung möglich ist. Bei einem Kein-Wager-Bonus dagegen können Sie das gewonnene Geld sofort vom Konto abheben, ohne weitere Bedingungen.</p>
+
+          <p>Der mathematische Vorteil ist enorm. Nehmen wir an, Sie erhalten €50 Freebet ohne Wager. Sie spielen Roulette und gewinnen €50. Diese €50 sind sofort als Echtgeld verfügbar und können ausgezahlt werden. Bei einem konventionellen €50-Bonus mit 35x Wagering müssten Sie hingegen €1.750 umsetzen – statistisch ein erwarteter Verlust von etwa €70 bei 96% RTP. Ihr „Gewinn&quot; wäre also rechnerisch bereits negativ, bevor Sie überhaupt eine Auszahlung beantragen können. Genau diese Mathematik macht Wager-freie Angebote so wertvoll – und so rar.</p>
+
+          <p>Warum sind 0x-Bonusangebote so selten? Die Antwort liegt im Geschäftsmodell. Casinos finanzieren ihre großen Willkommensboni über Umsatzbedingungen – sie wissen statistisch, dass nur 1–5% aller Bonuskunden die Anforderungen erfüllen und tatsächlich auszahlen. Ohne Wagering müsste das Casino jeden Bonus quasi als reine Werbeausgabe verbuchen. Daher kommen Kein-Wager-Angebote meist in einer von drei Formen: Erstens als reine Krypto-Casinos (wie Stake) mit niedrigeren Marketingkosten und VIP-fokussiertem Modell, zweitens als gezielte Promotion für treue Spieler statt als breite Akquise, und drittens als Free Spins mit niedrigem Maximalgewinn (oft auf €100 gedeckelt).</p>
+
+          <p>Worauf Sie bei „Kein-Wager-Boni&quot; achten sollten: Nicht jeder als wager-free beworbene Bonus ist auch wirklich frei von Bedingungen. Häufige Fallstricke sind ein maximaler Auszahlungsbetrag (oft 5x bis 10x des Bonuswerts), ein Zeitlimit zur Aktivierung (24 bis 72 Stunden), eingeschränkte Spielauswahl (nur ein bestimmter Slot), und Mindesteinzahlungsanforderungen, die höher sind als beim normalen Spiel. Lesen Sie immer die AGB zum Punkt „Maximale Umwandlung&quot; – das ist der versteckte Deckel, der den Wert vieler Kein-Wager-Angebote stark begrenzt.</p>
+
+          <p>Vergleich mit Niedrig-Wager-Casinos: Ein Casino mit 20x Umsatzbedingung ist mathematisch nicht so weit von 0x entfernt, wie es klingt. Bei €100 Bonus müssten Sie €2.000 umsetzen, statistisch mit etwa €80 erwartetem Verlust. Bei 0x liegt der „Pflicht-Einsatz&quot; naturgemäß bei null. Der Unterschied zwischen 20x und 0x entspricht damit etwa €80 erwartetem Vorteil – nicht trivial, aber auch nicht der einzige Faktor. Die Bonushöhe selbst zählt ebenso. Ein €50 Wager-freier Bonus ist mathematisch oft weniger wert als ein €500-Bonus mit 25x Umsatz, wenn Sie diszipliniert spielen können. Die fairste Kombination bleibt jedoch: hoher Bonusbetrag plus niedrige oder keine Umsatzbedingung – und genau diese Casinos listen wir oben.</p>
+        </div>
+      </div>
+
       {noWager.length > 0 && (
         <>
           <h2 className="text-xl font-black text-white mb-4">0x Umsatzbedingungen Casinos</h2>

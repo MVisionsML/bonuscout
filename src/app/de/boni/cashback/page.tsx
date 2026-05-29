@@ -131,6 +131,21 @@ export default function DeCashbackPage() {
       </div>
 
       <div className="bg-[#161820] border border-[#252830] rounded-2xl p-6 md:p-8 mb-10">
+        <h2 className="text-white font-black text-xl mb-4">Warum Cashback der ehrlichste Bonus ist</h2>
+        <div className="space-y-4 text-sm text-gray-400 leading-relaxed">
+          <p>Cashback-Boni unterscheiden sich grundlegend von allen anderen Bonusarten im Online-Casino – und das aus einem einfachen Grund: Sie werden im Nachhinein gezahlt. Während Sie bei einem klassischen Willkommensbonus erst Geld erhalten und anschließend hohe Umsatzbedingungen erfüllen müssen, funktioniert Cashback umgekehrt. Sie spielen mit Ihrem eigenen Guthaben, und falls Sie verlieren, bekommen Sie einen Prozentsatz zurück. Diese Umkehrung der Logik macht Cashback zum statistisch ehrlichsten Bonus auf dem deutschen Markt.</p>
+
+          <p>Die Mathematik dahinter ist entscheidend. Nehmen wir an, Sie zahlen €500 ein und spielen Spielautomaten mit einer Auszahlungsquote (RTP) von 96%. Statistisch werden Sie über lange Sicht etwa 4% des umgesetzten Volumens verlieren – nicht der Einzahlung, sondern des gesamten Spielvolumens. Bei einem 25%-Cashback auf Nettoverluste bekommen Sie ein Viertel dieses Verlusts zurück, was Ihren effektiven Hausvorteil auf rund 3% reduziert. Bei einem 100%-Match-Bonus mit 40-facher Umsatzbedingung müssten Sie hingegen das Doppelte umsetzen – Sie spielen mehr, verlieren statistisch mehr, und die Mathematik kippt zu Ungunsten des Spielers.</p>
+
+          <p>Ein konkretes Beispiel aus der Praxis: Sie zahlen €200 ein. Über eine Woche setzen Sie diese €200 mehrmals um und stehen am Sonntag bei einem Nettoverlust von €120. Bei 20% wöchentlichem Cashback erhalten Sie €24 zurück – ohne Umsatzbedingung oder mit nur 1x. Das Geld ist sofort auszahlbar. Vergleichen Sie das mit einem 100%-Bonus, bei dem Sie für €200 Bonusguthaben erst €8.000 umsetzen müssten, bevor irgendetwas auszahlbar wäre. In dieser Zeit haben Sie statistisch bereits mehr verloren, als der Bonus jemals wert war.</p>
+
+          <p>Die größten Vorteile von Cashback im Überblick: keine Maximaleinsatz-Beschränkung beim Spielen (bei Welcome-Boni häufig auf €5 pro Spin gedeckelt), keine Spielausschlüsse (Live-Casino und Tischspiele zählen meist voll mit), und Sie behalten die volle Kontrolle über Ihre Bankroll. Sie können jederzeit aufhören, ohne dass ein nicht freigespielter Bonus verfällt. Auch Boni-Jagd-Strategien wie Bonus-Hunting funktionieren mit Cashback nicht – aber das ist genau der Punkt: Es ist kein Lockmittel, sondern ein echter Loyalitätsmechanismus.</p>
+
+          <p>Tipps zur Maximierung Ihres Cashback-Werts: Erstens, wählen Sie Casinos mit wöchentlicher statt monatlicher Auszahlung – die kürzere Periode reduziert die Varianz und führt zu konstanteren Auszahlungen. Zweitens, prüfen Sie, ob Cashback auf alle Spiele gilt oder nur auf Slots. Drittens, achten Sie auf die Mindestverlust-Schwelle: einige Casinos zahlen erst ab €50 Nettoverlust aus. Viertens, kombinieren Sie Cashback mit Spielen hoher Auszahlungsquote – Slots mit 96–97% RTP funktionieren mathematisch besser als 92%-Titel. Und fünftens, lesen Sie immer die AGB zur „Negativ-Saldo-Klausel&quot;: Wenn Sie in der Vorwoche im Plus standen, wird das oft mit Verlusten der Folgewoche verrechnet, was den effektiven Cashback-Wert reduziert.</p>
+        </div>
+      </div>
+
+      <div className="bg-[#161820] border border-[#252830] rounded-2xl p-6 md:p-8 mb-10">
         <h2 className="text-white font-black text-xl mb-5">Häufig gestellte Fragen</h2>
         <div className="space-y-5 text-sm">
           <div>
