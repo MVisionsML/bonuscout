@@ -89,6 +89,21 @@ export default function DeKeinEinzahlungsbonusPage() {
       </div>
 
       <div className="bg-[#161820] border border-[#252830] rounded-2xl p-6 md:p-8 mb-10">
+        <h2 className="text-white font-black text-xl mb-4">No Deposit Boni — was Sie wirklich wissen müssen</h2>
+        <div className="space-y-4 text-sm text-gray-400 leading-relaxed">
+          <p>Ein Bonus ohne Einzahlung ist eine kleine Geldgabe – meist €5 bis €25 in Bargeld oder 10 bis 50 Freispiele – die ein Casino neuen Spielern allein für die Kontoeröffnung gewährt. Anders als beim klassischen Willkommensbonus müssen Sie kein eigenes Geld einsetzen. Der Zweck dieses Marketinginstruments ist eindeutig: Casinos wollen Sie durch den KYC-Prozess führen und einen langfristigen Kunden gewinnen. Genau aus diesem Grund kompensieren die Anbieter das Risiko durch strenge Bedingungen, die viele Spieler unterschätzen.</p>
+
+          <p>Die detaillierte Schritt-für-Schritt-Anleitung umfasst mehr Stationen, als die meisten denken. Zunächst wählen Sie ein lizenziertes Casino aus unserer Liste – Curaçao oder MGA gelten als Mindeststandard. Bei der Registrierung müssen Sie Ihre echten Daten verwenden: falscher Name oder erfundenes Geburtsdatum führen später zur KYC-Sperre und damit zur Konfiszierung sämtlicher Gewinne. Nach der E-Mail- oder SMS-Verifizierung wird der Bonus entweder automatisch gutgeschrieben oder Sie müssen einen Bonuscode im Kassenbereich eintragen – beides ist meist innerhalb von 24 Stunden zu erledigen, sonst verfällt das Angebot.</p>
+
+          <p>Die Umsatzbedingungen liegen bei No-Deposit-Boni typischerweise zwischen 35x und 60x – höher als bei Willkommensboni, weil das Risiko für das Casino größer ist. Bei €10 Bonus mit 40x Wagering setzen Sie €400 um. Beachten Sie auch die Maximalauszahlung: Fast immer ist Ihr Auszahlungsbetrag auf €50 bis €100 gedeckelt, unabhängig davon, ob Sie €500 oder €5.000 gewonnen haben. Wer das vorab nicht weiß, erlebt eine böse Überraschung. Hinzu kommt fast immer ein Maximaleinsatz von €1 bis €5 pro Spin sowie eine Spielausschlussliste – Live-Casino und progressive Jackpots zählen meistens nicht.</p>
+
+          <p>Die größten Fehler beim Einlösen von No-Deposit-Angeboten: Erstens, Überschreiten des Maximaleinsatzes – schon ein einzelner €6-Spin kann den gesamten Bonus annullieren. Zweitens, Spielen auf ausgeschlossenen Titeln, ohne die AGB zu prüfen. Drittens, Mehrfachregistrierung im selben Haushalt – Casinos erkennen IP-Adressen und Geräte-Fingerprints und sperren Doppelkonten ohne Vorwarnung. Viertens, das Ignorieren des Zeitfensters: meist haben Sie 7 bis 30 Tage zum Umsetzen, andernfalls erlischt der Bonus samt Gewinnen. Fünftens, KYC-Dokumente erst nach Auszahlungsantrag einreichen – wer Ausweis und Adressnachweis bereits beim Registrieren hochlädt, spart Tage Wartezeit.</p>
+
+          <p>Tipps zur Maximierung des realen Werts: Wählen Sie Boni mit niedrigem Wagering (unter 40x) und mit hoher Maximalauszahlung (möglichst €100 oder mehr). Spielen Sie ausschließlich Slots mit RTP von 96% oder höher – jeder Prozentpunkt schlägt rechnerisch auf Ihre Gewinnchance durch. Setzen Sie konsequent am unteren Ende des erlaubten Einsatzes, um Varianz zu reduzieren. Lesen Sie die „Bonus-Missbrauchsklausel&quot; in den AGB – sie erlaubt es Casinos, „verdächtiges&quot; Spielverhalten (etwa konsequentes Niedrigvarianz-Spiel auf Roulette) als Bonus-Missbrauch zu klassifizieren. Wer diese Punkte beachtet, holt aus einem €10-Bonus realistisch zwischen €30 und €80 Echtgeld – nicht garantiert, aber statistisch erwartbar.</p>
+        </div>
+      </div>
+
+      <div className="bg-[#161820] border border-[#252830] rounded-2xl p-6 md:p-8 mb-10">
         <h2 className="text-white font-black text-xl mb-5">Häufig gestellte Fragen</h2>
         <div className="space-y-5 text-sm">
           <div>

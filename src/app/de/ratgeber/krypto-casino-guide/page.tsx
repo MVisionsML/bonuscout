@@ -152,6 +152,21 @@ export default function DeKryptoCasinoGuidePage() {
             </div>
           </div>
 
+          <div className="bg-[#161820] border border-[#252830] rounded-xl p-6 md:p-8">
+            <h2 className="font-black text-white text-xl mb-4">Bitcoin in Deutschland kaufen — Börsen, Banken und Steuern</h2>
+            <div className="text-gray-400 text-sm leading-relaxed space-y-4">
+              <p>Bevor Sie Krypto im Casino einsetzen, müssen Sie die Coins erst einmal kaufen. In Deutschland funktioniert das mittlerweile reibungslos über mehrere regulierte Börsen. Die größten und mit BaFin-Erlaubnis arbeitenden Anbieter sind Bitpanda (Wien, EU-passportiert), Coinbase Germany (mit deutscher Kryptoverwahrlizenz seit 2021) und Bison von der Börse Stuttgart. Alle drei akzeptieren SEPA-Überweisungen, Kreditkarten und Sofortüberweisung. Die Gebühren liegen typischerweise zwischen 0,99% (Bitpanda) und 1,49% (Coinbase) plus Spread – also rund 2–3% Gesamtkosten beim Kauf.</p>
+
+              <p>Schritt-für-Schritt-Anleitung zum Bitcoin-Kauf in Deutschland: Erstens, Registrierung bei der Börse mit echten Daten und Adresse (das deutsche Geldwäschegesetz verlangt KYC für jeden Kauf über €1.000). Zweitens, Identitätsverifizierung per Video-Ident oder Post-Ident, dauert ein bis drei Werktage. Drittens, SEPA-Überweisung oder Sofortüberweisung als Zahlungsmethode auswählen – Kreditkarte funktioniert, ist aber teurer. Viertens, Bitcoin-Betrag wählen und kaufen. Fünftens, die gekaufte Menge in Ihre persönliche Wallet senden (nicht in der Börse lassen – „not your keys, not your coins&quot;). Erst aus dieser Wallet überweisen Sie an das Casino.</p>
+
+              <p>Welche deutschen Banken Krypto-Transaktionen unterstützen, ist eine häufige Quelle von Frustration. N26 erlaubt SEPA-Überweisungen an Bitpanda, Coinbase und Bison ohne Einschränkungen – das ist die spielerfreundlichste Online-Bank Deutschlands. Die DKB blockiert Kreditkartenzahlungen an viele Krypto-Börsen, lässt SEPA-Überweisungen aber zu. Sparkasse und Commerzbank verhalten sich uneinheitlich – einzelne Filialen blockieren Krypto-Überweisungen automatisch, andere nicht. Die Volksbank hat seit 2024 mit der „VR Crypto&quot;-Plattform sogar eigene Krypto-Funktionen integriert. Bei allen Banken empfehlen wir, vor der ersten größeren Überweisung den Kundenservice zu kontaktieren, um Limit- und Compliance-Fragen vorab zu klären.</p>
+
+              <p>Die steuerlichen Aspekte sind in Deutschland besonders wichtig und werden von vielen Spielern übersehen. Glücksspielgewinne aus EU-lizenzierten Casinos sind grundsätzlich steuerfrei. Aber: Krypto, das Sie für Casino-Einzahlungen verwenden, unterliegt der privaten Veräußerungsgewinn-Regelung nach §23 EStG. Konkret: Wenn Sie Bitcoin im Februar für €30.000 kaufen, im Juni für €40.000 verkaufen oder in ein Casino einzahlen, ist der Gewinn von €10.000 steuerpflichtig – sofern weniger als ein Jahr zwischen Kauf und Verwendung liegt. Nach einem Jahr Haltefrist ist der Gewinn steuerfrei. Im Casino selbst entstehende Gewinne sind separat zu betrachten – diese sind aus EU-lizenzierten Anbietern steuerfrei.</p>
+
+              <p>Praktischer Tipp: Führen Sie ein eigenes Krypto-Transaktionsbuch mit Kaufdatum, Kurs und Verwendungszweck. Tools wie CoinTracking oder Blockpit (deutsche Anbieter) automatisieren das vollständig und erstellen die Steuerunterlagen, die bei einer Betriebsprüfung verlangt werden können. Wer monatlich €500 oder mehr in Bitcoin bewegt, sollte zusätzlich Rücksprache mit einem auf Krypto spezialisierten Steuerberater halten – die Branche ist mittlerweile etabliert und der Aufpreis im Vergleich zu möglichen Steuerfolgekosten vernachlässigbar.</p>
+            </div>
+          </div>
+
           <div>
             <h2 className="text-2xl font-black text-white mb-6">Beste Krypto Casinos 2026</h2>
             <div className="space-y-4">

@@ -47,6 +47,21 @@ export default function DeKryptoCasinoPage() {
         </div>
       </div>
 
+      <div className="bg-[#161820] border border-[#252830] rounded-2xl p-6 md:p-8 mb-8">
+        <h2 className="text-white font-black text-xl mb-4">Bitcoin im Casino — Vorteile und Praxis erklärt</h2>
+        <div className="space-y-4 text-sm text-gray-400 leading-relaxed">
+          <p>Bitcoin hat das Online-Glücksspiel seit etwa 2014 grundlegend verändert. Während traditionelle Banküberweisungen drei bis fünf Werktage benötigen und Kreditkarten häufig von deutschen Banken für Glücksspielzahlungen abgelehnt werden, läuft eine Bitcoin-Transaktion in 10 bis 30 Minuten durch – unabhängig davon, ob Sie €50 oder €50.000 senden. Diese Geschwindigkeit ist nicht der einzige Vorteil. Auszahlungen bei reinen Krypto-Casinos wie Stake oder BlockSpins erfolgen oft binnen einer bis vier Stunden, während Sie bei Fiat-Casinos auf bankübliche Bearbeitungszeiten von 24 bis 72 Stunden warten.</p>
+
+          <p>Die Einzahlung von Krypto folgt einem klaren Ablauf. Zunächst kaufen Sie Bitcoin oder Ethereum auf einer Börse – in Deutschland sind Bitpanda, Coinbase und Bison (Stuttgarter Börse) die meistgenutzten Anbieter. Nach dem Kauf senden Sie die Coins an Ihre persönliche Wallet, etwa MetaMask für Ethereum oder Electrum für Bitcoin. Im Casino navigieren Sie zur Kasse, wählen die gewünschte Kryptowährung und erhalten eine eindeutige Einzahlungsadresse. Diese Adresse kopieren Sie exakt – schon ein falscher Buchstabe führt zum permanenten Verlust der Coins, da Blockchain-Transaktionen nicht rückgängig zu machen sind.</p>
+
+          <p>Die am häufigsten akzeptierten Kryptowährungen sind Bitcoin (BTC), Ethereum (ETH), Tether (USDT), Litecoin (LTC) und Dogecoin (DOGE). Tether ist besonders interessant, weil es als Stablecoin an den US-Dollar gekoppelt ist – Kursvolatilität entfällt damit komplett. Wer im Januar mit Bitcoin einzahlt und im März auszahlt, kann durch reinen Wertgewinn (oder -verlust) deutlich vom ursprünglichen Bonusbetrag abweichen. Für reines Spielbudget ohne Spekulation empfehlen wir USDT. Wer den möglichen Bitcoin-Wertanstieg mitnehmen möchte, akzeptiert die Volatilität als zusätzliches Risiko – mathematisch ist das aber eine separate Wette neben dem eigentlichen Casino-Spiel.</p>
+
+          <p>Provably Fair ist das Verfahren, das Krypto-Casinos einen Transparenzvorsprung gegenüber traditionellen Anbietern verschafft. Vereinfacht: vor jedem Spiel erzeugt das Casino einen kryptografischen Hash, der das Ergebnis enthält, aber nicht enthüllt. Erst nach Ihrem Einsatz wird der zugrunde liegende Seed offengelegt. Sie können die Echtheit jedes einzelnen Spielzugs unabhängig nachrechnen – etwas, das bei klassischen RNG-Casinos nicht möglich ist. Spiele mit Provably Fair sind besonders in den Bereichen Crash, Plinko, Mines und Dice verbreitet. Bei klassischen Slot-Titeln (Pragmatic, Hacksaw) gilt weiterhin die zertifizierte RNG der Hersteller.</p>
+
+          <p>Im Vergleich Krypto- versus Fiat-Boni gibt es klare Trends. Krypto-Boni fallen prozentual oft kleiner aus (50% Match statt 100%), bieten aber häufiger niedrige oder gar keine Umsatzbedingungen. Stake bietet beispielsweise Wochen-Cashback ohne Wagering, während ein vergleichbarer Fiat-Bonus 35x Umsatz verlangt. Auch Limits unterscheiden sich: Bei Bitcoin sind Einzahlungen ab dem Gegenwert von €5 und bis €100.000 in einer Transaktion möglich, während Banküberweisungen oft auf €4.000 bis €10.000 pro Vorgang begrenzt sind. Für High-Roller ist das ein entscheidender Faktor. Eine letzte Überlegung: Krypto-Casinos sind seltener mit deutscher Lizenz ausgestattet (MGA und Curaçao überwiegen) – prüfen Sie daher die Lizenz, bevor Sie größere Summen einzahlen.</p>
+        </div>
+      </div>
+
       <h2 className="text-2xl font-black text-white mb-6">Beste Krypto Casinos</h2>
       <div className="space-y-4">
         {cryptoCasinos.map((casino, index) => (

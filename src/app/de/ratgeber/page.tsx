@@ -24,6 +24,28 @@ export default function DeRatgeberPage() {
       </div>
       <h1 className="text-3xl md:text-4xl font-black text-white mb-3">Casino Ratgeber</h1>
       <p className="text-gray-400 mb-10">Alles, was Sie über Casino-Boni wissen müssen — von unserem Testteam verfasst.</p>
+
+      <div className="bg-[#161820] border border-[#252830] rounded-2xl p-6 md:p-8 mb-10">
+        <h2 className="text-white font-black text-xl mb-4">Was Sie hier finden — und warum es wichtig ist</h2>
+        <div className="space-y-4 text-sm text-gray-400 leading-relaxed">
+          <p>Casino-Ratgeber sind tiefgehende Erklärtexte, die einzelne Themen des Online-Glücksspiels in praktisch verwertbarem Detailgrad behandeln. Während Bonuslisten und Casino-Bewertungen Ihnen schnell zeigen, wo Sie Wert finden, beantworten Ratgeber das „Warum&quot; und „Wie&quot;. Warum verlangen die meisten Casinos 35-fachen Umsatz? Wie hoch ist der reale Wert eines €100-Freispiel-Pakets? Wann lohnt sich Bitcoin-Glücksspiel gegenüber Euro-Einzahlungen? Genau diese Fragen klären wir in den vier Hauptratgebern unten.</p>
+
+          <p>Warum diese Texte für deutsche Spieler besonders wichtig sind: Der Markt unterliegt seit 2021 dem Glücksspielstaatsvertrag, der vieles strenger reguliert als in Nachbarländern. Anbieter ohne deutsche Lizenz operieren häufig unter Curaçao oder MGA – das ist legal nutzbar, aber die Spielerrechte unterscheiden sich. Wer den Unterschied zwischen einem MGA-lizenzierten und einem rein offshore-betriebenen Casino nicht kennt, riskiert bei Streitfällen Probleme mit der Auszahlung. Unsere Ratgeber adressieren diese deutsche Marktlage explizit, statt allgemeine internationale Empfehlungen zu wiederholen.</p>
+
+          <p>So nutzen Sie die Texte effektiv: Lesen Sie zuerst den Ratgeber zu Umsatzbedingungen – das ist das Konzept, an dem 90% aller Spieler scheitern. Wer einen 100%-Bonus annimmt, ohne die Mathematik hinter 40x Wagering zu verstehen, verliert statistisch mehr Geld als ohne Bonus. Anschließend wählen Sie den Ratgeber, der zu Ihrer Spielstrategie passt: Wer mit kleinen Beträgen risikolos starten möchte, beginnt mit „Kein Einzahlungsbonus Holen&quot;. Wer Bitcoin oder Ethereum besitzt, springt direkt zum Krypto-Guide. Wer auf Freispiel-Pakete fokussiert, findet im Freispiele-Guide die mathematische Wertberechnung.</p>
+
+          <p>Eine Kurzzusammenfassung der vier Hauptratgeber:</p>
+
+          <p><strong className="text-white">Umsatzbedingungen Erklärt</strong> — der wichtigste Text für jeden Einsteiger. Wir zeigen mit echten Zahlen, wie 40x-Wagering auf einen €200-Bonus tatsächlich €8.000 Umsatz bedeutet, welche Spielanteile (Slots 100%, Roulette oft 10%, Live-Tische 0%) gelten und welche Casinos die niedrigsten Bedingungen bieten. Lesezeit etwa 5 Minuten.</p>
+
+          <p><strong className="text-white">Kein Einzahlungsbonus Holen</strong> — Schritt-für-Schritt-Anleitung zum Sichern von Bonus ohne Eigenkapital. Der Text geht über die Registrierung hinaus auf KYC, Maximalauszahlung, häufige Fehler und Tipps zur realistischen Erwartungshaltung ein. Wer das einmal verstanden hat, vermeidet die teuersten Anfängerfehler.</p>
+
+          <p><strong className="text-white">Freispiele Guide</strong> — wir berechnen den realen Wert pro Spin (€0,10 vs. €0,50 macht enorme Unterschiede), erklären, ob Umsatz auf den Gewinn oder den Spielwert angewendet wird, und zeigen, welche Slot-Hersteller die fairsten Freispiele-Pakete liefern. Pragmatic Play, Hacksaw und NoLimit City stehen im direkten Vergleich.</p>
+
+          <p><strong className="text-white">Krypto Casino Guide</strong> — der umfangreichste Text mit 10 Minuten Lesezeit. Bitcoin, Ethereum und Stablecoins werden erklärt, Provably Fair entmystifiziert und die deutschen Steueraspekte (siehe §23 EStG) eingeordnet. Pflichtlektüre für jeden, der ernsthaft mit Krypto im Casino spielen will.</p>
+        </div>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {guides.map(g => (
           <Link key={g.slug} href={`/de/ratgeber/${g.slug}`}
