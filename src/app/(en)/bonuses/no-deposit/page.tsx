@@ -1,17 +1,28 @@
 import CasinoCard from '@/components/casino/CasinoCard'
+import Link from 'next/link'
 import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
+import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'No Deposit Casino Bonus 2026 — Free Bonus Without Depositing | BonusScout',
   description: 'Best no deposit casino bonuses 2026. Get free bonus funds or free spins just for registering — no deposit required. All offers verified and tested. Updated May 2026.',
 }
 
+const faqs = [
+  { q: 'Can I really withdraw winnings from a no deposit bonus?', a: 'Yes, but only after meeting the wagering requirements. There is also almost always a maximum withdrawal cap (often €50–€100) regardless of how much you actually won.' },
+  { q: 'Do I have to verify my identity?', a: 'Before any first withdrawal, every reputable casino runs a KYC check (ID and proof of address). This protects against duplicate registrations.' },
+  { q: 'How high is the wagering on no deposit bonuses?', a: 'Usually between 35x and 50x — higher than on welcome bonuses because the casino is taking more risk. Anything under 35x is considered fair.' },
+  { q: 'Do I need a bonus code?', a: 'Some casinos require a code at registration. When that is the case, you will find the code in our individual casino reviews.' },
+]
+
 export default function NoDepositPage() {
   const noDeposit = casinos.filter(c => c.bonusType === 'no-deposit')
   const others = casinos.filter(c => c.bonusType !== 'no-deposit')
 
   return (
+    <>
+    <FAQSchema faqs={faqs} />
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
       <div className="mb-10">
@@ -84,6 +95,51 @@ export default function NoDepositPage() {
         </div>
       </div>
 
+      <div className="bg-[#161820] border border-[#252830] rounded-2xl p-6 md:p-8 mt-10 mb-10">
+        <h2 className="text-white font-black text-xl mb-4">No deposit bonuses — what you actually need to know</h2>
+        <div className="space-y-4 text-sm text-gray-400 leading-relaxed">
+          <p>A no deposit bonus is a small giveaway — typically €5 to €25 in cash or 10 to 50 free spins — that a casino hands new players just for opening an account. Unlike a classic welcome bonus, you do not put any of your own money down. The purpose of this marketing tool is straightforward: casinos want to walk you through KYC and turn you into a long-term customer. That is exactly why they offset the risk with strict conditions that most players underestimate.</p>
+
+          <p>The full step-by-step process involves more stops than most people think. First, pick a licensed casino from our list — Curaçao or MGA should be the minimum standard. At registration you must use real details: a fake name or made-up date of birth leads to a KYC block later and to confiscation of any winnings. After email or SMS verification the bonus is either credited automatically or you have to enter a bonus code in the cashier — both usually within 24 hours, otherwise the offer expires.</p>
+
+          <p>Wagering on no deposit bonuses typically ranges from 35x to 60x — higher than on welcome bonuses because the risk for the casino is bigger. On a €10 bonus at 40x wagering you turn over €400. Watch the maximum withdrawal too: almost always your payout is capped at €50 to €100, regardless of whether you won €500 or €5,000. Players who do not know this in advance get an ugly surprise. On top of that there is almost always a max bet of €1 to €5 per spin and a game-exclusion list — live casino and progressive jackpots usually do not count.</p>
+
+          <p>The biggest mistakes when claiming no deposit offers: first, breaking the max bet — a single €6 spin can void the entire bonus. Second, playing on excluded titles without checking the terms. Third, multiple registrations from the same household — casinos detect IP addresses and device fingerprints and shut down duplicate accounts without warning. Fourth, ignoring the time window: you usually have 7 to 30 days to clear wagering, otherwise the bonus and winnings expire. Fifth, only submitting KYC documents after requesting a withdrawal — uploading ID and proof of address at registration saves days of waiting later.</p>
+
+          <p>Tips to maximize real value: pick bonuses with low wagering (under 40x) and a high max-withdrawal cap (€100+ where possible). Play only slots with 96% RTP or higher — every percentage point feeds directly into your expected return. Stick to the low end of the allowed bet range to reduce variance. Read the &quot;bonus abuse clause&quot; in the terms — it lets casinos label &quot;suspicious&quot; play (such as consistent low-variance roulette) as bonus abuse. Players who get all of this right realistically extract €30 to €80 of real money out of a €10 bonus — not guaranteed, but statistically reasonable.</p>
+        </div>
+      </div>
+
+      <div className="bg-[#161820] border border-[#252830] rounded-2xl p-6 md:p-8 mb-10">
+        <h2 className="text-white font-black text-xl mb-5">Frequently asked questions</h2>
+        <div className="space-y-5 text-sm">
+          {faqs.map(f => (
+            <div key={f.q}>
+              <div className="text-white font-bold mb-1">{f.q}</div>
+              <p className="text-gray-400 leading-relaxed">{f.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="bg-[#161820] border border-[#252830] rounded-xl p-6">
+        <h2 className="font-black text-white mb-4">Related pages</h2>
+        <div className="grid grid-cols-2 gap-3">
+          {[
+            { label: 'Welcome Bonuses', href: '/bonuses/welcome' },
+            { label: 'Free Spins', href: '/bonuses/free-spins' },
+            { label: 'Lowest Wagering Casinos', href: '/lowest-wagering-casinos' },
+            { label: 'All Bonuses', href: '/bonuses' },
+          ].map(item => (
+            <Link key={item.href} href={item.href}
+              className="bg-[#0D0F14] border border-[#252830] hover:border-[#F5A623]/30 rounded-xl p-4 text-sm font-bold text-white hover:text-[#F5A623] transition-all">
+              {item.label} →
+            </Link>
+          ))}
+        </div>
+      </div>
+
     </div>
+    </>
   )
 }

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
+import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Kein Wager Casino 2026 — 0x Umsatzbedingungen | BonusScout',
@@ -11,8 +12,16 @@ export const metadata: Metadata = {
 const noWager = casinos.filter(c => c.wagering === 0)
 const lowWager = casinos.filter(c => c.wagering > 0 && c.wagering <= 30)
 
+const faqs = [
+  { q: 'Was ist ein Kein-Wager-Casino-Bonus?', a: 'Ein Bonus ohne Umsatzbedingungen (0x) bedeutet, dass Bonusgewinne sofort als Echtgeld auszahlbar sind – ohne Playthrough. Diese Angebote sind selten und kommen meist von Krypto-Casinos.' },
+  { q: 'Lohnen sich Kein-Wager-Boni wirklich?', a: 'Ja – bei vergleichbaren Beträgen ist ein Bonus ohne Umsatz immer mehr wert als ein höherer Bonus mit Wagering. Die sofortige Auszahlung ist ein entscheidender Vorteil.' },
+  { q: 'Welches Casino hat keine Umsatzbedingungen?', a: 'Stake Casino bietet aktuell Promotionsangebote mit 0x Umsatz – das macht es zur Spitzenwahl in dieser Kategorie. Es ist ein Krypto-fokussiertes Casino mit Provably-Fair-Spielen.' },
+]
+
 export default function DeKeinWagerPage() {
   return (
+    <>
+    <FAQSchema faqs={faqs} />
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <div className="text-sm text-gray-500 mb-6">
         <Link href="/de" className="hover:text-[#F5A623]">Startseite</Link>
@@ -95,6 +104,19 @@ export default function DeKeinWagerPage() {
           </div>
         ))}
       </div>
+
+      <div className="bg-[#161820] border border-[#252830] rounded-xl p-6 md:p-8 mt-10">
+        <h2 className="font-black text-white mb-6">Häufig gestellte Fragen</h2>
+        <div className="space-y-6">
+          {faqs.map((faq, i) => (
+            <div key={i} className={i > 0 ? 'border-t border-[#252830] pt-6' : ''}>
+              <h3 className="font-bold text-white mb-2">{faq.q}</h3>
+              <p className="text-sm text-gray-400 leading-relaxed">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
+    </>
   )
 }
