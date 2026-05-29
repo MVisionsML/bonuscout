@@ -3,7 +3,7 @@ import { Geist } from 'next/font/google'
 import './globals.css'
 import GoogleAnalytics from '@/components/seo/GoogleAnalytics'
 
-const geist = Geist({ subsets: ['latin'] })
+const geist = Geist({ subsets: ['latin'], display: 'swap' })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.bonuscout.com'),
