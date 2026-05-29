@@ -7,12 +7,22 @@ interface Props {
   params: Promise<{ slug: string }>
 }
 
+const customTitles: Record<string, string> = {
+  'stake-casino': 'Stake Casino Erfahrungen 2026 — 0x Umsatz & Krypto Getestet | BonusScout',
+  'wonaco-casino': 'Wonaco Casino Erfahrungen 2026 — €500 Bonus Getestet | BonusScout',
+  'jackpoty': 'Jackpoty Erfahrungen 2026 — €2.000 + 100 Freispiele Getestet | BonusScout',
+  'vegashero-casino': 'VegasHero Erfahrungen 2026 — MGA Lizenz & €500 Bonus Getestet | BonusScout',
+  'winningz-casino': 'Winningz Casino Erfahrungen 2026 — €5.000 + 500 Spins Getestet | BonusScout',
+  'binobet-casino': 'BinoBet Erfahrungen 2026 — €1.500 Bonus Getestet | BonusScout',
+  'blockspins-casino': 'Blockspins Erfahrungen 2026 — Krypto Casino Getestet | BonusScout',
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const casino = casinos.find(c => c.slug === slug)
   if (!casino) return {}
   return {
-    title: `${casino.name} Bewertung 2026 — Bonus, Umsatz & Sicherheit | BonusScout`,
+    title: customTitles[slug] ?? `${casino.name} Bewertung 2026 — Bonus, Umsatz & Sicherheit | BonusScout`,
     description: `${casino.name} Bewertung von unserem Team. Bonus ${casino.bonus} getestet. Umsatzbedingungen: ${casino.wagering}x. Ist ${casino.name} seriös? Vollständige Bewertung.`,
     alternates: {
       canonical: `https://www.bonuscout.com/de/bewertungen/${slug}`,
