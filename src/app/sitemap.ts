@@ -21,6 +21,18 @@ function scanArticles(): { slug: string; lastModified: Date }[] {
   return out
 }
 
+// Scans content/news/*.mdx — produced by SEO agents 16+17. Each file becomes /news/<slug>.
+function scanNews(): { slug: string; lastModified: Date }[] {
+  const newsDir = path.join(process.cwd(), 'content', 'news')
+  if (!fs.existsSync(newsDir)) return []
+  return fs.readdirSync(newsDir)
+    .filter(f => f.endsWith('.mdx'))
+    .map(f => {
+      const filePath = path.join(newsDir, f)
+      return { slug: f.replace(/\.mdx$/, ''), lastModified: fs.statSync(filePath).mtime }
+    })
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
 
@@ -108,5 +120,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }))
 
-  return [...enPages, ...dePages, ...enReviews, ...deReviews, ...articles]
+  const news = scanNews().map(n => ({
+    url: `${base}/news/${n.slug}`,
+    lastModified: n.lastModified,
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
+  }))
+
+  return [...enPages, ...dePages, ...enReviews, ...deReviews, ...articles, ...news]
 }

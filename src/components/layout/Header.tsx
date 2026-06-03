@@ -11,6 +11,7 @@ export default function Header() {
     { label: 'Reviews', href: '/reviews' },
     { label: 'Free Games', href: '/free-games' },
     { label: 'Guides', href: '/guides' },
+    { label: 'News', href: '/news' },
   ]
 
   const Logo = () => (
