@@ -1,7 +1,25 @@
 import { MetadataRoute } from 'next'
 import { casinos } from '@/data/casinos'
+import fs from 'node:fs'
+import path from 'node:path'
 
 const base = 'https://www.bonuscout.com'
+
+// Scans src/app/(en)/articles/ at build time. Every subdirectory containing a page.mdx
+// becomes /articles/<dirname>. The SEO-agent pipeline drops new articles here; this scan
+// picks them up without anyone editing this file.
+function scanArticles(): { slug: string; lastModified: Date }[] {
+  const articlesDir = path.join(process.cwd(), 'src', 'app', '(en)', 'articles')
+  if (!fs.existsSync(articlesDir)) return []
+  const out: { slug: string; lastModified: Date }[] = []
+  for (const entry of fs.readdirSync(articlesDir, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue
+    const mdxPath = path.join(articlesDir, entry.name, 'page.mdx')
+    if (!fs.existsSync(mdxPath)) continue
+    out.push({ slug: entry.name, lastModified: fs.statSync(mdxPath).mtime })
+  }
+  return out
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
@@ -83,5 +101,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8
   }))
 
-  return [...enPages, ...dePages, ...enReviews, ...deReviews]
+  const articles = scanArticles().map(a => ({
+    url: `${base}/articles/${a.slug}`,
+    lastModified: a.lastModified,
+    changeFrequency: 'monthly' as const,
+    priority: 0.85,
+  }))
+
+  return [...enPages, ...dePages, ...enReviews, ...deReviews, ...articles]
 }
