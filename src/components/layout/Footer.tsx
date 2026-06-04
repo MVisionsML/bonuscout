@@ -33,6 +33,15 @@ export default function Footer() {
               <li><Link href="/reviews" className="hover:text-[#F5A623] transition-colors">Casino Reviews</Link></li>
               <li><Link href="/casinos/new" className="hover:text-[#F5A623] transition-colors">New Casinos</Link></li>
               <li><Link href="/free-games" className="hover:text-[#F5A623] transition-colors">Free Games</Link></li>
+              <li>
+                <a
+                  href="https://www.bonusreviewers.com"
+                  rel="dofollow"
+                  className="hover:text-[#F5A623] transition-colors"
+                >
+                  Detailed Casino Reviews → bonusreviewers.com
+                </a>
+              </li>
             </ul>
           </div>
 

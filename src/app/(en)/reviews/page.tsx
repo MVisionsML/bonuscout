@@ -18,7 +18,9 @@ export default function ReviewsPage() {
 
       <div className="mb-8">
         <h1 className="text-3xl md:text-4xl font-black text-white mb-3">Casino Reviews</h1>
-        <p className="text-gray-400 max-w-2xl">Every review is based on real testing — not casino marketing material.</p>
+        <p className="text-gray-400 max-w-2xl">
+          Every review is based on real testing — not casino marketing material. For in-depth casino reviews with real deposit testing, see our sister site <a href="https://www.bonusreviewers.com" rel="dofollow" className="text-[#F5A623] hover:underline">BonusReviewers</a>.
+        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
