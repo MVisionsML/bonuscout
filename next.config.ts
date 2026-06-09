@@ -5,6 +5,16 @@ import remarkFrontmatter from "remark-frontmatter"
 const nextConfig: NextConfig = {
   // Treat .mdx files as page files alongside existing .tsx pages.
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+  async redirects() {
+    return [
+      { source: "/home", destination: "/", permanent: true },
+      { source: "/contact", destination: "/#contact", permanent: true },
+      // Specific known-broken WordPress endpoint before the catch-all (first match wins).
+      { source: "/wp-json/elementskit/v1/", destination: "/", permanent: true },
+      // Catch-all for any other lingering /wp-json/* requests from the old WordPress site.
+      { source: "/wp-json/:path*", destination: "/", permanent: true },
+    ]
+  },
 }
 
 const withMDX = createMDX({
