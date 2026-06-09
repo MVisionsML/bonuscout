@@ -18,6 +18,8 @@ const nextConfig: NextConfig = {
       },
       { source: "/home", destination: "/", permanent: true },
       { source: "/contact", destination: "/#contact", permanent: true },
+      // Phantom /games URL (likely from an old WordPress site or external link) → real /free-games page.
+      { source: "/games/:path*", destination: "/free-games", permanent: true },
       // Specific known-broken WordPress endpoint before the catch-all (first match wins).
       { source: "/wp-json/elementskit/v1/", destination: "/", permanent: true },
       // Catch-all for any other lingering /wp-json/* requests from the old WordPress site.
