@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import { listNewsArticles } from '@/lib/news'
 import NewsCategoryFilter from './NewsCategoryFilter'
+import { BreadcrumbSchema, ItemListSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Casino News & Updates 2026 | BonusScout',
@@ -17,6 +18,17 @@ export default function NewsIndexPage() {
   const rest = articles.slice(1)
 
   return (
+    <>
+    <BreadcrumbSchema items={[
+      { name: 'Home', url: 'https://www.bonuscout.com' },
+      { name: 'News', url: 'https://www.bonuscout.com/news' }
+    ]} />
+    {articles.length > 0 && (
+      <ItemListSchema
+        name="BonusScout Casino News"
+        items={articles.map(a => ({ name: a.title, url: `https://www.bonuscout.com/news/${a.slug}` }))}
+      />
+    )}
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <div className="text-sm text-gray-500 mb-6">
         <Link href="/" className="hover:text-[#F5A623]">Home</Link>
@@ -41,5 +53,6 @@ export default function NewsIndexPage() {
         />
       )}
     </div>
+    </>
   )
 }

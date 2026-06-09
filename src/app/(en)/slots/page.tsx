@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { slots } from '@/data/slots'
+import { BreadcrumbSchema, ItemListSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Online Slot Reviews 2026 — RTP, Volatility & Max Win | BonusScout',
@@ -19,6 +20,15 @@ export default function SlotsIndexPage() {
   const sorted = [...slots].sort((a, b) => b.rating - a.rating)
 
   return (
+    <>
+    <BreadcrumbSchema items={[
+      { name: 'Home', url: 'https://www.bonuscout.com' },
+      { name: 'Slots', url: 'https://www.bonuscout.com/slots' }
+    ]} />
+    <ItemListSchema
+      name="BonusScout Slot Reviews"
+      items={sorted.map(s => ({ name: s.name, url: `https://www.bonuscout.com/slots/${s.slug}` }))}
+    />
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
       <div className="text-sm text-gray-500 mb-6">
@@ -118,5 +128,6 @@ export default function SlotsIndexPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }

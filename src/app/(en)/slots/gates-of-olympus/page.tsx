@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 import { casinos } from '@/data/casinos'
 import { getSlot } from '@/data/slots'
-import { FAQSchema } from '@/components/seo/SchemaMarkup'
+import { FAQSchema, GameSchema, BreadcrumbSchema } from '@/components/seo/SchemaMarkup'
 
 const slot = getSlot('gates-of-olympus')!
 
@@ -29,6 +29,19 @@ export default function GatesOfOlympusReview() {
   return (
     <>
     <FAQSchema faqs={faqs} />
+    <GameSchema game={{
+      name: slot.name,
+      url: `https://www.bonuscout.com/slots/${slot.slug}`,
+      provider: slot.provider,
+      description: slot.shortDesc,
+      rating: slot.rating,
+      ratingMax: 10
+    }} />
+    <BreadcrumbSchema items={[
+      { name: 'Home', url: 'https://www.bonuscout.com' },
+      { name: 'Slots', url: 'https://www.bonuscout.com/slots' },
+      { name: slot.name, url: `https://www.bonuscout.com/slots/${slot.slug}` }
+    ]} />
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
       <div className="text-sm text-gray-500 mb-6">

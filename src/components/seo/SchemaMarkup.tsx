@@ -121,3 +121,96 @@ export function BreadcrumbSchema({ items }: { items: { name: string; url: string
     />
   )
 }
+
+interface ArticleSchemaProps {
+  title: string
+  description: string
+  url: string
+  datePublished: string
+  dateModified?: string
+  section?: string
+}
+
+export function ArticleSchema({ article }: { article: ArticleSchemaProps }) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.title,
+    description: article.description,
+    url: article.url,
+    datePublished: article.datePublished,
+    dateModified: article.dateModified || article.datePublished,
+    articleSection: article.section || 'News',
+    author: { '@type': 'Organization', name: 'BonusScout', url: 'https://www.bonuscout.com' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'BonusScout',
+      logo: { '@type': 'ImageObject', url: 'https://www.bonuscout.com/logo.png' }
+    },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': article.url }
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
+
+interface GameSchemaProps {
+  name: string
+  url: string
+  provider: string
+  description: string
+  rating?: number
+  ratingMax?: number
+}
+
+export function GameSchema({ game }: { game: GameSchemaProps }) {
+  const schema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'Game',
+    name: game.name,
+    url: game.url,
+    description: game.description,
+    publisher: { '@type': 'Organization', name: game.provider }
+  }
+  if (game.rating !== undefined) {
+    schema.aggregateRating = {
+      '@type': 'AggregateRating',
+      ratingValue: game.rating,
+      bestRating: game.ratingMax || 10,
+      worstRating: 0,
+      ratingCount: 1
+    }
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
+
+export function ItemListSchema({ items, name }: { items: { name: string; url: string }[]; name: string }) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name,
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      url: item.url
+    }))
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}

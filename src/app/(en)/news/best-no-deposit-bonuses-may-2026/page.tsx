@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Metadata } from 'next'
+import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Best No Deposit Casino Bonuses — May 2026 | BonusScout',
@@ -9,6 +10,19 @@ export const metadata: Metadata = {
 
 export default function ArticlePage() {
   return (
+    <>
+    <ArticleSchema article={{
+      title: 'Best No Deposit Casino Bonuses — May 2026',
+      description: 'May 2026 audit of every no deposit casino bonus worth claiming. New offers, reduced wagering, and which casino pulled its no deposit promotion entirely.',
+      url: 'https://www.bonuscout.com/news/best-no-deposit-bonuses-may-2026',
+      datePublished: '2026-05-30',
+      section: 'Bonuses'
+    }} />
+    <BreadcrumbSchema items={[
+      { name: 'Home', url: 'https://www.bonuscout.com' },
+      { name: 'News', url: 'https://www.bonuscout.com/news' },
+      { name: 'May 2026 No Deposit Audit', url: 'https://www.bonuscout.com/news/best-no-deposit-bonuses-may-2026' }
+    ]} />
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
       <div className="text-sm text-gray-500 mb-6">
@@ -71,5 +85,6 @@ export default function ArticlePage() {
         </div>
       </div>
     </div>
+    </>
   )
 }
