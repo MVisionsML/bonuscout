@@ -140,6 +140,8 @@ export default function CashbackPage() {
             { label: 'No Wagering Casinos', href: '/no-wagering-casinos' },
             { label: 'All Bonuses', href: '/bonuses' },
             { label: 'All Reviews', href: '/reviews' },
+            { label: 'Casino News & Bonus Updates', href: '/news' },
+            { label: 'May 2026 No Deposit Audit', href: '/news/best-no-deposit-bonuses-may-2026' },
           ].map(item => (
             <Link key={item.href} href={item.href}
               className="bg-[#0D0F14] border border-[#252830] hover:border-[#F5A623]/30 rounded-xl p-4 text-sm font-bold text-white hover:text-[#F5A623] transition-all">

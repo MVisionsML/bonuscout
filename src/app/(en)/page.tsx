@@ -136,6 +136,31 @@ export default function HomePage() {
           )
         })()}
 
+        {/* Popular Slots */}
+        <div className="bg-[#161820] border border-[#252830] rounded-2xl p-6 md:p-8 mb-14">
+          <div className="flex items-center justify-between mb-6">
+            <div>
+              <h2 className="text-xl font-black text-white">Popular Slots</h2>
+              <p className="text-gray-500 text-sm mt-1">Top-rated slots reviewed by our team — full RTP, volatility and bonus mechanics breakdown</p>
+            </div>
+            <Link href="/slots" className="text-[#F5A623] text-sm font-bold hover:underline">See all slot reviews →</Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {[
+              { name: 'Gates of Olympus', slug: 'gates-of-olympus', provider: 'Pragmatic Play', rtp: '96.5%' },
+              { name: 'Sweet Bonanza', slug: 'sweet-bonanza', provider: 'Pragmatic Play', rtp: '96.48%' },
+              { name: 'Big Bass Bonanza', slug: 'big-bass-bonanza', provider: 'Pragmatic Play', rtp: '96.71%' },
+              { name: 'Wanted Dead or a Wild', slug: 'wanted-dead-or-a-wild', provider: 'Hacksaw Gaming', rtp: '96.38%' },
+            ].map(s => (
+              <Link key={s.slug} href={`/slots/${s.slug}`}
+                className="bg-[#0D0F14] border border-[#252830] hover:border-[#F5A623]/30 rounded-xl p-4 transition-all">
+                <div className="font-bold text-white text-sm mb-1">{s.name} →</div>
+                <div className="text-xs text-gray-500">{s.provider} · RTP {s.rtp}</div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* Bottom CTA */}
         <div className="bg-gradient-to-r from-[#F5A623]/10 to-[#F5A623]/5 border border-[#F5A623]/20 rounded-2xl p-8 text-center">
           <h2 className="text-2xl font-black text-white mb-2">Looking for no deposit bonuses?</h2>
