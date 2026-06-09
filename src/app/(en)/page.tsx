@@ -161,6 +161,25 @@ export default function HomePage() {
           </div>
         </div>
 
+        {/* Get in touch */}
+        <section id="contact" className="bg-[#161820] border border-[#252830] rounded-2xl p-6 md:p-8 mb-14 scroll-mt-20">
+          <h2 className="text-xl font-black text-white mb-3">Get in touch</h2>
+          <p className="text-gray-400 text-sm leading-relaxed mb-5 max-w-2xl">
+            Question about our methodology, a casino we should test, a correction to a review, or a partnership inquiry? See our about page for the best way to reach us.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/about" className="inline-flex items-center gap-2 bg-[#F5A623] hover:bg-[#E09520] text-black font-black text-sm px-5 py-2.5 rounded-lg transition-colors">
+              About &amp; Contact →
+            </Link>
+            <Link href="/methodology" className="inline-flex items-center gap-2 border border-[#252830] hover:border-[#F5A623]/30 text-gray-400 hover:text-[#F5A623] text-sm font-bold px-5 py-2.5 rounded-lg transition-all">
+              Our Methodology →
+            </Link>
+            <Link href="/responsible-gambling" className="inline-flex items-center gap-2 border border-[#252830] hover:border-[#F5A623]/30 text-gray-400 hover:text-[#F5A623] text-sm font-bold px-5 py-2.5 rounded-lg transition-all">
+              Responsible Gambling →
+            </Link>
+          </div>
+        </section>
+
         {/* Bottom CTA */}
         <div className="bg-gradient-to-r from-[#F5A623]/10 to-[#F5A623]/5 border border-[#F5A623]/20 rounded-2xl p-8 text-center">
           <h2 className="text-2xl font-black text-white mb-2">Looking for no deposit bonuses?</h2>
