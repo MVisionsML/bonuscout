@@ -7,6 +7,15 @@ const nextConfig: NextConfig = {
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   async redirects() {
     return [
+      // Canonical domain: any request to bare bonuscout.com (http or https) → https://www.bonuscout.com.
+      // Cloudflare in front of Vercel typically handles this at the edge; this is a defence-in-depth
+      // fallback at the application layer in case any request makes it through.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "bonuscout.com" }],
+        destination: "https://www.bonuscout.com/:path*",
+        permanent: true,
+      },
       { source: "/home", destination: "/", permanent: true },
       { source: "/contact", destination: "/#contact", permanent: true },
       // Specific known-broken WordPress endpoint before the catch-all (first match wins).
