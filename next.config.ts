@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
       },
       { source: "/home", destination: "/", permanent: true },
       { source: "/contact", destination: "/#contact", permanent: true },
+      // Explicit trailing-slash normalisation for /news/ → /news.
+      // Next.js does this implicitly with trailingSlash:false, but Google flagged
+      // /news/ as a "Redirect error" — making the rule explicit (and putting it
+      // ahead of the built-in normalisation) gives the crawler a clean single hop.
+      { source: "/news/", destination: "/news", permanent: true },
       // Phantom /games URL (likely from an old WordPress site or external link) → real /free-games page.
       { source: "/games/:path*", destination: "/free-games", permanent: true },
       // Specific known-broken WordPress endpoint before the catch-all (first match wins).
