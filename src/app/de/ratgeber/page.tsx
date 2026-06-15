@@ -12,6 +12,7 @@ const guides = [
   { title: 'Kein Einzahlungsbonus Holen', slug: 'kein-einzahlungsbonus-guide', desc: 'Schritt-für-Schritt Anleitung zum Holen von Gratis-Bonus ohne Einzahlung.', readTime: '4 Min. Lesezeit' },
   { title: 'Freispiele Guide', slug: 'freispiele-guide', desc: 'Alles über Freispiele — Wert pro Spin, Umsatz auf Gewinne und wie man die besten Angebote findet.', readTime: '5 Min. Lesezeit' },
   { title: 'Krypto Casino Guide', slug: 'krypto-casino-guide', desc: 'Bitcoin, Ethereum und Krypto-Glücksspiel erklärt. Vorteile, Einzahlungen und die besten Krypto-Boni.', readTime: '10 Min. Lesezeit' },
+  { title: 'Einzahlungsanforderungen Erklärt', slug: 'einzahlungsanforderungen-erklaert', desc: 'Mindesteinzahlung, Limits, Gebühren und Zahlungsmethoden im Vergleich für deutsche Spieler.', readTime: '5 Min. Lesezeit' },
 ]
 
 export default function DeRatgeberPage() {
