@@ -97,6 +97,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/de/ratgeber`, priority: 0.8 },
     { url: `${base}/de/ratgeber/umsatzbedingungen-erklaert`, priority: 0.85 },
     { url: `${base}/de/ratgeber/krypto-casino-guide`, priority: 0.85 },
+    { url: `${base}/de/ratgeber/freispiele-guide`, priority: 0.85 },
+    { url: `${base}/de/ratgeber/einzahlungsanforderungen-erklaert`, priority: 0.85 },
+    { url: `${base}/de/ratgeber/kein-einzahlungsbonus-guide`, priority: 0.85 },
   ].map(p => ({ ...p, lastModified: now, changeFrequency: 'monthly' as const }))
 
   const enReviews = casinos.map(c => ({
