@@ -18,6 +18,10 @@ const nextConfig: NextConfig = {
       },
       { source: "/home", destination: "/", permanent: true },
       { source: "/contact", destination: "/#contact", permanent: true },
+      // /methodology → /how-we-rate. The two pages diverged in scope (methodology =
+      // process detail, how-we-rate = scoring weights) and we want the scoring page
+      // as the canonical entry; old inbound links and search results land there.
+      { source: "/methodology", destination: "/how-we-rate", permanent: true },
       // Explicit trailing-slash normalisation for /news/ → /news.
       // Next.js does this implicitly with trailingSlash:false, but Google flagged
       // /news/ as a "Redirect error" — making the rule explicit (and putting it
