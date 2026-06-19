@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import CasinoCard from '@/components/casino/CasinoCard'
 import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
@@ -74,6 +75,21 @@ export default function WelcomeBonusPage() {
         </ul>
       </div>
 
+        {/* Related categories & trust */}
+        <div className="bg-[#0D0F14] border border-[#252830] rounded-xl p-6 mt-12">
+          <h2 className="font-black text-white text-sm mb-3 uppercase tracking-wide">Related categories &amp; resources</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm">
+            <Link href="/best-casino-bonus" className="text-[#F5A623] hover:underline">Best Casino Bonus →</Link>
+            <Link href="/no-deposit-bonus" className="text-[#F5A623] hover:underline">No Deposit Bonuses →</Link>
+            <Link href="/crypto-casino-bonus" className="text-[#F5A623] hover:underline">Crypto Casinos →</Link>
+            <Link href="/bonuses/cashback" className="text-[#F5A623] hover:underline">Cashback Casinos →</Link>
+            <Link href="/lowest-wagering-casinos" className="text-[#F5A623] hover:underline">Low Wagering →</Link>
+            <Link href="/fast-withdrawal-casinos" className="text-[#F5A623] hover:underline">Fast Withdrawals →</Link>
+            <Link href="/guides/wagering-requirements-explained" className="text-[#F5A623] hover:underline">Wagering Explained →</Link>
+            <Link href="/how-we-rate" className="text-[#F5A623] hover:underline">How We Rate →</Link>
+            <Link href="/responsible-gambling" className="text-red-400 hover:underline">Responsible Gambling →</Link>
+          </div>
+        </div>
     </div>
   )
 }

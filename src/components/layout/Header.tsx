@@ -9,8 +9,9 @@ export default function Header() {
     { label: 'Online Casinos', href: '/casinos' },
     { label: 'Bonuses', href: '/bonuses' },
     { label: 'Reviews', href: '/reviews' },
-    { label: 'Free Games', href: '/free-games' },
     { label: 'Guides', href: '/guides' },
+    { label: 'How We Rate', href: '/how-we-rate' },
+    { label: 'Free Games', href: '/free-games' },
     { label: 'News', href: '/news' },
   ]
 

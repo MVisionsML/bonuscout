@@ -3,8 +3,8 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Casino Bonuses 2026 — No Deposit, Free Spins & Welcome Offers',
-  description: 'Find the best casino bonuses in 2026. No deposit bonuses, free spins, welcome offers, and cashback — all tested and reviewed.',
+  title: 'Casino Bonuses 2026 â No Deposit, Free Spins & Welcome Offers',
+  description: 'Find the best casino bonuses in 2026. No deposit bonuses, free spins, welcome offers, and cashback â all tested and reviewed.',
 }
 
 const bonusCategories = [
@@ -13,7 +13,7 @@ const bonusCategories = [
     title: 'No Deposit Bonuses',
     href: '/bonuses/no-deposit',
     description: 'Get bonus funds or free spins without making a deposit. Play for free and keep what you win.',
-    icon: '🎁',
+    icon: 'ð',
     badge: 'Most Popular',
   },
   {
@@ -21,7 +21,7 @@ const bonusCategories = [
     title: 'Free Spins',
     href: '/bonuses/free-spins',
     description: 'Spin the reels for free on real slots. Most free spin bonuses require a deposit.',
-    icon: '🎰',
+    icon: 'ð°',
     badge: null,
   },
   {
@@ -29,7 +29,7 @@ const bonusCategories = [
     title: 'Welcome Bonuses',
     href: '/bonuses/welcome',
     description: 'Match bonuses on your first deposit. The most common and highest-value casino bonuses.',
-    icon: '💰',
+    icon: 'ð°',
     badge: 'Highest Value',
   },
   {
@@ -37,7 +37,7 @@ const bonusCategories = [
     title: 'Cashback Offers',
     href: '/bonuses/cashback',
     description: 'Get a percentage of your losses back. The fairest bonus type with the lowest wagering.',
-    icon: '↩️',
+    icon: 'â©ï¸',
     badge: 'Lowest Wagering',
   },
 ]
@@ -103,11 +103,26 @@ export default function BonusesPage() {
           </div>
           <div>
             <div className="text-[#F5A623] font-bold mb-2">Max bet restrictions</div>
-            <p>Most bonuses limit your bet to €5 while wagering. Exceeding this can void your bonus. Always read the terms before spinning.</p>
+            <p>Most bonuses limit your bet to â¬5 while wagering. Exceeding this can void your bonus. Always read the terms before spinning.</p>
           </div>
         </div>
       </div>
 
+        {/* Related categories & trust */}
+        <div className="bg-[#0D0F14] border border-[#252830] rounded-xl p-6 mt-12">
+          <h2 className="font-black text-white text-sm mb-3 uppercase tracking-wide">Related categories &amp; resources</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm">
+            <Link href="/best-casino-bonus" className="text-[#F5A623] hover:underline">Best Casino Bonus Ã¢â â</Link>
+            <Link href="/no-deposit-bonus" className="text-[#F5A623] hover:underline">No Deposit Bonuses Ã¢â â</Link>
+            <Link href="/crypto-casino-bonus" className="text-[#F5A623] hover:underline">Crypto Casinos Ã¢â â</Link>
+            <Link href="/bonuses/cashback" className="text-[#F5A623] hover:underline">Cashback Casinos Ã¢â â</Link>
+            <Link href="/lowest-wagering-casinos" className="text-[#F5A623] hover:underline">Low Wagering Ã¢â â</Link>
+            <Link href="/fast-withdrawal-casinos" className="text-[#F5A623] hover:underline">Fast Withdrawals Ã¢â â</Link>
+            <Link href="/guides/wagering-requirements-explained" className="text-[#F5A623] hover:underline">Wagering Explained Ã¢â â</Link>
+            <Link href="/how-we-rate" className="text-[#F5A623] hover:underline">How We Rate Ã¢â â</Link>
+            <Link href="/responsible-gambling" className="text-red-400 hover:underline">Responsible Gambling Ã¢â â</Link>
+          </div>
+        </div>
     </div>
   )
 }

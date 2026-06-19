@@ -47,13 +47,15 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-bold text-sm mb-4">Info</h4>
+            <h4 className="text-white font-bold text-sm mb-4">Trust &amp; Info</h4>
             <ul className="space-y-2 text-xs text-gray-500">
               <li><Link href="/about" className="hover:text-[#F5A623] transition-colors">About Us</Link></li>
-              <li><Link href="/methodology" className="hover:text-[#F5A623] transition-colors">Methodology</Link></li>
-              <li><Link href="/news" className="hover:text-[#F5A623] transition-colors">Casino News</Link></li>
+              <li><Link href="/team" className="hover:text-[#F5A623] transition-colors">Editorial Team</Link></li>
+              <li><Link href="/how-we-rate" className="hover:text-[#F5A623] transition-colors">How We Rate</Link></li>
+              <li><Link href="/methodology" className="hover:text-[#F5A623] transition-colors">Testing Methodology</Link></li>
+              <li><Link href="/editorial-policy" className="hover:text-[#F5A623] transition-colors">Editorial Policy</Link></li>
               <li><Link href="/responsible-gambling" className="hover:text-[#F5A623] transition-colors">Responsible Gambling</Link></li>
-              <li><Link href="/contact" className="hover:text-[#F5A623] transition-colors">Contact</Link></li>
+              <li><Link href="/news" className="hover:text-[#F5A623] transition-colors">Casino News</Link></li>
             </ul>
           </div>
         </div>
