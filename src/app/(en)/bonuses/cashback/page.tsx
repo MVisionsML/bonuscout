@@ -5,8 +5,8 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Best Casino Cashback Bonus 2026 â Get 10-25% of Losses Back | BonusScout',
-  description: 'Claim the best casino cashback bonuses in 2026. Get 10-25% of your net losses returned weekly. 1x wagering â withdraw almost immediately. All offers tested.',
+  title: 'Best Casino Cashback Bonuses 2026 — Get Money Back on Losses',
+  description: 'Find casinos offering 10-25% cashback on losses. Compare the best cashback casino bonuses with low wagering requirements. Updated weekly.',
 }
 
 const faqs = [

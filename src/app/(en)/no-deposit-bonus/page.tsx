@@ -94,6 +94,11 @@ export default function NoDepositBonusPage() {
         <h2 className="font-black text-white mb-4">Related pages</h2>
         <div className="grid grid-cols-2 gap-3">
           {[
+            // Casino-specific no-deposit articles — added per June 2026 audit
+            // (both were 0-incoming orphans even though they target queries
+            // already on the no-deposit cluster's GSC list).
+            { label: 'Jackpoty No Deposit Bonus', href: '/articles/jackpoty-casino-no-deposit-bonus' },
+            { label: 'LuckyMax No Deposit Bonus', href: '/articles/luckymax-casino-no-deposit-bonus' },
             { label: 'No Deposit Bonus List', href: '/bonuses/no-deposit' },
             { label: 'Free Spins No Deposit', href: '/free-spins-no-deposit' },
             { label: 'Casino Cashback Bonus', href: '/casino-cashback-bonus' },

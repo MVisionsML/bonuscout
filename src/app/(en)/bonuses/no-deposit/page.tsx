@@ -5,8 +5,8 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'No Deposit Casino Bonus 2026 â Free Bonus Without Depositing | BonusScout',
-  description: 'Best no deposit casino bonuses 2026. Get free bonus funds or free spins just for registering â no deposit required. All offers verified and tested. Updated May 2026.',
+  title: 'No Deposit Casino Bonuses 2026 — Free Bonus Codes & Offers',
+  description: 'Claim no deposit casino bonuses without risking your money. Compare the best free bonus codes, free spins and no deposit offers available in 2026.',
 }
 
 const faqs = [

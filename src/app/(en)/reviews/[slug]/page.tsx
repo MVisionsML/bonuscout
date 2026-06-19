@@ -9,44 +9,17 @@ interface Props {
   params: Promise<{ slug: string }>
 }
 
-const customTitles: Record<string, string> = {
-  'luckywins-casino': 'LuckyWins Casino Review 2026 — €8,000 Bonus Tested. Is It Legit?',
-  'luckymax-casino': 'LuckyMax Casino Review 2026 — €4,000 Bonus Tested & Rated',
-  'billionaire-spin': 'Billionaire Spin Review 2026 — 25% Cashback + €450 Bonus Tested',
-  'binobet-casino': 'BinoBet Casino Review 2026 — €1,500 Bonus & 24/7 Support Tested',
-  'stake-casino': 'Stake Casino Review 2026 — 0x Wagering & Crypto Tested',
-  'winningz-casino': 'Winningz Casino Review 2026 — €5,000 + 500 Spins, Is It Legit?',
-  'crocoslots': 'Crocoslots Review 2026 — 6,000+ Games & €1,000 Bonus Tested',
-  'rooli-casino': 'Rooli Casino Review 2026 — €500 Bonus & 35x Wagering Tested',
-  'jackpoty': 'Jackpoty Review 2026 — €2,000 + 100 Free Spins Tested',
-  'chancer-casino': 'Chancer Casino Review 2026 — 30x Wagering & 300% Bonus Tested',
-  'blockspins-casino': 'Blockspins Casino Review 2026 — Crypto & 30x Wagering Tested',
-  'spin-fever-casino': 'Spin Fever Casino Review 2026 — €4,000 + Gold Spins Tested',
-  'rooster-bet': 'Rooster.bet Review 2026 — $5,000 Sports & Casino Bonus Tested',
-  'playio': 'Playio Casino Review 2026 — Bonus Crab & €500 Offer Tested',
-  'talismania': 'TalisMania Review 2026 — €500 + 200 Free Spins & Bonus Crab Tested',
-  'wonaco-casino': 'Wonaco Casino Review 2026 — €500 + 200 Spins Tested',
-  'luck-nation-casino': 'Luck Nation Casino Review 2026 — €200 Bonus Tested',
-  'vegashero-casino': 'VegasHero Casino Review 2026 — MGA Licensed, €500 Bonus Tested',
-  'emirbet-casino': 'EmirBet Casino Review 2026 — €500 Bonus & Fast Withdrawals Tested',
-}
-
-const customDescriptions: Record<string, string> = {
-  'luckywins-casino': 'Full LuckyWins Casino review 2026. We tested the €8,000 + 500 Free Spins bonus with a real deposit. 40x wagering explained. Verdict: is LuckyWins worth it?',
-  'luckymax-casino': 'Full LuckyMax Casino review. €4,000 + 300 Free Spins tested by our team. 35x wagering, Hacksaw Gaming slots. Is LuckyMax worth it?',
-  'stake-casino': 'Full Stake Casino review. 0x wagering on promos, crypto withdrawals in 1-4h. Is Stake Casino legit? Our team tested everything.',
-  'winningz-casino': 'Full Winningz Casino review. €5,000 + 500 Free Spins at 35x wagering tested. Is Winningz legit? Read our verdict before depositing.',
-  'crocoslots': 'Full Crocoslots review. 6,000+ games and €1,000 bonus tested. 45x wagering — is it worth it? Our team deposits and withdraws to find out.',
-  'vegashero-casino': 'Full VegasHero Casino review 2026. MGA licensed casino tested by our team. €500 bonus, real withdrawal tested. Is VegasHero safe? Read before depositing.',
-}
-
+// Metadata follows the SEO-audit formula uniformly across all 20 casino reviews
+// (June 2026 audit: CTR <0.5% on every /reviews/* page despite ranking p11-25;
+// custom per-casino titles weren't converting, so we standardised on a
+// search-intent format that reads cleanly in the SERP).
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const casino = casinos.find(c => c.slug === slug)
   if (!casino) return {}
   return {
-    title: customTitles[slug] ?? `${casino.name} Review 2026 — Bonus, Wagering & Safety Tested | BonusScout`,
-    description: customDescriptions[slug] ?? `Independent ${casino.name} review. We tested the bonus, withdrawals and support. ${casino.bonus}. Wagering: ${casino.wagering}x. Is it worth it? Read our full verdict.`,
+    title: `${casino.name} Review 2026 — Bonus, Games & Withdrawal Tested`,
+    description: `We tested ${casino.name} with real deposits. ${casino.bonus} welcome bonus at ${casino.wagering}x wagering. Honest verdict on games, withdrawals and support.`,
     alternates: { canonical: `https://www.bonuscout.com/reviews/${casino.slug}` }
   }
 }

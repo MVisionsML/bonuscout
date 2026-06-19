@@ -202,11 +202,17 @@ export default function CryptoCasinoBonusPage() {
           </div>
         </div>
 
-        {/* Internal links */}
+        {/* Internal links — merged June 2026 audit additions (5 cluster
+            support links the audit flagged as 0-outgoing from this hub). */}
         <div className="bg-[#161820] border border-[#252830] rounded-xl p-6">
           <h2 className="font-black text-white mb-4">Related Pages</h2>
           <div className="grid grid-cols-2 gap-3">
             {[
+              { label: 'Best Crypto Casino Bonuses', href: '/articles/best-crypto-casino-bonus' },
+              { label: 'Blockspins Crypto Casino Review', href: '/articles/blockspins-crypto-casino-review' },
+              { label: 'BitStarz Casino Review', href: '/articles/bitstarz-casino-review-2026-bonuses-games-crypto-payments-honest-verdict' },
+              { label: 'Crypto Casino Wagering Requirements', href: '/guides/wagering-requirements-explained' },
+              { label: '10% Cashback Crypto Casinos', href: '/articles/best-10-percent-cashback-casinos' },
               { label: 'No Wagering Casinos', href: '/no-wagering-casinos' },
               { label: 'Lowest Wagering Casinos', href: '/lowest-wagering-casinos' },
               { label: 'Stake vs Blockspins', href: '/stake-vs-blockspins' },
