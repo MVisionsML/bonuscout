@@ -147,7 +147,6 @@ export default function HowWeRatePage() {
           <Link href="/team" className="text-[#F5A623] hover:underline">About the Editorial Team →</Link>
           <Link href="/responsible-gambling" className="text-[#F5A623] hover:underline">Responsible Gambling →</Link>
           <Link href="/guides/wagering-requirements-explained" className="text-[#F5A623] hover:underline">Wagering Requirements Explained →</Link>
-          <Link href="/methodology" className="text-[#F5A623] hover:underline">Testing Methodology in Detail →</Link>
           <Link href="/casinos" className="text-[#F5A623] hover:underline">See the Casino Rankings →</Link>
         </div>
       </section>

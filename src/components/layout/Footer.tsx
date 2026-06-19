@@ -52,7 +52,7 @@ export default function Footer() {
               <li><Link href="/about" className="hover:text-[#F5A623] transition-colors">About Us</Link></li>
               <li><Link href="/team" className="hover:text-[#F5A623] transition-colors">Editorial Team</Link></li>
               <li><Link href="/how-we-rate" className="hover:text-[#F5A623] transition-colors">How We Rate</Link></li>
-              <li><Link href="/methodology" className="hover:text-[#F5A623] transition-colors">Testing Methodology</Link></li>
+              <li><Link href="/how-we-rate" className="hover:text-[#F5A623] transition-colors">Testing Methodology</Link></li>
               <li><Link href="/editorial-policy" className="hover:text-[#F5A623] transition-colors">Editorial Policy</Link></li>
               <li><Link href="/responsible-gambling" className="hover:text-[#F5A623] transition-colors">Responsible Gambling</Link></li>
               <li><Link href="/news" className="hover:text-[#F5A623] transition-colors">Casino News</Link></li>

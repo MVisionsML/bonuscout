@@ -94,7 +94,7 @@ export default function TeamPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
           <Link href="/editorial-policy" className="text-[#F5A623] hover:underline">Editorial Policy →</Link>
           <Link href="/how-we-rate" className="text-[#F5A623] hover:underline">How We Rate Casinos →</Link>
-          <Link href="/methodology" className="text-[#F5A623] hover:underline">Testing Methodology →</Link>
+          <Link href="/how-we-rate" className="text-[#F5A623] hover:underline">Testing Methodology →</Link>
           <Link href="/responsible-gambling" className="text-[#F5A623] hover:underline">Responsible Gambling →</Link>
           <Link href="/about" className="text-[#F5A623] hover:underline">About BonusCout →</Link>
           <Link href="/casinos" className="text-[#F5A623] hover:underline">See the Casino Rankings →</Link>

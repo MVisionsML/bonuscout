@@ -50,7 +50,7 @@ export default function AboutPage() {
             ))}
           </div>
           <div className="mt-4">
-            <Link href="/methodology" className="text-[#F5A623] text-sm font-bold hover:underline">
+            <Link href="/how-we-rate" className="text-[#F5A623] text-sm font-bold hover:underline">
               Read our full methodology →
             </Link>
           </div>
