@@ -18,8 +18,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const casino = casinos.find(c => c.slug === slug)
   if (!casino) return {}
   return {
-    title: `${casino.name} Review 2026 — Bonus, Games & Withdrawal Tested`,
-    description: `We tested ${casino.name} with real deposits. ${casino.bonus} welcome bonus at ${casino.wagering}x wagering. Honest verdict on games, withdrawals and support.`,
+    // Hybrid-strategy metadata (2026-06-22): title/H1/description deliberately
+    // shifted from generic "Review" to bonus-targeted intent so this page no
+    // longer competes with bonusreviewers.com/reviews/{slug} on "{brand} review".
+    // Target query family: "{brand} bonus", "{brand} welcome offer", "{brand} free spins".
+    title: `${casino.name} Bonus 2026 — Welcome Offer, Free Spins & Bonus Terms`,
+    description: `Every active ${casino.name} bonus in one place: ${casino.bonus} welcome offer at ${casino.wagering}x wagering, free spins, and the full bonus terms broken down by our team.`,
     alternates: { canonical: `https://www.bonuscout.com/reviews/${casino.slug}` }
   }
 }
@@ -50,7 +54,7 @@ export default async function ReviewPage({ params }: Props) {
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://www.bonuscout.com' },
         { name: 'Reviews', url: 'https://www.bonuscout.com/reviews' },
-        { name: `${casino.name} Review`, url: `https://www.bonuscout.com/reviews/${casino.slug}` }
+        { name: `${casino.name} Bonus 2026`, url: `https://www.bonuscout.com/reviews/${casino.slug}` }
       ]} />
       <FAQSchema faqs={faqs} />
 
@@ -62,7 +66,7 @@ export default async function ReviewPage({ params }: Props) {
           <span className="mx-2">›</span>
           <Link href="/reviews" className="hover:text-[#F5A623]">Reviews</Link>
           <span className="mx-2">›</span>
-          <span className="text-gray-300">{casino.name} Review</span>
+          <span className="text-gray-300">{casino.name} Bonus 2026</span>
         </div>
 
         {/* Header */}
@@ -77,7 +81,7 @@ export default async function ReviewPage({ params }: Props) {
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-3 flex-wrap mb-2">
-                <h1 className="text-2xl md:text-3xl font-black text-white">{casino.name} Review 2026</h1>
+                <h1 className="text-2xl md:text-3xl font-black text-white">{casino.name} Bonus 2026</h1>
                 <span className="text-xs bg-[#F5A623]/10 text-[#F5A623] border border-[#F5A623]/20 px-2 py-1 rounded-full font-bold">
                   Verified May 2026
                 </span>
@@ -318,6 +322,25 @@ export default async function ReviewPage({ params }: Props) {
                   <p className="text-sm text-gray-400 leading-relaxed">{faq.a}</p>
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* Cross-site CTA — sister-site coverage for the trust/withdrawal intent.
+              Hybrid-strategy (2026-06-22): this page now targets the {brand} BONUS intent.
+              For the trust/withdrawal/KYC intent on the same brand, route readers to
+              BonusReviewers — one contextual link, in-body, NOT a sitewide footer link. */}
+          <div className="bg-gradient-to-br from-emerald-500/10 to-emerald-500/5 border border-emerald-500/20 rounded-xl p-6">
+            <div className="flex items-start gap-4">
+              <div className="text-3xl">🔍</div>
+              <div className="flex-1">
+                <div className="text-xs uppercase tracking-wide text-emerald-400 font-bold mb-1">Trust &amp; Testing</div>
+                <h2 className="font-black text-white text-lg mb-2">Want withdrawal and trust testing for {casino.name}?</h2>
+                <p className="text-sm text-gray-400 mb-3">Our sister site BonusReviewers ran a real-money deposit, full KYC walkthrough and timed a withdrawal at {casino.name}. See the full test report.</p>
+                <a href={`https://www.bonusreviewers.com/reviews/${casino.slug}`} target="_blank" rel="noopener noreferrer"
+                  className="inline-block bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/40 text-emerald-400 font-bold px-4 py-2 rounded-lg text-sm transition-colors">
+                  Read the full {casino.name} review on BonusReviewers →
+                </a>
+              </div>
             </div>
           </div>
 
