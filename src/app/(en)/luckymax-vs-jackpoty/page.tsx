@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'LuckyMax vs Jackpoty Casino 2026 — Which is Better? | BonusScout',
+  title: 'LuckyMax vs Jackpoty Casino 2026 — Which is Better?',
   description: 'LuckyMax Casino vs Jackpoty compared. Bonus, wagering, games and withdrawals tested side by side. Which casino is better in 2026?',
   alternates: { canonical: 'https://www.bonuscout.com/luckymax-vs-jackpoty' }
 }

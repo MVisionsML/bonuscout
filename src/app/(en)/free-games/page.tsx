@@ -3,7 +3,7 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Free Casino Games 2026 — Play Slots for Free | BonusScout',
+  title: 'Free Casino Games 2026 — Play Slots for Free',
   description: 'Play free casino games without risking real money. Find the best casinos offering free play mode for slots, roulette and more.',
 }
 

@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Umsatzbedingungen Erklärt 2026 — Vollständiger Guide | BonusScout',
+  title: 'Umsatzbedingungen Erklärt 2026 — Vollständiger Guide',
   description: 'Was sind Umsatzbedingungen? Wie berechnet man sie? Welche Casinos haben die niedrigsten? Vollständiger Guide mit Beispielen. Aktualisiert Mai 2026.',
   alternates: { canonical: 'https://www.bonuscout.com/de/ratgeber/umsatzbedingungen-erklaert' }
 }

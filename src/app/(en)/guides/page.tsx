@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Casino Bonus Guides 2026 — Expert Guides | BonusScout',
+  title: 'Casino Bonus Guides 2026 — Expert Guides',
   description: 'Expert casino bonus guides. Learn how wagering works, how to claim no deposit bonuses, free spins explained and bonus terms decoded.',
 }
 

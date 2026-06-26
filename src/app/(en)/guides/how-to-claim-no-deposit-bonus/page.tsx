@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'How to Claim a No Deposit Bonus — Step by Step Guide 2026 | BonusScout',
+  title: 'How to Claim a No Deposit Bonus — Step by Step Guide 2026',
   description: 'Step-by-step guide to claiming a no deposit casino bonus. Registration, verification, bonus codes and wagering — everything explained clearly.',
   alternates: { canonical: 'https://www.bonuscout.com/guides/how-to-claim-no-deposit-bonus' }
 }

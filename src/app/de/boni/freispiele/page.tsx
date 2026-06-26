@@ -3,7 +3,7 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Beste Casino Freispiele 2026 — Gratis Spins Angebote | BonusScout',
+  title: 'Beste Casino Freispiele 2026 — Gratis Spins Angebote',
   description: 'Die besten Casino Freispiele 2026. Gratis Spins auf echten Slots bei lizenzierten und getesteten Casinos. Alle Angebote geprüft und verglichen.',
   alternates: { canonical: 'https://www.bonuscout.com/de/boni/freispiele' }
 }

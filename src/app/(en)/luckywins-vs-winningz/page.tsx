@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'LuckyWins vs Winningz Casino 2026 — Which is Better? | BonusScout',
+  title: 'LuckyWins vs Winningz Casino 2026 — Which is Better?',
   description: 'LuckyWins Casino vs Winningz Casino compared. Bonus, wagering, games and withdrawals tested side by side. Which casino is better in 2026?',
   alternates: { canonical: 'https://www.bonuscout.com/luckywins-vs-winningz' }
 }

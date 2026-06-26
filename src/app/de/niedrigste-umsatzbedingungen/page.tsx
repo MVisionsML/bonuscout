@@ -3,7 +3,7 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Niedrigste Umsatzbedingungen Casino 2026 — 30x und Weniger | BonusScout',
+  title: 'Niedrigste Umsatzbedingungen Casino 2026 — 30x und Weniger',
   description: 'Casinos mit den niedrigsten Umsatzbedingungen 2026. Von 0x bis 30x — alle getestet und verglichen. Aktualisiert Mai 2026.',
   alternates: { canonical: 'https://www.bonuscout.com/de/niedrigste-umsatzbedingungen' }
 }

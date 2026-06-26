@@ -3,7 +3,7 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Bester Willkommensbonus Casino 2026 | BonusScout',
+  title: 'Bester Willkommensbonus Casino 2026',
   description: 'Die besten Casino Willkommensboni 2026. Match-Boni, Einzahlungsboni und Erstangebote — bewertet nach Wert und Fairness. Alle Angebote getestet.',
   alternates: { canonical: 'https://www.bonuscout.com/de/boni/willkommensbonus' }
 }

@@ -5,7 +5,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Free Spins No Deposit 2026 — Real Value of Every Offer Calculated | BonusScout',
+  title: 'Free Spins No Deposit 2026 — Real Value of Every Offer Calculated',
   description: 'Free spins without depositing, ranked by real expected value. Per-spin value, max win caps, and slot RTP all considered. No marketing fluff.',
   alternates: { canonical: 'https://www.bonuscout.com/free-spins-no-deposit' }
 }

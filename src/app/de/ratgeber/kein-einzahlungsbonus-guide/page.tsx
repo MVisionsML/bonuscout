@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Kein Einzahlungsbonus Guide 2026 — Schritt für Schritt sichern | BonusScout',
+  title: 'Kein Einzahlungsbonus Guide 2026 — Schritt für Schritt sichern',
   description: 'Kein Einzahlungsbonus richtig holen: Schritt-für-Schritt Anleitung, KYC, Maximalauszahlung und häufige Fehler. Aktualisiert Juni 2026.',
   alternates: { canonical: 'https://www.bonuscout.com/de/ratgeber/kein-einzahlungsbonus-guide' }
 }

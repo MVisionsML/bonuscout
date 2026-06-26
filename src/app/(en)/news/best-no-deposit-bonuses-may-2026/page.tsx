@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Best No Deposit Casino Bonuses — May 2026 | BonusScout',
+  title: 'Best No Deposit Casino Bonuses — May 2026',
   description: 'May 2026 audit of every no deposit casino bonus worth claiming. New offers, reduced wagering, and which casino pulled its no deposit promotion entirely.',
   alternates: { canonical: 'https://www.bonuscout.com/news/best-no-deposit-bonuses-may-2026' }
 }

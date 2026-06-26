@@ -3,7 +3,7 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Kein Einzahlungsbonus 2026 — Gratis Bonus Ohne Einzahlung | BonusScout',
+  title: 'Kein Einzahlungsbonus 2026 — Gratis Bonus Ohne Einzahlung',
   description: 'Die besten Casino Boni ohne Einzahlung 2026. Gratis Guthaben oder Freispiele nur für die Registrierung — keine Einzahlung nötig. Alle Angebote geprüft.',
   alternates: { canonical: 'https://www.bonuscout.com/de/boni/kein-einzahlungsbonus' }
 }

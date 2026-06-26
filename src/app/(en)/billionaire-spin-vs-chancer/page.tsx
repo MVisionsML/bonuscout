@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Billionaire Spin vs Chancer Casino 2026 — Which is Better? | BonusScout',
+  title: 'Billionaire Spin vs Chancer Casino 2026 — Which is Better?',
   description: 'Billionaire Spin vs Chancer Casino compared side by side. Bonus, wagering, cashback and withdrawals tested. Which casino is better in 2026?',
   alternates: { canonical: 'https://www.bonuscout.com/billionaire-spin-vs-chancer' }
 }

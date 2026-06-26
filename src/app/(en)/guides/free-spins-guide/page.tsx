@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Free Spins Guide 2026 — How Free Spins Work | BonusScout',
+  title: 'Free Spins Guide 2026 — How Free Spins Work',
   description: 'Complete guide to casino free spins. How they work, what the winnings are worth, wagering on free spin wins, and which casinos offer the best free spins deals.',
   alternates: { canonical: 'https://www.bonuscout.com/guides/free-spins-guide' }
 }

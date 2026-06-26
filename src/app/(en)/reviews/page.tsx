@@ -3,7 +3,7 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Casino Reviews 2026 — Tested by Our Team | BonusScout',
+  title: 'Casino Reviews 2026 — Tested by Our Team',
   description: 'In-depth casino reviews based on real testing. We deposit, withdraw and test support before publishing any review.',
 }
 

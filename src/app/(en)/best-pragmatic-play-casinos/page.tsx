@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Best Pragmatic Play Casinos 2026 — Gates of Olympus, Sweet Bonanza | BonusScout',
+  title: 'Best Pragmatic Play Casinos 2026 — Gates of Olympus, Sweet Bonanza',
   description: 'Best casinos with Pragmatic Play slots in 2026. Play Gates of Olympus, Sweet Bonanza, Big Bass and more at top-rated Pragmatic Play casinos.',
   alternates: { canonical: 'https://www.bonuscout.com/best-pragmatic-play-casinos' }
 }

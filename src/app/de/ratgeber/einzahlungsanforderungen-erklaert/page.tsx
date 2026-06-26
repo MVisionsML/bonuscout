@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Einzahlungsanforderungen Erklärt 2026 — Minimum, Methoden, Gebühren | BonusScout',
+  title: 'Einzahlungsanforderungen Erklärt 2026 — Minimum, Methoden, Gebühren',
   description: 'Casino Einzahlungsanforderungen verständlich erklärt. Mindesteinzahlung, Limits, Gebühren und Zahlungsmethoden im Vergleich. Aktualisiert Juni 2026.',
   alternates: { canonical: 'https://www.bonuscout.com/de/ratgeber/einzahlungsanforderungen-erklaert' }
 }

@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Casino Bonus Terms Glossary 2026 — Every Term Explained | BonusScout',
+  title: 'Casino Bonus Terms Glossary 2026 — Every Term Explained',
   description: 'Complete glossary of casino bonus terms. Wagering requirements, playthrough, sticky bonus, max bet rule, withdrawal cap and more — all explained clearly.',
   alternates: { canonical: 'https://www.bonuscout.com/guides/casino-bonus-terms' }
 }

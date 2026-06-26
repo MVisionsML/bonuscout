@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'No Wagering Casinos 2026 — 0x Wagering Bonus Offers | BonusScout',
+  title: 'No Wagering Casinos 2026 — 0x Wagering Bonus Offers',
   description: 'Find casinos with no wagering requirements in 2026. Keep what you win with 0x wagering casino bonuses. All offers independently verified.',
   alternates: { canonical: 'https://www.bonuscout.com/no-wagering-casinos' }
 }

@@ -5,7 +5,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'No Deposit Bonus 2026 — Free Spins, Free Chips & Freerolls Compared | BonusScout',
+  title: 'No Deposit Bonus 2026 — Free Spins, Free Chips & Freerolls Compared',
   description: 'Compare all three types of no deposit bonuses: free spins, free chips, and freeroll tournaments. Real expected value calculated for each.',
   alternates: { canonical: 'https://www.bonuscout.com/no-deposit-bonus' }
 }

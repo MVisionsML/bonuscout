@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Freispiele Guide 2026 — Wert, Umsatz und beste Angebote | BonusScout',
+  title: 'Freispiele Guide 2026 — Wert, Umsatz und beste Angebote',
   description: 'Freispiele richtig nutzen: Spinwert berechnen, Umsatz auf Gewinne verstehen, die besten Freispiel-Angebote 2026 finden. Vollständiger Guide mit Beispielen.',
   alternates: { canonical: 'https://www.bonuscout.com/de/ratgeber/freispiele-guide' }
 }

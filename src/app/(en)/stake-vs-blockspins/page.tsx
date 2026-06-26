@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Stake Casino vs Blockspins 2026 — Best Crypto Casino? | BonusScout',
+  title: 'Stake Casino vs Blockspins 2026 — Best Crypto Casino?',
   description: 'Stake Casino vs Blockspins compared. Both crypto casinos tested side by side. Wagering, withdrawals, games and bonuses compared. Which is better?',
   alternates: { canonical: 'https://www.bonuscout.com/stake-vs-blockspins' }
 }

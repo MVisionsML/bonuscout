@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Best Free Spins Casino 2026 — Most Free Spins Offers | BonusScout',
+  title: 'Best Free Spins Casino 2026 — Most Free Spins Offers',
   description: 'Find casinos with the most free spins in 2026. We compare free spin counts, wagering on winnings and expiry times. All offers independently tested.',
   alternates: { canonical: 'https://www.bonuscout.com/best-free-spins-casino' }
 }

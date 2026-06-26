@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Crypto Casino Guide 2026 — Bitcoin, Ethereum & Crypto Gambling | BonusScout',
+  title: 'Crypto Casino Guide 2026 — Bitcoin, Ethereum & Crypto Gambling',
   description: 'Complete crypto casino guide 2026. Everything about Bitcoin casinos, accepted cryptocurrencies, advantages, how to deposit and the best crypto casino bonuses. Updated May 2026.',
   alternates: { canonical: 'https://www.bonuscout.com/guides/crypto-casino-guide' }
 }

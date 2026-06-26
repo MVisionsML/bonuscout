@@ -5,7 +5,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Casino Cashback Bonus 2026 — Calculate Your Real Value | BonusScout',
+  title: 'Casino Cashback Bonus 2026 — Calculate Your Real Value',
   description: 'Compare casino cashback bonuses by percentage tier (5%–25%), payout frequency, and hidden terms. Real expected-value math for every offer.',
   alternates: { canonical: 'https://www.bonuscout.com/casino-cashback-bonus' }
 }

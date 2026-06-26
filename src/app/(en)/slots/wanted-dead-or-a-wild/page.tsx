@@ -7,7 +7,7 @@ import { FAQSchema, GameSchema, BreadcrumbSchema } from '@/components/seo/Schema
 const slot = getSlot('wanted-dead-or-a-wild')!
 
 export const metadata: Metadata = {
-  title: 'Wanted Dead or a Wild Review 2026 — RTP 96.38%, 12,500x Max Win | BonusScout',
+  title: 'Wanted Dead or a Wild Review 2026 — RTP 96.38%, 12,500x Max Win',
   description: 'Full Wanted Dead or a Wild review. Hacksaw Gaming\'s Wild West slot tested. 96.38% RTP, 12,500x max win, three free spins modes — extreme volatility verdict.',
   alternates: { canonical: 'https://www.bonuscout.com/slots/wanted-dead-or-a-wild' }
 }

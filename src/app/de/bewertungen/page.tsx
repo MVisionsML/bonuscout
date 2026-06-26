@@ -3,7 +3,7 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Casino Bewertungen 2026 — Von Unserem Team Getestet | BonusScout',
+  title: 'Casino Bewertungen 2026 — Von Unserem Team Getestet',
   description: 'Detaillierte Casino-Bewertungen basierend auf echten Tests. Wir zahlen ein, heben ab und testen den Support bevor wir eine Bewertung veröffentlichen.',
   alternates: { canonical: 'https://www.bonuscout.com/de/bewertungen' }
 }

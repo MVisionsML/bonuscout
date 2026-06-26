@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Kein Wager Casino 2026 — 0x Umsatzbedingungen | BonusScout',
+  title: 'Kein Wager Casino 2026 — 0x Umsatzbedingungen',
   description: 'Casinos ohne Umsatzbedingungen 2026. Gewinne sofort auszahlen ohne Playthrough. Alle 0x Wager Angebote getestet.',
   alternates: { canonical: 'https://www.bonuscout.com/de/kein-wager-casino' }
 }

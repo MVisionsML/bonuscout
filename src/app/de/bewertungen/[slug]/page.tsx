@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Target query family: "{brand} bonus", "{brand} willkommensbonus",
   // "{brand} freispiele", "{brand} bonus code", "{brand} bonusangebot".
   return {
-    title: `${casino.name} Bonus 2026 — Willkommensangebot, Freispiele & Bonusbedingungen | BonusScout`,
+    title: `${casino.name} Bonus 2026 — Willkommensangebot, Freispiele & Bonusbedingungen`,
     description: `Jeder aktive ${casino.name} Bonus an einem Ort: ${casino.bonus} Willkommensangebot bei ${casino.wagering}x Umsatzbedingungen, Freispiele und die vollständigen Bonusbedingungen — von unserem Team aufgeschlüsselt.`,
     alternates: {
       canonical: `https://www.bonuscout.com/de/bewertungen/${slug}`,

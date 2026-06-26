@@ -5,7 +5,7 @@ import NewsCategoryFilter from './NewsCategoryFilter'
 import { BreadcrumbSchema, ItemListSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Casino News & Updates 2026 | BonusScout',
+  title: 'Casino News & Updates 2026',
   description: 'Casino industry news and updates. New bonus offers, wagering regulation changes, slot releases, and crypto casino developments — verified by our team.',
   alternates: { canonical: 'https://www.bonuscout.com/news' },
 }

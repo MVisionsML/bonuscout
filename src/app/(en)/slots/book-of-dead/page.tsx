@@ -7,7 +7,7 @@ import { FAQSchema, GameSchema, BreadcrumbSchema } from '@/components/seo/Schema
 const slot = getSlot('book-of-dead')!
 
 export const metadata: Metadata = {
-  title: 'Book of Dead Review 2026 — RTP 96.21%, 5,000x Max Win | BonusScout',
+  title: 'Book of Dead Review 2026 — RTP 96.21%, 5,000x Max Win',
   description: 'Full Book of Dead review 2026. Play\'n GO\'s Egyptian classic tested. 96.21% RTP, 5,000x max win, expanding symbols in free spins — definitive verdict.',
   alternates: { canonical: 'https://www.bonuscout.com/slots/book-of-dead' }
 }

@@ -7,7 +7,7 @@ import { FAQSchema, GameSchema, BreadcrumbSchema } from '@/components/seo/Schema
 const slot = getSlot('sweet-bonanza')!
 
 export const metadata: Metadata = {
-  title: 'Sweet Bonanza Review 2026 — RTP 96.48%, 21,175x Max Win | BonusScout',
+  title: 'Sweet Bonanza Review 2026 — RTP 96.48%, 21,175x Max Win',
   description: 'Full Sweet Bonanza review 2026. Pragmatic Play\'s candy-themed tumble slot tested. 96.48% RTP, 21,175x max win, multiplier bombs from x2 to x100 — full verdict.',
   alternates: { canonical: 'https://www.bonuscout.com/slots/sweet-bonanza' }
 }

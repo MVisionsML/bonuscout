@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Casino Ratgeber 2026 — Experten Guides | BonusScout',
+  title: 'Casino Ratgeber 2026 — Experten Guides',
   description: 'Experten Casino Ratgeber. Umsatzbedingungen erklärt, Kein Einzahlungsbonus holen, Freispiele Guide und Krypto Casino erklärt. Aktualisiert Mai 2026.',
   alternates: { canonical: 'https://www.bonuscout.com/de/ratgeber' }
 }

@@ -3,7 +3,7 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Beste Casino Cashback Bonus 2026 — Verluste Zurückbekommen | BonusScout',
+  title: 'Beste Casino Cashback Bonus 2026 — Verluste Zurückbekommen',
   description: 'Die besten Casino Cashback Boni 2026. Holen Sie sich 10–25% Ihrer Nettoverluste zurück. Niedrige Umsatzbedingungen — alle Angebote getestet.',
   alternates: { canonical: 'https://www.bonuscout.com/de/boni/cashback' }
 }

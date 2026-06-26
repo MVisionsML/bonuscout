@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Best Hacksaw Gaming Casinos 2026 — Wanted Dead or a Wild | BonusScout',
+  title: 'Best Hacksaw Gaming Casinos 2026 — Wanted Dead or a Wild',
   description: 'Best casinos with Hacksaw Gaming slots in 2026. Play Wanted Dead or a Wild, Chaos Crew and more at top-rated Hacksaw Gaming casinos.',
   alternates: { canonical: 'https://www.bonuscout.com/best-hacksaw-gaming-casinos' }
 }

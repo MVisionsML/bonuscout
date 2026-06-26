@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Krypto Casino Guide 2026 — Bitcoin Casino Deutschland | BonusScout',
+  title: 'Krypto Casino Guide 2026 — Bitcoin Casino Deutschland',
   description: 'Vollständiger Krypto Casino Guide 2026. Bitcoin, Ethereum, Vor- und Nachteile, Einzahlungen, Auszahlungen und die besten Krypto Casino Boni erklärt.',
   alternates: { canonical: 'https://www.bonuscout.com/de/ratgeber/krypto-casino-guide' }
 }
