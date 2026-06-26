@@ -7,23 +7,24 @@ interface Props {
   params: Promise<{ slug: string }>
 }
 
-const customTitles: Record<string, string> = {
-  'stake-casino': 'Stake Casino Erfahrungen 2026 — 0x Umsatz & Krypto Getestet | BonusScout',
-  'wonaco-casino': 'Wonaco Casino Erfahrungen 2026 — €500 Bonus Getestet | BonusScout',
-  'jackpoty': 'Jackpoty Erfahrungen 2026 — €2.000 + 100 Freispiele Getestet | BonusScout',
-  'vegashero-casino': 'VegasHero Erfahrungen 2026 — MGA Lizenz & €500 Bonus Getestet | BonusScout',
-  'winningz-casino': 'Winningz Casino Erfahrungen 2026 — €5.000 + 500 Spins Getestet | BonusScout',
-  'binobet-casino': 'BinoBet Erfahrungen 2026 — €1.500 Bonus Getestet | BonusScout',
-  'blockspins-casino': 'Blockspins Erfahrungen 2026 — Krypto Casino Getestet | BonusScout',
-}
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const casino = casinos.find(c => c.slug === slug)
   if (!casino) return {}
+  // Hybrid-strategy metadata (2026-06-26): the DE side now mirrors the EN
+  // C1 repositioning — bonuscout owns BONUS intent (welcome / no-deposit /
+  // cashback / free spins) in both languages; bonusreviewers owns REVIEW /
+  // TRUST intent ("{brand} Erfahrungen" / "Auszahlungstest" / "KYC") in both.
+  // Previously every brand here had a hand-written "Erfahrungen" / "Getestet"
+  // title that competed head-on with bonusreviewers.com/de/reviews/{slug} for
+  // the same query family. Removed the per-brand customTitles override so
+  // every brand takes the single bonus-targeted template below — same shape
+  // as the EN /reviews/[slug] template after C1.
+  // Target query family: "{brand} bonus", "{brand} willkommensbonus",
+  // "{brand} freispiele", "{brand} bonus code", "{brand} bonusangebot".
   return {
-    title: customTitles[slug] ?? `${casino.name} Bewertung 2026 — Bonus, Umsatz & Sicherheit | BonusScout`,
-    description: `${casino.name} Bewertung von unserem Team. Bonus ${casino.bonus} getestet. Umsatzbedingungen: ${casino.wagering}x. Ist ${casino.name} seriös? Vollständige Bewertung.`,
+    title: `${casino.name} Bonus 2026 — Willkommensangebot, Freispiele & Bonusbedingungen | BonusScout`,
+    description: `Jeder aktive ${casino.name} Bonus an einem Ort: ${casino.bonus} Willkommensangebot bei ${casino.wagering}x Umsatzbedingungen, Freispiele und die vollständigen Bonusbedingungen — von unserem Team aufgeschlüsselt.`,
     alternates: {
       canonical: `https://www.bonuscout.com/de/bewertungen/${slug}`,
       languages: { 'en': `https://www.bonuscout.com/reviews/${slug}`, 'de': `https://www.bonuscout.com/de/bewertungen/${slug}` }
@@ -50,7 +51,7 @@ export default async function DeCasinoReview({ params }: Props) {
         <span className="mx-2">›</span>
         <Link href="/de/bewertungen" className="hover:text-[#F5A623]">Bewertungen</Link>
         <span className="mx-2">›</span>
-        <span className="text-gray-300">{casino.name}</span>
+        <span className="text-gray-300">{casino.name} Bonus 2026</span>
       </div>
 
       {/* Header */}
@@ -59,7 +60,7 @@ export default async function DeCasinoReview({ params }: Props) {
           <div className="w-20 h-20 bg-[#252830] rounded-xl flex items-center justify-center text-4xl border border-[#2E3040] flex-shrink-0">{casino.logo}</div>
           <div className="flex-1">
             <div className="flex items-center gap-3 flex-wrap mb-2">
-              <h1 className="text-2xl md:text-3xl font-black text-white">{casino.name} Bewertung 2026</h1>
+              <h1 className="text-2xl md:text-3xl font-black text-white">{casino.name} Bonus 2026</h1>
               <span className="text-xs bg-[#F5A623]/10 text-[#F5A623] border border-[#F5A623]/20 px-2 py-1 rounded-full font-bold">Verifiziert Mai 2026</span>
             </div>
             <div className="flex items-center gap-2 mb-3">
