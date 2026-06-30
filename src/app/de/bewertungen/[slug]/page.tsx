@@ -1,4 +1,4 @@
-import { casinos } from '@/data/casinos'
+import { casinos , casinoUrl } from '@/data/casinos'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { Metadata } from 'next'
@@ -27,7 +27,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: `Jeder aktive ${casino.name} Bonus an einem Ort: ${casino.bonus} Willkommensangebot bei ${casino.wagering}x Umsatzbedingungen, Freispiele und die vollständigen Bonusbedingungen — von unserem Team aufgeschlüsselt.`,
     alternates: {
       canonical: `https://www.bonuscout.com/de/bewertungen/${slug}`,
-      languages: { 'en': `https://www.bonuscout.com/reviews/${slug}`, 'de': `https://www.bonuscout.com/de/bewertungen/${slug}` }
+      // hreflang must point at the CANONICAL EN URL for each brand —
+      // casinoUrl() returns /articles/{slug}-casino-review for the 2 reverse
+      // pairs (talismania, wonaco-casino) so hreflang doesn't advertise a
+      // redirecting URL to crawlers.
+      languages: { 'en': `https://www.bonuscout.com${casinoUrl(slug)}`, 'de': `https://www.bonuscout.com/de/bewertungen/${slug}` }
     }
   }
 }
@@ -190,7 +194,7 @@ export default async function DeCasinoReview({ params }: Props) {
       <div className="bg-[#161820] border border-[#252830] rounded-xl p-4 text-center">
         <p className="text-gray-500 text-sm">
           Read this review in English: {' '}
-          <Link href={`/reviews/${casino.slug}`} className="text-[#F5A623] hover:underline font-bold">
+          <Link href={casinoUrl(casino.slug)} className="text-[#F5A623] hover:underline font-bold">
             {casino.name} Review →
           </Link>
         </p>

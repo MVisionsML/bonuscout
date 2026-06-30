@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { casinos } from '@/data/casinos'
+import { casinos , casinoUrl } from '@/data/casinos'
 import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
@@ -92,7 +92,7 @@ export default function NoDepositGuide() {
                   className="bg-[#F5A623] hover:bg-[#E09520] text-black font-black text-xs px-4 py-2 rounded-lg transition-colors text-center">
                   Claim
                 </a>
-                <Link href={`/reviews/${casino.slug}`} className="text-center text-xs text-gray-500 hover:text-[#F5A623]">Review</Link>
+                <Link href={casinoUrl(casino.slug)} className="text-center text-xs text-gray-500 hover:text-[#F5A623]">Review</Link>
               </div>
             </div>
           ))}

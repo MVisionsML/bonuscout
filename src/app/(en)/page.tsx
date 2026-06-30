@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import CasinoCard from '@/components/casino/CasinoCard'
-import { casinos } from '@/data/casinos'
+import { casinos , casinoUrl } from '@/data/casinos'
 import { Metadata } from 'next'
 import { WebsiteSchema } from '@/components/seo/SchemaMarkup'
 import HeroSection from '@/components/home/HeroSection'
@@ -185,7 +185,7 @@ export default function HomePage() {
                         className="bg-[#F5A623] hover:bg-[#E09520] text-black font-black text-xs px-3 py-1.5 rounded-lg transition-colors">
                         Claim
                       </a>
-                      <Link href={`/reviews/${casino.slug}`} className="text-xs text-gray-500 hover:text-[#F5A623] border border-[#252830] px-3 py-1.5 rounded-lg">
+                      <Link href={casinoUrl(casino.slug)} className="text-xs text-gray-500 hover:text-[#F5A623] border border-[#252830] px-3 py-1.5 rounded-lg">
                         Review
                       </Link>
                     </div>

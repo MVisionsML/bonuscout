@@ -1,4 +1,4 @@
-import { casinos } from '@/data/casinos'
+import { casinos , casinoUrl } from '@/data/casinos'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -29,7 +29,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  return casinos.map(c => ({ slug: c.slug }))
+  // Skip slugs that next.config.ts 308-redirects away from /reviews/{slug}.
+  // Building the static page for these is wasted work — the edge redirect
+  // intercepts before route resolution, so the page never renders.
+  // See CANONICAL_OVERRIDES in src/data/casinos for the slug list.
+  const REVERSE_REDIRECTED = new Set(['talismania', 'wonaco-casino'])
+  return casinos.filter(c => !REVERSE_REDIRECTED.has(c.slug)).map(c => ({ slug: c.slug }))
 }
 
 export default async function ReviewPage({ params }: Props) {
@@ -349,7 +354,7 @@ export default async function ReviewPage({ params }: Props) {
             <h2 className="font-black text-white mb-4">Compare Similar Casinos</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {relatedCasinos.map(rc => (
-                <Link key={rc.id} href={`/reviews/${rc.slug}`}
+                <Link key={rc.id} href={casinoUrl(rc.slug)}
                   className="bg-[#0D0F14] border border-[#252830] hover:border-[#F5A623]/30 rounded-xl p-4 transition-all group">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="text-2xl">{rc.logo}</span>

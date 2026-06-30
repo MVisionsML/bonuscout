@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Metadata } from 'next'
-import { casinos } from '@/data/casinos'
+import { casinos , casinoUrl } from '@/data/casinos'
 import { getSlot } from '@/data/slots'
 import { FAQSchema, GameSchema, BreadcrumbSchema } from '@/components/seo/SchemaMarkup'
 
@@ -146,7 +146,7 @@ export default function BigBassReview() {
                     className="bg-[#F5A623] hover:bg-[#E09520] text-black font-black text-sm px-4 py-2.5 rounded-lg transition-colors text-center">
                     Play Now
                   </a>
-                  <Link href={`/reviews/${casino.slug}`} className="text-center text-xs text-gray-500 hover:text-[#F5A623]">Review</Link>
+                  <Link href={casinoUrl(casino.slug)} className="text-center text-xs text-gray-500 hover:text-[#F5A623]">Review</Link>
                 </div>
               </div>
             </div>

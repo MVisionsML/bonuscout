@@ -1,5 +1,24 @@
 import { Casino } from '@/types'
 
+// ── Canonical URL routing (2026-06-30) ──────────────────────────────────────
+// Most casinos in our catalog canonical to /reviews/{slug}. Two exceptions
+// per the phase-2 hybrid-strategy redirect map: talismania and wonaco-casino
+// reverse-pair to their /articles/{slug}-casino-review counterparts because
+// those URLs hold materially better SERP position (talismania pos 14.1 vs
+// 32.9; wonaco 16.8 vs 28.3 in the 90-day GSC window).
+//
+// Use casinoUrl() everywhere we link to a casino page. The next.config.ts
+// 308 catches any /reviews/talismania or /reviews/wonaco-casino request that
+// slips through (from external referrers / old SERP entries), but internal
+// links MUST route via the helper so we never internally fire through a redirect.
+const CANONICAL_OVERRIDES: Record<string, string> = {
+  'talismania':    '/articles/talismania-casino-review',
+  'wonaco-casino': '/articles/wonaco-casino-review',
+}
+export function casinoUrl(slug: string): string {
+  return CANONICAL_OVERRIDES[slug] ?? `/reviews/${slug}`
+}
+
 export const casinos: Casino[] = [
   {
     id: '1', name: 'LuckyWins Casino', slug: 'luckywins-casino', logo: '🍀', logoUrl: '/logos/luckywins.webp',

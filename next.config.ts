@@ -56,6 +56,32 @@ const nextConfig: NextConfig = {
       { source: "/articles/stake-casino-review",                                                       destination: "/reviews/stake-casino",              permanent: true },
       { source: "/articles/vegashero-live-casino-review",                                              destination: "/reviews/vegashero-casino",          permanent: true },
       { source: "/articles/winningz-casino-review",                                                    destination: "/reviews/winningz-casino",           permanent: true },
+
+      // ── Hybrid-strategy article cleanup, phase 2 (2026-06-30) ────────────
+      // The 7 held /articles/<brand>-casino-review URLs (had >=50 impressions
+      // when phase 1 ran on 2026-06-22) are now mapped per the 90-day GSC
+      // inventory + position-differential analysis:
+      //
+      //  Forward (6 of 7): keep /reviews/{slug} as canonical, redirect
+      //  /articles/{slug}-casino-review → /reviews/{slug}. Standard direction.
+      //
+      //  Reverse (2 of 7): /reviews/talismania and /reviews/wonaco-casino
+      //  redirect to their /articles/ counterparts — those article URLs hold
+      //  materially better position (talismania 14.1 vs 32.9; wonaco 16.8 vs
+      //  28.3). Reverse direction preserves the accumulated authority on the
+      //  article URL rather than throwing it away.
+      //
+      // All sources land directly at their destination — no chains, no loops.
+      // Internal-link audit covered separately to ensure no <Link> still
+      // points at a redirected source.
+      { source: "/articles/vegashero-casino-review",   destination: "/reviews/vegashero-casino",          permanent: true },
+      { source: "/articles/spinfever-casino-review",   destination: "/reviews/spin-fever-casino",         permanent: true },
+      { source: "/articles/jackpoty-casino-review",    destination: "/reviews/jackpoty",                  permanent: true },
+      { source: "/articles/luckymax-casino-review",    destination: "/reviews/luckymax-casino",           permanent: true },
+      { source: "/articles/crocoslots-casino-review",  destination: "/reviews/crocoslots",                permanent: true },
+      // Reverse pair: /articles/ rank > /reviews/ rank → /articles/ becomes canonical.
+      { source: "/reviews/talismania",                 destination: "/articles/talismania-casino-review", permanent: true },
+      { source: "/reviews/wonaco-casino",              destination: "/articles/wonaco-casino-review",     permanent: true },
     ]
   },
 }

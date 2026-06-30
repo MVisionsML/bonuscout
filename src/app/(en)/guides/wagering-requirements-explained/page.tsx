@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { casinos } from '@/data/casinos'
+import { casinos , casinoUrl } from '@/data/casinos'
 import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
@@ -147,7 +147,7 @@ export default function WageringGuide() {
                   <div className={`text-xl font-black flex-shrink-0 ${casino.wagering === 0 ? 'text-green-400' : casino.wagering <= 30 ? 'text-green-400' : 'text-yellow-400'}`}>
                     {casino.wagering}x
                   </div>
-                  <Link href={`/reviews/${casino.slug}`} className="text-xs text-[#F5A623] hover:underline flex-shrink-0">Review →</Link>
+                  <Link href={casinoUrl(casino.slug)} className="text-xs text-[#F5A623] hover:underline flex-shrink-0">Review →</Link>
                 </div>
               ))}
             </div>

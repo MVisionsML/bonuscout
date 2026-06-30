@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { casinos } from '@/data/casinos'
+import { casinos , casinoUrl } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -79,7 +79,7 @@ export default function FastWithdrawalCasinosPage() {
                   className="bg-[#F5A623] hover:bg-[#E09520] text-black font-black text-xs px-3 py-1.5 rounded-lg">
                   Claim
                 </a>
-                <Link href={`/reviews/${c.slug}`} className="text-xs text-gray-500 hover:text-[#F5A623] border border-[#252830] px-3 py-1.5 rounded-lg">
+                <Link href={casinoUrl(c.slug)} className="text-xs text-gray-500 hover:text-[#F5A623] border border-[#252830] px-3 py-1.5 rounded-lg">
                   Review
                 </Link>
               </div>

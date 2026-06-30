@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { casinos } from '@/data/casinos'
+import { casinos , casinoUrl } from '@/data/casinos'
 import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
@@ -64,7 +64,7 @@ export default function PragmaticPlayPage() {
                     className="bg-[#F5A623] hover:bg-[#E09520] text-black font-black text-sm px-5 py-2.5 rounded-lg transition-colors text-center">
                     Play Now
                   </a>
-                  <Link href={`/reviews/${casino.slug}`} className="text-center text-xs text-gray-500 hover:text-[#F5A623]">Review</Link>
+                  <Link href={casinoUrl(casino.slug)} className="text-center text-xs text-gray-500 hover:text-[#F5A623]">Review</Link>
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { casinos } from '@/data/casinos'
+import { casinos, casinoUrl } from '@/data/casinos'
 import fs from 'node:fs'
 import path from 'node:path'
 
@@ -105,8 +105,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/de/ratgeber/kein-einzahlungsbonus-guide`, priority: 0.85 },
   ].map(p => ({ ...p, lastModified: now, changeFrequency: 'monthly' as const }))
 
+  // Route each casino to its canonical URL — most resolve to /reviews/{slug},
+  // but talismania and wonaco-casino route to /articles/{slug}-casino-review
+  // per the 2026-06-30 redirect map. casinoUrl() returns the right path so
+  // we never put a URL in the sitemap that the next.config.ts 308s away from.
   const enReviews = casinos.map(c => ({
-    url: `${base}/reviews/${c.slug}`,
+    url: `${base}${casinoUrl(c.slug)}`,
     lastModified: now,
     changeFrequency: 'monthly' as const,
     priority: 0.85

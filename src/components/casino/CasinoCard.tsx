@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Casino } from '@/types'
+import { casinoUrl } from '@/data/casinos'
 
 interface CasinoCardProps {
   casino: Casino
@@ -80,7 +81,7 @@ export default function CasinoCard({ casino, rank }: CasinoCardProps) {
           </a>
           <p className="text-xs text-gray-600">18+ | Play Responsibly</p>
           <Link
-            href={`/reviews/${casino.slug}`}
+            href={casinoUrl(casino.slug)}
             className="text-sm text-gray-500 hover:text-[#F5A623] transition-colors"
           >
             Read Review
@@ -145,7 +146,7 @@ export default function CasinoCard({ casino, rank }: CasinoCardProps) {
           Claim Bonus
         </a>
         <Link
-          href={`/reviews/${casino.slug}`}
+          href={casinoUrl(casino.slug)}
           className="border border-[#252830] text-gray-400 hover:text-white hover:border-gray-400 text-sm px-4 py-3 rounded-xl transition-colors"
         >
           Review
