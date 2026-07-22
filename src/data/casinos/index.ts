@@ -105,23 +105,11 @@ export const casinos: Casino[] = [
     games: 2000, software: ['Pragmatic Play', 'Evolution', 'NetEnt'],
     safetyIndex: 'medium', markets: ['global'], founded: 2020
   },
-  {
-    id: '2', name: 'LuckyMax Casino', slug: 'luckymax-casino', logo: '🎯', logoUrl: '/logos/luckymax.webp',
-    rating: 4.3, ratingMax: 5.0,
-    bonus: '€4,000 + 300 Free Spins',
-    bonusType: 'welcome',
-    wagering: 35, minDeposit: 20,
-    withdrawalTime: '24-48h',
-    depositTested: true, withdrawalTested: true, supportType: 'Live chat',
-    licenses: ['Curaçao'], affiliateLink: 'https://luckymax.site/jed914eeb',
-    tag: 'Best Mobile',
-    bestFor: 'Mobile players who want a strong multi-deposit bonus with fair wagering',
-    verdict: 'Strong game curation with Hacksaw Gaming included, excellent mobile experience, but support slows down noticeably outside European hours.',
-    pros: ['€4,000 welcome package', 'Hacksaw Gaming included', 'Excellent mobile', '35x fair wagering'],
-    cons: ['Support slow outside EU hours', 'Curaçao license only'],
-    games: 3000, software: ['Hacksaw Gaming', 'Pragmatic Play', 'Evolution'],
-    safetyIndex: 'medium', markets: ['global'], founded: 2021
-  },
+  // LuckyMax Casino entry removed 2026-07-22: cross-domain 301 sends
+  // /reviews/luckymax-casino to bonusreviewers where BR ranks page 1
+  // (pos 10.3) vs bonuscout page 3 (pos 29.6). Removing from this array
+  // takes luckymax out of all bonuscout listings (best-of, comparisons,
+  // categories) so we don't internally link to a redirect target.
   {
     id: '8', name: 'Chancer Casino', slug: 'chancer-casino', logo: '🍀', logoUrl: '/logos/chancer.webp',
     rating: 3.9, ratingMax: 5.0,
@@ -258,23 +246,9 @@ export const casinos: Casino[] = [
     games: 1500, software: ['Pragmatic Play', 'Evolution'],
     safetyIndex: 'medium', markets: ['global'], founded: 2022
   },
-  {
-    id: '13', name: 'Playio', slug: 'playio', logo: '🎮', logoUrl: '/logos/playio.webp',
-    rating: 3.9, ratingMax: 5.0,
-    bonus: '100% up to €500 + 200 FS + 1 Bonus Crab',
-    bonusType: 'welcome',
-    wagering: 35, minDeposit: 20,
-    withdrawalTime: '24-48h',
-    depositTested: true, withdrawalTested: true, supportType: 'Live chat',
-    licenses: ['Curaçao'], affiliateLink: 'https://plio.xarvilo.com/?mid=252832_1482213',
-    tag: 'Unique Mechanics',
-    bestFor: 'Slot players who enjoy unique bonus mechanics alongside a standard welcome package',
-    verdict: 'The Bonus Crab mechanic is a genuinely novel addition — a random prize drop that lands on your account unprompted. Solid slot library and fair wagering round it out.',
-    pros: ['Unique Bonus Crab mechanic', '200 free spins', 'Fair 35x wagering', 'Solid slot library'],
-    cons: ['Curaçao license only', 'Newer brand'],
-    games: 2000, software: ['Pragmatic Play', 'Hacksaw Gaming', 'Evolution'],
-    safetyIndex: 'medium', markets: ['global'], founded: 2023
-  },
+  // Playio entry removed 2026-07-22: cross-domain 301 sends /reviews/playio
+  // to bonusreviewers (BR pos 14.4 vs bonuscout pos 20.0). Same rationale
+  // as LuckyMax — remove from all internal listings.
   {
     id: '14', name: 'Rooster.bet', slug: 'rooster-bet', logo: '🐓', logoUrl: '/logos/rooster.webp',
     rating: 4.0, ratingMax: 5.0,

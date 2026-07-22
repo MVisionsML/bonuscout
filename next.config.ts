@@ -98,6 +98,12 @@ const nextConfig: NextConfig = {
       { source: "/reviews/luckymax-casino",            destination: "https://www.bonusreviewers.com/reviews/luckymax-casino",       permanent: true },
       { source: "/reviews/playio",                     destination: "https://www.bonusreviewers.com/reviews/playio",                permanent: true },
       { source: "/de/bewertungen/luckymax-casino",     destination: "https://www.bonusreviewers.com/de/reviews/luckymax-casino",    permanent: true },
+
+      // /luckymax-vs-jackpoty page deleted (2026-07-22) because it hard-referenced
+      // the luckymax slug we just removed from the casinos array. Redirect to
+      // the surviving brand's page so any residual SERP or backlink traffic
+      // lands on relevant on-domain content.
+      { source: "/luckymax-vs-jackpoty",               destination: "/reviews/jackpoty",                                            permanent: true },
     ]
   },
 }
