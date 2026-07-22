@@ -277,9 +277,9 @@ export const casinos: Casino[] = [
     licenses: ['Curaçao'], affiliateLink: 'https://media.vegaslegends.com/visit/?bta=36153&nci=5390&utm_campaign=ROWta',
     tag: 'Slot Players',
     bestFor: 'Slot players who want a generous free spins count and enjoy bonus game mechanics',
-    verdict: 'Identical bonus structure to Playio including the Bonus Crab feature, solid slot library, and fair 35x wagering — a strong offering for slot-focused players.',
+    verdict: 'Same €500 + 200 Free Spins package as Rooli at fair 35x wagering, with a distinctive Bonus Crab feature layered on top and Hacksaw Gaming in the slot library — a strong offering for slot-focused players.',
     pros: ['Bonus Crab mechanic', '200 free spins', 'Fair 35x wagering', 'Strong slot library'],
-    cons: ['Curaçao license only', 'Similar to Playio'],
+    cons: ['Curaçao license only', 'Similar bonus profile to Rooli'],
     games: 2000, software: ['Pragmatic Play', 'Hacksaw Gaming', 'Evolution'],
     safetyIndex: 'medium', markets: ['global'], founded: 2023
   },
