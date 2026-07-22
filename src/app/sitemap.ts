@@ -82,7 +82,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/luckywins-vs-winningz`, priority: 0.8 },
     { url: `${base}/stake-vs-blockspins`, priority: 0.8 },
     { url: `${base}/billionaire-spin-vs-chancer`, priority: 0.8 },
-    { url: `${base}/luckymax-vs-jackpoty`, priority: 0.8 },
+    // /luckymax-vs-jackpoty removed 2026-07-22 — page deleted (hard-referenced
+    // the removed luckymax slug); URL 308s to /reviews/jackpoty.
   ].map(p => ({ ...p, lastModified: now, changeFrequency: 'monthly' as const }))
 
   const dePages = [
