@@ -17,13 +17,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const casino = casinos.find(c => c.slug === slug)
   if (!casino) return {}
+  // Per-slug seoTitle/seoDescription override the generic bonus-targeted template
+  // for high-impression pages where a targeted title lifts CTR (see 2026-07 GSC audit).
+  const title = casino.seoTitle
+    ?? `${casino.name} Bonus 2026 — Welcome Offer, Free Spins & Bonus Terms`
+  const description = casino.seoDescription
+    ?? `Every active ${casino.name} bonus in one place: ${casino.bonus} welcome offer at ${casino.wagering}x wagering, free spins, and the full bonus terms broken down by our team.`
   return {
     // Hybrid-strategy metadata (2026-06-22): title/H1/description deliberately
     // shifted from generic "Review" to bonus-targeted intent so this page no
     // longer competes with bonusreviewers.com/reviews/{slug} on "{brand} review".
     // Target query family: "{brand} bonus", "{brand} welcome offer", "{brand} free spins".
-    title: `${casino.name} Bonus 2026 — Welcome Offer, Free Spins & Bonus Terms`,
-    description: `Every active ${casino.name} bonus in one place: ${casino.bonus} welcome offer at ${casino.wagering}x wagering, free spins, and the full bonus terms broken down by our team.`,
+    title,
+    description,
     alternates: { canonical: `https://www.bonuscout.com/reviews/${casino.slug}` }
   }
 }

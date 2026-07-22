@@ -26,4 +26,12 @@ export interface Casino {
   safetyIndex: 'high' | 'medium' | 'low'
   markets: string[]
   founded: number
+  // Per-slug SEO overrides. When set, generateMetadata uses them verbatim
+  // instead of the generic "Bonus 2026 — Welcome Offer" template. Populated
+  // for high-impression pages ranking 11-20 where a targeted title lifts CTR.
+  // EN fields consumed by (en)/reviews/[slug]/page.tsx; DE by de/bewertungen/[slug]/page.tsx.
+  seoTitle?: string
+  seoDescription?: string
+  seoTitleDe?: string
+  seoDescriptionDe?: string
 }

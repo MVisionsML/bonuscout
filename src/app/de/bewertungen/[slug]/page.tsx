@@ -11,6 +11,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const casino = casinos.find(c => c.slug === slug)
   if (!casino) return {}
+  // Per-slug DE seoTitleDe/seoDescriptionDe override the generic bonus-targeted
+  // template for high-impression pages where a targeted title lifts CTR
+  // (see 2026-07 GSC audit). Mirrors the EN seoTitle/seoDescription pattern.
+  const title = casino.seoTitleDe
+    ?? `${casino.name} Bonus 2026 — Willkommensangebot, Freispiele & Bonusbedingungen`
+  const description = casino.seoDescriptionDe
+    ?? `Jeder aktive ${casino.name} Bonus an einem Ort: ${casino.bonus} Willkommensangebot bei ${casino.wagering}x Umsatzbedingungen, Freispiele und die vollständigen Bonusbedingungen — von unserem Team aufgeschlüsselt.`
   // Hybrid-strategy metadata (2026-06-26): the DE side now mirrors the EN
   // C1 repositioning — bonuscout owns BONUS intent (welcome / no-deposit /
   // cashback / free spins) in both languages; bonusreviewers owns REVIEW /
@@ -23,8 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Target query family: "{brand} bonus", "{brand} willkommensbonus",
   // "{brand} freispiele", "{brand} bonus code", "{brand} bonusangebot".
   return {
-    title: `${casino.name} Bonus 2026 — Willkommensangebot, Freispiele & Bonusbedingungen`,
-    description: `Jeder aktive ${casino.name} Bonus an einem Ort: ${casino.bonus} Willkommensangebot bei ${casino.wagering}x Umsatzbedingungen, Freispiele und die vollständigen Bonusbedingungen — von unserem Team aufgeschlüsselt.`,
+    title,
+    description,
     alternates: {
       canonical: `https://www.bonuscout.com/de/bewertungen/${slug}`,
       // hreflang must point at the CANONICAL EN URL for each brand —
