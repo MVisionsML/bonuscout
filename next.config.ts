@@ -82,6 +82,22 @@ const nextConfig: NextConfig = {
       // Reverse pair: /articles/ rank > /reviews/ rank → /articles/ becomes canonical.
       { source: "/reviews/talismania",                 destination: "/articles/talismania-casino-review", permanent: true },
       { source: "/reviews/wonaco-casino",              destination: "/articles/wonaco-casino-review",     permanent: true },
+
+      // ── Cannibalization cleanup, phase 3 (2026-07-22) ────────────────────
+      // Cross-domain 301s to bonusreviewers.com for slugs where BR ranks
+      // materially better than the bonuscout equivalent — consolidates
+      // review authority on the site that owns review intent.
+      //
+      //   luckymax-casino: BR pos 10.3 (page 1) vs BC pos 29.6 (page 3)
+      //   luckymax-casino DE: BR pos 20.8 with 168 impr vs BC pos 13.9 with 8 impr (BR carries 21x the volume)
+      //   playio: BR pos 14.4 vs BC pos 20.0
+      //
+      // These are the only slugs where BR is clearly stronger. For all
+      // other cannibalized brand queries, bonuscout ranks better and we
+      // hold the URL (metadata already bonus-angled per phase-1 audit).
+      { source: "/reviews/luckymax-casino",            destination: "https://www.bonusreviewers.com/reviews/luckymax-casino",       permanent: true },
+      { source: "/reviews/playio",                     destination: "https://www.bonusreviewers.com/reviews/playio",                permanent: true },
+      { source: "/de/bewertungen/luckymax-casino",     destination: "https://www.bonusreviewers.com/de/reviews/luckymax-casino",    permanent: true },
     ]
   },
 }

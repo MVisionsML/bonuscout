@@ -8,7 +8,7 @@ export default function Header() {
   const nav = [
     { label: 'Online Casinos', href: '/casinos' },
     { label: 'Bonuses', href: '/bonuses' },
-    { label: 'Reviews', href: '/reviews' },
+    { label: 'Casinos', href: '/reviews' },
     { label: 'Guides', href: '/guides' },
     { label: 'How We Rate', href: '/how-we-rate' },
     { label: 'Free Games', href: '/free-games' },

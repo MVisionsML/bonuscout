@@ -8,7 +8,7 @@ export default function HeaderDe() {
   const nav = [
     { label: 'Online Casinos', href: '/de/casinos' },
     { label: 'Boni', href: '/de/boni' },
-    { label: 'Bewertungen', href: '/de/bewertungen' },
+    { label: 'Casinos', href: '/de/bewertungen' },
     { label: 'Gratis Spiele', href: '/de/gratis-spiele' },
     { label: 'Ratgeber', href: '/de/ratgeber' },
   ]
