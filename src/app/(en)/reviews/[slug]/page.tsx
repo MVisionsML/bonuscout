@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Metadata } from 'next'
-import { ReviewSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup'
+import { CasinoOrganizationSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -61,7 +61,7 @@ export default async function ReviewPage({ params }: Props) {
 
   return (
     <>
-      <ReviewSchema casino={casino} />
+      <CasinoOrganizationSchema casino={casino} />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://www.bonuscout.com' },
         { name: 'Reviews', url: 'https://www.bonuscout.com/reviews' },

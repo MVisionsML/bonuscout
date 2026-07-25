@@ -33,9 +33,7 @@ export default function GatesOfOlympusReview() {
       name: slot.name,
       url: `https://www.bonuscout.com/slots/${slot.slug}`,
       provider: slot.provider,
-      description: slot.shortDesc,
-      rating: slot.rating,
-      ratingMax: 10
+      description: slot.shortDesc
     }} />
     <BreadcrumbSchema items={[
       { name: 'Home', url: 'https://www.bonuscout.com' },

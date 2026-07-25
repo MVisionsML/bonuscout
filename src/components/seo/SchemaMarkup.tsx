@@ -1,44 +1,36 @@
-interface ReviewSchemaProps {
+// ── Substantiable schema policy (2026-07-25 Phase 0.1) ────────────────────
+// This module emits ONLY schema types that can be substantiated from public
+// data. No self-authored Review, no fabricated AggregateRating, no invalid
+// @type:'Casino'. Every optional field is emitted only when the source data
+// contains a real, verified value.
+
+interface CasinoOrganizationSchemaProps {
   casino: {
     name: string
-    slug: string
-    rating: number
-    ratingMax: number
-    bonus: string
     founded: number
-    licenses: string[]
+    homepage?: string
+    legalName?: string
+    licenseAuthority?: string
+    licenseNumber?: string
   }
 }
 
-export function ReviewSchema({ casino }: ReviewSchemaProps) {
-  const schema = {
+export function CasinoOrganizationSchema({ casino }: CasinoOrganizationSchemaProps) {
+  const schema: Record<string, unknown> = {
     '@context': 'https://schema.org',
-    '@type': 'Review',
-    name: `${casino.name} Casino Review`,
-    reviewRating: {
-      '@type': 'Rating',
-      ratingValue: casino.rating,
-      bestRating: casino.ratingMax,
-      worstRating: 0
-    },
-    author: {
-      '@type': 'Organization',
-      name: 'BonusScout',
-      url: 'https://www.bonuscout.com'
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'BonusScout',
-      url: 'https://www.bonuscout.com'
-    },
-    itemReviewed: {
-      '@type': 'Casino',
-      name: casino.name,
-      url: `https://www.bonuscout.com/reviews/${casino.slug}`,
-      description: `${casino.name} online casino — ${casino.bonus}`,
-      foundingDate: casino.founded.toString(),
-    },
-    reviewBody: `${casino.name} is reviewed by BonusScout. Rating: ${casino.rating}/${casino.ratingMax}. License: ${casino.licenses.join(', ')}.`
+    '@type': 'Organization',
+    name: casino.name,
+    foundingDate: casino.founded.toString(),
+  }
+  if (casino.homepage) schema.url = casino.homepage
+  if (casino.legalName) schema.legalName = casino.legalName
+  if (casino.licenseAuthority) {
+    const identifier: Record<string, string> = {
+      '@type': 'PropertyValue',
+      propertyID: `${casino.licenseAuthority} Gaming Licence`,
+    }
+    if (casino.licenseNumber) identifier.value = casino.licenseNumber
+    schema.identifier = identifier
   }
 
   return (
@@ -163,8 +155,6 @@ interface GameSchemaProps {
   url: string
   provider: string
   description: string
-  rating?: number
-  ratingMax?: number
 }
 
 export function GameSchema({ game }: { game: GameSchemaProps }) {
@@ -175,15 +165,6 @@ export function GameSchema({ game }: { game: GameSchemaProps }) {
     url: game.url,
     description: game.description,
     publisher: { '@type': 'Organization', name: game.provider }
-  }
-  if (game.rating !== undefined) {
-    schema.aggregateRating = {
-      '@type': 'AggregateRating',
-      ratingValue: game.rating,
-      bestRating: game.ratingMax || 10,
-      worstRating: 0,
-      ratingCount: 1
-    }
   }
 
   return (

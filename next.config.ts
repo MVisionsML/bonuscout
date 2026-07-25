@@ -83,26 +83,20 @@ const nextConfig: NextConfig = {
       { source: "/reviews/talismania",                 destination: "/articles/talismania-casino-review", permanent: true },
       { source: "/reviews/wonaco-casino",              destination: "/articles/wonaco-casino-review",     permanent: true },
 
-      // ── Cannibalization cleanup, phase 3 (2026-07-22) ────────────────────
-      // Cross-domain 301s to bonusreviewers.com for slugs where BR ranks
-      // materially better than the bonuscout equivalent — consolidates
-      // review authority on the site that owns review intent.
-      //
-      //   luckymax-casino: BR pos 10.3 (page 1) vs BC pos 29.6 (page 3)
-      //   luckymax-casino DE: BR pos 20.8 with 168 impr vs BC pos 13.9 with 8 impr (BR carries 21x the volume)
-      //   playio: BR pos 14.4 vs BC pos 20.0
-      //
-      // These are the only slugs where BR is clearly stronger. For all
-      // other cannibalized brand queries, bonuscout ranks better and we
-      // hold the URL (metadata already bonus-angled per phase-1 audit).
-      { source: "/reviews/luckymax-casino",            destination: "https://www.bonusreviewers.com/reviews/luckymax-casino",       permanent: true },
-      { source: "/reviews/playio",                     destination: "https://www.bonusreviewers.com/reviews/playio",                permanent: true },
-      { source: "/de/bewertungen/luckymax-casino",     destination: "https://www.bonusreviewers.com/de/reviews/luckymax-casino",    permanent: true },
+      // ── Cannibalization cleanup, phase 3 REVERSED (2026-07-25) ───────────
+      // The three cross-domain 301s that used to send /reviews/luckymax-casino,
+      // /reviews/playio, and /de/bewertungen/luckymax-casino to bonusreviewers
+      // have been REMOVED to honour the locked "three separate sites, no
+      // cross-domain 301s" policy. LuckyMax + Playio are once again independent
+      // bonuscout review pages with their own Organization schema. See the
+      // restored entries in src/data/casinos/index.ts.
 
-      // /luckymax-vs-jackpoty page deleted (2026-07-22) because it hard-referenced
-      // the luckymax slug we just removed from the casinos array. Redirect to
-      // the surviving brand's page so any residual SERP or backlink traffic
-      // lands on relevant on-domain content.
+      // /luckymax-vs-jackpoty is an intra-site redirect (both URLs are on
+      // bonuscout.com) — it does NOT violate the no-cross-domain policy so
+      // it stays. The comparison page itself remains deleted; residual
+      // traffic still lands on-domain at /reviews/jackpoty. If the comparison
+      // page is restored in a separate change, remove this redirect at the
+      // same time.
       { source: "/luckymax-vs-jackpoty",               destination: "/reviews/jackpoty",                                            permanent: true },
     ]
   },

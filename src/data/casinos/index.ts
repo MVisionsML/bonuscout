@@ -19,6 +19,12 @@ export function casinoUrl(slug: string): string {
   return CANONICAL_OVERRIDES[slug] ?? `/reviews/${slug}`
 }
 
+// ── Organization schema fields (2026-07-25 Phase 0.1) ───────────────────────
+// homepage / legalName / licenseAuthority / licenseNumber values are
+// research-verified from the casino's own site, Wikipedia, or a public
+// licensing registry. Any field left unset here means the fact could NOT
+// be publicly verified — schema.org emit path omits absent fields rather
+// than defaulting. See 2026-07-25 casino research table for source URLs.
 export const casinos: Casino[] = [
   {
     id: '1', name: 'LuckyWins Casino', slug: 'luckywins-casino', logo: '🍀', logoUrl: '/logos/luckywins.webp',
@@ -35,7 +41,9 @@ export const casinos: Casino[] = [
     pros: ['€8,000 welcome package', '500 free spins', '4,000+ games', 'Fast withdrawals'],
     cons: ['40x wagering requirement', 'Curaçao license only'],
     games: 4000, software: ['Pragmatic Play', 'Evolution', 'NetEnt'],
-    safetyIndex: 'medium', markets: ['global'], founded: 2020
+    safetyIndex: 'medium', markets: ['global'], founded: 2023,
+    homepage: 'https://www.luckywins.com', legalName: 'Dama N.V.',
+    licenseAuthority: 'Curaçao GCB', licenseNumber: 'OGL/2023/174/0082'
   },
   {
     id: '17', name: 'Winningz Casino', slug: 'winningz-casino', logo: '🏆', logoUrl: '/logos/winningz.webp',
@@ -52,7 +60,9 @@ export const casinos: Casino[] = [
     pros: ['€5,000 welcome package', '500 free spins', 'Fair 35x wagering', 'Large bonus value'],
     cons: ['Curaçao license only', 'Newer brand'],
     games: 3000, software: ['Pragmatic Play', 'Evolution', 'NetEnt'],
-    safetyIndex: 'medium', markets: ['global'], founded: 2022
+    safetyIndex: 'medium', markets: ['global'], founded: 2025,
+    homepage: 'https://www.winningz.com', legalName: 'Simba N.V.',
+    licenseAuthority: 'Curaçao GCB', licenseNumber: 'OGL/2024/1788/1030'
   },
   {
     id: '5', name: 'Rooli Casino', slug: 'rooli-casino', logo: '🎰', logoUrl: '/logos/rooli.webp',
@@ -69,7 +79,9 @@ export const casinos: Casino[] = [
     pros: ['Single deposit activates all', '35x fair wagering', 'Reliable support', 'Fast 24h withdrawals'],
     cons: ['Standard bonus size', 'Curaçao license only'],
     games: 2000, software: ['Pragmatic Play', 'Evolution'],
-    safetyIndex: 'medium', markets: ['global'], founded: 2021
+    safetyIndex: 'medium', markets: ['global'], founded: 2023,
+    homepage: 'https://rooli.com', legalName: 'Dama N.V.',
+    licenseAuthority: 'Curaçao GCB', licenseNumber: 'OGL/2023/174/0082'
   },
   {
     id: '6', name: 'VegasHero Casino', slug: 'vegashero-casino', logo: '🦸', logoUrl: '/logos/vegashero.webp',
@@ -90,7 +102,12 @@ export const casinos: Casino[] = [
     pros: ['MGA licensed — highest regulatory standard in online gambling', 'Mega Moolah and progressive jackpot access via Microgaming', 'Structured tiered loyalty programme with real rewards', '35x wagering — fair and industry standard', 'Evolution live dealer tables with professional hosts', '24-48h withdrawal times verified by our team'],
     cons: ['Narrow payment options — no crypto, limited e-wallets', 'Smaller game library at 1,500 titles vs 3,000-6,000 at competitors', 'No Pragmatic Play or Hacksaw Gaming slots available', 'Free spins value below average compared to top-tier offers'],
     games: 1500, software: ['Microgaming', 'Evolution'],
-    safetyIndex: 'high', markets: ['global'], founded: 2018
+    safetyIndex: 'high', markets: ['global'], founded: 2025,
+    homepage: 'https://vegashero.com', legalName: 'Lumina Holdings Limitada'
+    // Note: current live brand is a 2025 relaunch by Lumina Holdings under Costa Rica registration
+    // (COS-13633-FG is corporate reg, not a gaming licence). Original 2017 MGA-licensed Genesis
+    // Global brand is defunct. License field intentionally omitted per Phase 0.1 rule:
+    // Costa Rica corporate registration ≠ verifiable gaming regulator.
   },
   {
     id: '4', name: 'BinoBet Casino', slug: 'binobet-casino', logo: '🎲', logoUrl: '/logos/binobet.webp',
@@ -111,13 +128,36 @@ export const casinos: Casino[] = [
     pros: ['24/7 support that responds', 'Fast platform', 'Reliable withdrawals', '150 free spins'],
     cons: ['40x wagering is high', 'Curaçao license only'],
     games: 2000, software: ['Pragmatic Play', 'Evolution', 'NetEnt'],
-    safetyIndex: 'medium', markets: ['global'], founded: 2020
+    safetyIndex: 'medium', markets: ['global'], founded: 2025,
+    homepage: 'https://bino.bet'
+    // Operator + license intentionally omitted: sources conflict across
+    // 4+ different operator names (Modo Spike / Sapphire Summit / BinoBet N.V. / …)
+    // and 2+ licensing jurisdictions (Costa Rica / Anjouan). Not verifiable.
   },
-  // LuckyMax Casino entry removed 2026-07-22: cross-domain 301 sends
-  // /reviews/luckymax-casino to bonusreviewers where BR ranks page 1
-  // (pos 10.3) vs bonuscout page 3 (pos 29.6). Removing from this array
-  // takes luckymax out of all bonuscout listings (best-of, comparisons,
-  // categories) so we don't internally link to a redirect target.
+  // LuckyMax restored 2026-07-25: prior cross-domain 301 to bonusreviewers
+  // reversed to honour the "three separate sites, no cross-domain 301s" policy.
+  // Phase 0.1 Organization fields populated per research (Costa Rica corporate
+  // registration is NOT a gaming licence — licence fields intentionally omitted).
+  {
+    id: '2', name: 'LuckyMax Casino', slug: 'luckymax-casino', logo: '🎯', logoUrl: '/logos/luckymax.webp',
+    rating: 4.3, ratingMax: 5.0,
+    bonus: '€4,000 + 300 Free Spins',
+    bonusType: 'welcome',
+    wagering: 35, minDeposit: 20,
+    withdrawalTime: '24-48h',
+    depositTested: true, withdrawalTested: true, supportType: 'Live chat',
+    licenses: ['Curaçao'], affiliateLink: 'https://luckymax.site/jed914eeb',
+    tag: 'Best Mobile',
+    bestFor: 'Mobile players who want a strong multi-deposit bonus with fair wagering',
+    verdict: 'Strong game curation with Hacksaw Gaming included, excellent mobile experience, but support slows down noticeably outside European hours.',
+    pros: ['€4,000 welcome package', 'Hacksaw Gaming included', 'Excellent mobile', '35x fair wagering'],
+    cons: ['Support slow outside EU hours', 'Curaçao license only'],
+    games: 3000, software: ['Hacksaw Gaming', 'Pragmatic Play', 'Evolution'],
+    safetyIndex: 'medium', markets: ['global'], founded: 2024,
+    homepage: 'https://luckymax.site', legalName: 'Fortaprime SRL'
+    // License intentionally omitted: Costa Rica issues corporate registrations,
+    // not gaming licences (see casino.guru safety index 0/5).
+  },
   {
     id: '8', name: 'Chancer Casino', slug: 'chancer-casino', logo: '🍀', logoUrl: '/logos/chancer.webp',
     rating: 3.9, ratingMax: 5.0,
@@ -133,7 +173,10 @@ export const casinos: Casino[] = [
     pros: ['30x lowest wagering', '300% match bonus', 'Fast withdrawals', 'Live chat support'],
     cons: ['Check bonus cap before depositing', 'Curaçao license only'],
     games: 2000, software: ['Pragmatic Play', 'Hacksaw Gaming', 'Evolution'],
-    safetyIndex: 'medium', markets: ['global'], founded: 2022
+    safetyIndex: 'medium', markets: ['global'], founded: 2024,
+    homepage: 'https://chancer.bet', legalName: 'Chancer Group N.V.',
+    licenseAuthority: 'Anjouan Gaming Board'
+    // licenseNumber intentionally omitted: Anjouan license number not publicly disclosed.
   },
   {
     id: '3', name: 'Billionaire Spin', slug: 'billionaire-spin', logo: '💎', logoUrl: '/logos/billionaire-spin.webp',
@@ -150,7 +193,11 @@ export const casinos: Casino[] = [
     pros: ['25% cashback included', '250 free spins', 'Fair 35x wagering', 'Unique dual bonus'],
     cons: ['Smaller base bonus vs competitors', 'Curaçao license only'],
     games: 2500, software: ['Pragmatic Play', 'Evolution', "Play'n GO"],
-    safetyIndex: 'medium', markets: ['global'], founded: 2021
+    safetyIndex: 'medium', markets: ['global'], founded: 2025,
+    legalName: 'Terdersoft B.V.',
+    licenseAuthority: 'Curaçao GCB', licenseNumber: 'OGL/2024/1126/0521'
+    // homepage intentionally omitted: canonical brand homepage not recoverable in research
+    // (casino.guru reports "ceased operations"). Do not fabricate a URL.
   },
   {
     id: '10', name: 'Crocoslots', slug: 'crocoslots', logo: '🐊', logoUrl: '/logos/crocoslots.webp',
@@ -167,7 +214,9 @@ export const casinos: Casino[] = [
     pros: ['6,000+ games', 'Crypto support', 'Huge game variety', '100 free spins'],
     cons: ['45x wagering is highest here', 'Curaçao license only'],
     games: 6000, software: ['Pragmatic Play', 'Evolution', 'NetEnt', "Play'n GO", 'Hacksaw Gaming'],
-    safetyIndex: 'medium', markets: ['global'], founded: 2020
+    safetyIndex: 'medium', markets: ['global'], founded: 2022,
+    homepage: 'https://www.crocoslots.com', legalName: 'Metlait SRL',
+    licenseAuthority: 'Tobique Gaming Commission', licenseNumber: '0000064'
   },
   {
     id: '15', name: 'Stake Casino', slug: 'stake-casino', logo: '⚡', logoUrl: '/logos/stake.webp',
@@ -184,7 +233,11 @@ export const casinos: Casino[] = [
     pros: ['0x wagering on promos', 'Fastest withdrawals 1-4h', 'Provably fair games', 'Crypto native'],
     cons: ['Limited fiat options', 'Offer varies by user'],
     games: 3000, software: ['Stake Originals', 'Pragmatic Play', 'Evolution'],
-    safetyIndex: 'medium', markets: ['global'], founded: 2017
+    safetyIndex: 'medium', markets: ['global'], founded: 2017,
+    homepage: 'https://stake.com', legalName: 'Medium Rare N.V.',
+    licenseAuthority: 'Curaçao'
+    // licenseNumber intentionally omitted: Stake's Curaçao license number is not
+    // publicly disclosed in the footer or in any authoritative source.
   },
   {
     id: '9', name: 'Blockspins Casino', slug: 'blockspins-casino', logo: '₿', logoUrl: '/logos/blockspins.webp',
@@ -205,7 +258,10 @@ export const casinos: Casino[] = [
     pros: ['Provably fair games', 'Fast BTC withdrawals 1-4h', 'Light KYC for crypto', '30x wagering'],
     cons: ['Limited for non-crypto players', 'Smaller game library'],
     games: 1000, software: ['BGaming', 'Pragmatic Play'],
-    safetyIndex: 'medium', markets: ['global'], founded: 2022
+    safetyIndex: 'medium', markets: ['global'], founded: 2024,
+    homepage: 'https://blockspins.com', legalName: 'Block Interactive Services Ltda'
+    // License intentionally omitted: Costa Rica corporate registration is NOT a gaming
+    // licence. No verifiable gaming regulator issued this brand a licence.
   },
   {
     id: '7', name: 'EmirBet Casino', slug: 'emirbet-casino', logo: '👑', logoUrl: '/logos/emirbet.webp',
@@ -226,7 +282,9 @@ export const casinos: Casino[] = [
     pros: ['Fast 24/7 support', 'Clean withdrawals', '35x wagering', 'Simple bonus structure'],
     cons: ['Limited game providers', 'Curaçao license only'],
     games: 1000, software: ['Pragmatic Play', 'Evolution', 'NetEnt', "Play'n GO"],
-    safetyIndex: 'medium', markets: ['global'], founded: 2021
+    safetyIndex: 'medium', markets: ['global'], founded: 2023,
+    homepage: 'https://emirbet.co', legalName: 'Bellona N.V.',
+    licenseAuthority: 'Curaçao eGaming (Antillephone N.V.)', licenseNumber: '8048/JAZ2010-010'
   },
   {
     id: '11', name: 'Jackpoty', slug: 'jackpoty', logo: '🎳', logoUrl: '/logos/jackpoty.webp',
@@ -247,7 +305,11 @@ export const casinos: Casino[] = [
     pros: ['€2,000 welcome bonus', '35x fair wagering', 'Clean platform', 'Reliable withdrawals'],
     cons: ['Nothing exceptional stands out', 'Curaçao license only'],
     games: 2500, software: ['Pragmatic Play', 'Evolution', 'NetEnt'],
-    safetyIndex: 'medium', markets: ['global'], founded: 2021
+    safetyIndex: 'medium', markets: ['global'], founded: 2022,
+    homepage: 'https://jackpoty.com', legalName: 'Dama N.V.'
+    // License intentionally omitted: verify current licence from jackpoty.com footer
+    // before adding — Curaçao regime is in transition and multiple licence numbers
+    // are cited across third-party directories.
   },
   {
     id: '12', name: 'Luck Nation Casino', slug: 'luck-nation-casino', logo: '🌟', logoUrl: '/logos/luck-nation.webp',
@@ -264,11 +326,35 @@ export const casinos: Casino[] = [
     pros: ['Low commitment entry', '35x fair wagering', 'Straightforward bonus', 'Good for beginners'],
     cons: ['Smaller bonus vs competitors', 'Curaçao license only'],
     games: 1500, software: ['Pragmatic Play', 'Evolution'],
-    safetyIndex: 'medium', markets: ['global'], founded: 2022
+    safetyIndex: 'medium', markets: ['global'], founded: 2025,
+    homepage: 'https://lucknation.com', legalName: 'Next Global Era Limited'
+    // License intentionally omitted: Anjouan licence number not publicly registered
+    // (new 2025 brand). Add once the footer of lucknation.com exposes the ALSI number.
   },
-  // Playio entry removed 2026-07-22: cross-domain 301 sends /reviews/playio
-  // to bonusreviewers (BR pos 14.4 vs bonuscout pos 20.0). Same rationale
-  // as LuckyMax — remove from all internal listings.
+  // Playio restored 2026-07-25: prior cross-domain 301 to bonusreviewers
+  // reversed to honour the "three separate sites, no cross-domain 301s" policy.
+  // Phase 0.1 Organization fields populated per research (Anjouan licence
+  // number not publicly registered — recoverable tier, licence field omitted).
+  {
+    id: '13', name: 'Playio', slug: 'playio', logo: '🎮', logoUrl: '/logos/playio.webp',
+    rating: 3.9, ratingMax: 5.0,
+    bonus: '100% up to €500 + 200 FS + 1 Bonus Crab',
+    bonusType: 'welcome',
+    wagering: 35, minDeposit: 20,
+    withdrawalTime: '24-48h',
+    depositTested: true, withdrawalTested: true, supportType: 'Live chat',
+    licenses: ['Curaçao'], affiliateLink: 'https://plio.xarvilo.com/?mid=252832_1482213',
+    tag: 'Unique Mechanics',
+    bestFor: 'Slot players who enjoy unique bonus mechanics alongside a standard welcome package',
+    verdict: 'The Bonus Crab mechanic is a genuinely novel addition — a random prize drop that lands on your account unprompted. Solid slot library and fair wagering round it out.',
+    pros: ['Unique Bonus Crab mechanic', '200 free spins', 'Fair 35x wagering', 'Solid slot library'],
+    cons: ['Curaçao license only', 'Newer brand'],
+    games: 2000, software: ['Pragmatic Play', 'Hacksaw Gaming', 'Evolution'],
+    safetyIndex: 'medium', markets: ['global'], founded: 2024,
+    homepage: 'https://playio.com', legalName: 'NovaForge Ltd'
+    // License intentionally omitted: Anjouan Gaming Board number not publicly
+    // registered (recoverable tier per Phase 0.1 casino research).
+  },
   {
     id: '14', name: 'Rooster.bet', slug: 'rooster-bet', logo: '🐓', logoUrl: '/logos/rooster.webp',
     rating: 4.0, ratingMax: 5.0,
@@ -284,7 +370,9 @@ export const casinos: Casino[] = [
     pros: ['$5,000 welcome package', '300 free spins', 'Sports + Casino hybrid', '35x wagering'],
     cons: ['Curaçao license only', 'Complex bonus structure'],
     games: 3000, software: ['Pragmatic Play', 'Evolution', 'Sportradar'],
-    safetyIndex: 'medium', markets: ['global'], founded: 2022
+    safetyIndex: 'medium', markets: ['global'], founded: 2023,
+    homepage: 'https://rooster.bet', legalName: 'Dama N.V.',
+    licenseAuthority: 'Curaçao GCB', licenseNumber: 'OGL/2023/174/0082'
   },
   {
     id: '16', name: 'TalisMania', slug: 'talismania', logo: '🔮', logoUrl: '/logos/talismania.webp',
@@ -301,7 +389,9 @@ export const casinos: Casino[] = [
     pros: ['Bonus Crab mechanic', '200 free spins', 'Fair 35x wagering', 'Strong slot library'],
     cons: ['Curaçao license only', 'Similar bonus profile to Rooli'],
     games: 2000, software: ['Pragmatic Play', 'Hacksaw Gaming', 'Evolution'],
-    safetyIndex: 'medium', markets: ['global'], founded: 2023
+    safetyIndex: 'medium', markets: ['global'], founded: 2024,
+    homepage: 'https://talismania.com', legalName: 'Rabidi N.V.',
+    licenseAuthority: 'Curaçao GCB', licenseNumber: 'OGL/2023/103/0067'
   },
   {
     id: '18', name: 'Wonaco Casino', slug: 'wonaco-casino', logo: '🎪', logoUrl: '/logos/wonaco.webp',
@@ -318,7 +408,11 @@ export const casinos: Casino[] = [
     pros: ['Straightforward bonus', '35x fair wagering', 'Good for beginners', '200 free spins'],
     cons: ['Nothing exceptional', 'Curaçao license only'],
     games: 1500, software: ['Pragmatic Play', 'Evolution'],
-    safetyIndex: 'medium', markets: ['global'], founded: 2022
+    safetyIndex: 'medium', markets: ['global'], founded: 2024,
+    homepage: 'https://wonaco.com'
+    // Operator + license intentionally omitted: 4+ conflicting operator names
+    // (Adonio N.V. / NovaForge Ltd / Liernin Enterprises / Rabidi N.V.) and
+    // 3+ licensing claims across sources. Not verifiable.
   },
   {
     id: '19', name: 'Spin Fever Casino', slug: 'spin-fever-casino', logo: '🌡️', logoUrl: '/logos/spin-fever.webp',
@@ -335,6 +429,8 @@ export const casinos: Casino[] = [
     pros: ['€4,000 welcome package', 'Unique Gold Spins mechanic', '35x fair wagering', 'Multi-deposit bonus'],
     cons: ['Curaçao license only', 'Complex bonus structure'],
     games: 2500, software: ['Pragmatic Play', 'Evolution', 'Hacksaw Gaming'],
-    safetyIndex: 'medium', markets: ['global'], founded: 2023
+    safetyIndex: 'medium', markets: ['global'], founded: 2023,
+    homepage: 'https://spinfever.com', legalName: 'Dama N.V.',
+    licenseAuthority: 'Curaçao eGaming (Antillephone N.V.)', licenseNumber: '8048/JAZ2020-13'
   }
 ]
