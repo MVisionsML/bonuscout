@@ -20,7 +20,7 @@ const faqs = [
   { q: 'What are money symbols in Big Bass Bonanza?', a: 'Money symbols are fish-shaped icons displaying random cash values from 2x to 200x your bet. They only have value during free spins, when fisherman wilds can collect them. In the base game, they appear but pay nothing — they are placeholders for bonus activity.' },
   { q: 'How do you trigger free spins on Big Bass Bonanza?', a: 'Landing 3 scatters (fishing-rod symbols) anywhere awards 10 free spins. 4 scatters award 15 free spins, 5 scatters award 20 free spins. The bonus retriggers when 3+ scatters land during the free spins themselves, with retrigger spin counts scaling identically.' },
   { q: 'Are there persistent multipliers in free spins?', a: 'Yes. In the standard 10-spin trigger, no persistent multiplier is active. In the 15-spin trigger (4 scatters), a x2 multiplier applies to all wins. In the 20-spin trigger (5 scatters), a x3 multiplier applies. The scaling rewards rare 5-scatter triggers significantly.' },
-  { q: 'Can you buy the bonus directly?', a: 'Yes. The bonus buy costs 100x your current bet and grants the standard 10-spin entry. RTP with bonus buy is 96.71%, unchanged from base. The buy averages 90–110x returns across thousands of tested entries — slightly positive but high variance.' },
+  { q: 'Can you buy the bonus directly?', a: 'Yes. The bonus buy costs 100x your current bet and grants the standard 10-spin entry. RTP with bonus buy is 96.71%, unchanged from base — expected return per €1 spent averages around €0.97 over the long run. Individual bonus outcomes are high-variance: most single buys lose, occasional ones exceed the cost significantly.' },
 ]
 
 const topCasinos = casinos.filter(c => c.software.includes(slot.provider)).sort((a, b) => b.rating - a.rating).slice(0, 5)
@@ -107,7 +107,7 @@ export default function BigBassReview() {
 
         <div className="mb-2">
           <h3 className="text-white font-black mb-2">Bonus Buy</h3>
-          <p className="text-gray-400 text-sm leading-relaxed">Available at 100x your current bet for the standard 10-spin entry. RTP remains 96.71% with bonus buy active. Note that the buy only grants the entry-level trigger — you cannot purchase the higher-multiplier 4-scatter or 5-scatter versions directly. Across thousands of tested buys, average returns sit at 95–105x stake spent, making the buy modestly EV-positive but high variance. Players who specifically want extended runs at higher multipliers must trigger naturally through scatter landing.</p>
+          <p className="text-gray-400 text-sm leading-relaxed">Available at 100x your current bet for the standard 10-spin entry. RTP remains 96.71% with bonus buy active — expected long-run return per €1 spent is around €0.97, matching the base game. Note that the buy only grants the entry-level trigger — you cannot purchase the higher-multiplier 4-scatter or 5-scatter versions directly. Individual buy outcomes are high-variance. Players who specifically want extended runs at higher multipliers must trigger naturally through scatter landing.</p>
         </div>
       </div>
 

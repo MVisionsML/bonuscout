@@ -58,7 +58,7 @@ export default function FastWithdrawalCasinosPage() {
         <div className="space-y-3">
           {fast.length === 0 && (
             <div className="bg-[#161820] border border-[#252830] rounded-xl p-6 text-gray-400 text-sm">
-              We don&apos;t have any operators currently clearing under 24 hours in our test set. Check{' '}
+              We don&apos;t have any operators currently publishing sub-24-hour withdrawal windows in our index. Check{' '}
               <Link href="/casinos" className="text-[#F5A623] hover:underline">all rated casinos</Link>.
             </div>
           )}

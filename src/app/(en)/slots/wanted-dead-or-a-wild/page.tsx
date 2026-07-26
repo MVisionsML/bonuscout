@@ -97,7 +97,7 @@ export default function WantedReview() {
 
         <div className="mb-6">
           <h3 className="text-white font-black mb-2">Mode 2 — Dead (6 free spins, sticky multiplier wilds)</h3>
-          <p className="text-gray-400 text-sm leading-relaxed">The mid-volatility option. 6 free spins with sticky multiplier wilds. Every wild landing on the reels carries a multiplier value from x2 to x10 and remains in position for the rest of the bonus round. Multiplier wilds combine multiplicatively: two wilds with x3 and x4 multipliers on the same payline result in a x12 multiplier on that win. The 6-spin window is short, which keeps variance manageable while delivering meaningful multiplier scaling. Dead mode is the statistical sweet spot for most players — it averages slightly above 100x return on its 80x Feature Buy cost across thousands of tested entries.</p>
+          <p className="text-gray-400 text-sm leading-relaxed">The mid-volatility option. 6 free spins with sticky multiplier wilds. Every wild landing on the reels carries a multiplier value from x2 to x10 and remains in position for the rest of the bonus round. Multiplier wilds combine multiplicatively: two wilds with x3 and x4 multipliers on the same payline result in a x12 multiplier on that win. The 6-spin window is short, which keeps variance manageable while delivering meaningful multiplier scaling. Dead mode is the statistical sweet spot for most players — the published RTP of 96.38% on its 80x Feature Buy cost places the expected long-run return above the cost, though individual buys vary widely.</p>
         </div>
 
         <div className="mb-6">

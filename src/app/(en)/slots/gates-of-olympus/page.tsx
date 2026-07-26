@@ -92,7 +92,7 @@ export default function GatesOfOlympusReview() {
 
         <div className="mb-6">
           <h3 className="text-white font-black mb-2">Tumbling Reels</h3>
-          <p className="text-gray-400 text-sm leading-relaxed">The core mechanic. Every win triggers a tumble: winning symbols are removed, and new ones drop from above. The tumble continues as long as new wins form. In our testing across 1,200 base-game spins, the longest tumble chain we recorded ran to 8 consecutive wins, yielding a single-spin payout of 280x stake. Tumbling reels effectively turn each spin into a mini-sequence — a 70% hit rate at the spin level translates to a much lower 25–30% hit rate at the tumble-chain level, but with significantly larger average wins per hit.</p>
+          <p className="text-gray-400 text-sm leading-relaxed">The core mechanic. Every win triggers a tumble: winning symbols are removed, and new ones drop from above. The tumble continues as long as new wins form. Extended tumble chains of 6–8 consecutive wins are mathematically possible per the published RTP model, though rare in practice. Tumbling reels effectively turn each spin into a mini-sequence — a nominal 70% hit rate at the spin level typically translates to a lower 25–30% hit rate at the tumble-chain level, but with significantly larger average wins per hit.</p>
         </div>
 
         <div className="mb-6">

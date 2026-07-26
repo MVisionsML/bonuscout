@@ -132,7 +132,7 @@ export default function HeroSection() {
 
           {/* Subtitle */}
           <p className="text-[11px] sm:text-xs uppercase tracking-[0.25em] text-gray-500 mb-6 max-w-lg">
-            Best casino bonuses · Tested before we rank them
+            Best casino bonuses · Evaluated against our published criteria
           </p>
 
           {/* Buttons */}

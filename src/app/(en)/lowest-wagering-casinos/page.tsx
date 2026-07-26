@@ -5,7 +5,7 @@ import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Lowest Wagering Casinos 2026 — 30x and Under',
-  description: 'Find casinos with the lowest wagering requirements in 2026. We rank every casino by wagering — from 0x to 30x. All tested by our team.',
+  description: 'Find casinos with the lowest wagering requirements in 2026. We rank every casino by wagering — from 0x to 30x. Evaluated against our published criteria.',
   alternates: { canonical: 'https://www.bonuscout.com/lowest-wagering-casinos' }
 }
 

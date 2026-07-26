@@ -19,7 +19,7 @@ const faqs = [
 ]
 
 const steps = [
-  { num: '01', title: 'Choose a verified casino', desc: 'Pick a casino from our list. Every casino here has been tested by our team — we verify the no deposit offer is still active before listing it.' },
+  { num: '01', title: 'Choose a verified casino', desc: 'Pick a casino from our list. Every casino here has a verified licence and current bonus terms recorded from the operator\'s own cashier page.' },
   { num: '02', title: 'Click "Claim" and register', desc: 'Use our link to visit the casino and create an account. Use your real details — casinos verify identity before processing withdrawals. Fake information will get your account closed.' },
   { num: '03', title: 'Verify your email', desc: 'Most casinos send a confirmation email immediately after registration. Click the link to activate your account. Some casinos require phone verification too.' },
   { num: '04', title: 'Enter a bonus code if required', desc: 'Some casinos credit the bonus automatically. Others require you to enter a code in the cashier or promotions section. Check the specific offer terms — our listings note when a code is needed.' },

@@ -23,7 +23,7 @@ export default function GuidesPage() {
         <span className="text-gray-300">Guides</span>
       </div>
       <h1 className="text-3xl md:text-4xl font-black text-white mb-3">Casino Bonus Guides</h1>
-      <p className="text-gray-400 mb-10">Everything you need to know about casino bonuses — written by our testing team.</p>
+      <p className="text-gray-400 mb-10">Everything you need to know about casino bonuses — written by the BonusCout editorial team.</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {guides.map(g => (
           <Link key={g.slug} href={`/guides/${g.slug}`}

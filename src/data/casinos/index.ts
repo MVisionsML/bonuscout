@@ -75,7 +75,7 @@ export const casinos: Casino[] = [
     licenses: ['Curaçao'], affiliateLink: 'https://rooli.live/n1ea538d9a',
     tag: 'Fair Wagering',
     bestFor: 'Players who want a single-deposit activation with fair 35x wagering',
-    verdict: 'No-frills reliability: one deposit activates everything, 35x wagering, and the support team picked up every time we tested.',
+    verdict: 'No-frills reliability: one deposit activates everything at fair 35x wagering, with live-chat support published as 24/7 by the operator.',
     pros: ['Single deposit activates all', '35x fair wagering', 'Reliable support', 'Fast 24h withdrawals'],
     cons: ['Standard bonus size', 'Curaçao license only'],
     games: 2000, software: ['Pragmatic Play', 'Evolution'],
@@ -112,7 +112,7 @@ export const casinos: Casino[] = [
   {
     id: '4', name: 'BinoBet Casino', slug: 'binobet-casino', logo: '🎲', logoUrl: '/logos/binobet.webp',
     seoTitle: 'BinoBet Casino Bonus 2026 — €1,500 + 150 Free Spins, 24/7 Support Tested',
-    seoDescription: 'BinoBet Casino bonus: €1,500 + 150 Free Spins at 40x wagering. 24/7 live chat verified fast in our test. Full bonus terms and claim guide.',
+    seoDescription: 'BinoBet Casino bonus: €1,500 + 150 Free Spins at 40x wagering. 24/7 live chat published by the operator. Full bonus terms and claim guide.',
     seoTitleDe: 'BinoBet Casino Bonus 2026 — €1.500 + 150 Freispiele, 24/7 Support getestet',
     seoDescriptionDe: 'BinoBet Casino Bonus: €1.500 + 150 Freispiele bei 40-fachem Umsatz. 24/7-Livechat im Test schnell verifiziert. Komplette Bonusbedingungen und Anleitung.',
     rating: 4.1, ratingMax: 5.0,

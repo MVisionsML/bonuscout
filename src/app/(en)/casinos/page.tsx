@@ -22,7 +22,7 @@ export default function CasinosPage() {
           Best Online Casinos 2026
         </h1>
         <p className="text-gray-400 max-w-2xl leading-relaxed">
-          Every casino below has been tested by our team. We deposit, withdraw, test support and read every line of the bonus terms before ranking.
+          Every casino below is evaluated against BonusCout&apos;s published criteria — licence verification, bonus terms, payment methods, game library and third-party reputation. We list operators we cannot monetise alongside those we can.
         </p>
       </div>
 
@@ -30,7 +30,7 @@ export default function CasinosPage() {
         <span className="text-[#F5A623] font-bold mt-0.5">✓</span>
         <p className="text-sm text-gray-400">
           <span className="text-white font-bold">Our rankings are not bought.</span>{' '}
-          No casino pays for position. Every rating reflects our own testing — including what casinos would rather we didn&apos;t mention.
+          No casino pays for position. Every rating reflects our published evaluation criteria — including scoring points casinos would rather we didn&apos;t highlight.
         </p>
       </div>
 

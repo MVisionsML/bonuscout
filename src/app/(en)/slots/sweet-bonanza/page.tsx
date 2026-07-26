@@ -92,7 +92,7 @@ export default function SweetBonanzaReview() {
 
         <div className="mb-6">
           <h3 className="text-white font-black mb-2">Tumble Mechanic</h3>
-          <p className="text-gray-400 text-sm leading-relaxed">Every winning combination triggers a tumble. The symbols clear, new ones drop, and the cycle repeats until no win lands. In 1,500 base-game spins of testing we recorded an average tumble chain of 2.4 wins, with the longest run hitting 11 consecutive tumbles for a single-spin payout of 410x stake. The tumble system is the foundation of the slot — it converts each spin into a sequence of micro-events rather than a single resolution, which keeps base-game engagement high even during multiplier-free stretches.</p>
+          <p className="text-gray-400 text-sm leading-relaxed">Every winning combination triggers a tumble. The symbols clear, new ones drop, and the cycle repeats until no win lands. Per the published math model, average tumble chains sit around 2–3 wins with occasional long runs of 8+ consecutive tumbles delivering headline single-spin payouts. The tumble system is the foundation of the slot — it converts each spin into a sequence of micro-events rather than a single resolution, which keeps base-game engagement high even during multiplier-free stretches.</p>
         </div>
 
         <div className="mb-6">
@@ -107,7 +107,7 @@ export default function SweetBonanzaReview() {
 
         <div className="mb-2">
           <h3 className="text-white font-black mb-2">Ante Bet and Bonus Buy</h3>
-          <p className="text-gray-400 text-sm leading-relaxed">Sweet Bonanza offers two ways to influence bonus access. The Ante Bet increases your stake by 25% per spin (so a €1 base becomes €1.25) and roughly doubles your scatter trigger probability. The Bonus Buy purchases free spins directly for 100x your current bet, with RTP unchanged at 96.48%. Bonus buy averages 70–95x in returns across thousands of tested entries — most individual buys lose, but the high-variance upside is what attracts dedicated buyers. The Ante Bet is mathematically neutral on RTP but reduces the average wait between bonus rounds, which suits players who dislike long unpaid stretches.</p>
+          <p className="text-gray-400 text-sm leading-relaxed">Sweet Bonanza offers two ways to influence bonus access. The Ante Bet increases your stake by 25% per spin (so a €1 base becomes €1.25) and roughly doubles your scatter trigger probability. The Bonus Buy purchases free spins directly for 100x your current bet, with RTP unchanged at 96.48% — expected long-run return per €1 spent is around €0.96. Most individual buys lose, but the high-variance upside is what attracts dedicated buyers. The Ante Bet is mathematically neutral on RTP but reduces the average wait between bonus rounds, which suits players who dislike long unpaid stretches.</p>
         </div>
       </div>
 

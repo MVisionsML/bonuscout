@@ -25,14 +25,15 @@ export default function EditorialPolicyPage() {
         <h2 className="font-black text-white text-lg mb-3">Editorial standards</h2>
         <div className="text-gray-400 text-sm leading-relaxed space-y-3">
           <p>
-            Every review and ranking on this site is based on first-hand testing by the BonusCout editorial team.
-            We deposit real money, request real withdrawals, read the full bonus terms, and contact live support before
-            assigning a score. Our exact scoring criteria are published on the{' '}
-            <Link href="/how-we-rate" className="text-[#F5A623] hover:underline">How We Rate</Link> page.
+            Every review and ranking on this site is based on documentary verification of publicly available operator information
+            — licence-number checks against regulator registers, bonus T&amp;C extraction from operator sites, cashier-page payment
+            methods, and cross-references against third-party reputation indices (casino.guru, AskGamblers). Our exact scoring
+            criteria are published on the{' '}
+            <Link href="/how-we-rate" className="text-[#F5A623] hover:underline">How We Evaluate Casinos</Link> page.
           </p>
           <p>
             We do not republish operator marketing copy. We do not run sponsored reviews. No casino can pay for a higher
-            position in our rankings. Rankings are reviewed monthly and individual reviews are re-tested at least annually.
+            position in our rankings. Rankings are reviewed monthly and individual reviews are re-verified at least annually.
           </p>
         </div>
       </section>
@@ -62,17 +63,17 @@ export default function EditorialPolicyPage() {
         <h2 className="font-black text-white text-lg mb-3">AI usage disclosure</h2>
         <div className="text-gray-400 text-sm leading-relaxed space-y-3">
           <p>
-            Some pages on BonusCout are drafted with the assistance of large-language-model tools. Where this happens:
+            AI drafting is used to structure and phrase editorial content on BonusCout. Where this happens:
           </p>
           <ul className="list-disc list-inside space-y-1 ml-2">
             <li>The draft is reviewed and edited by a human member of the editorial team before publication.</li>
-            <li>All factual claims — licence numbers, bonus terms, payment methods, withdrawal times — are verified against the operator&apos;s live website or licence register, not generated.</li>
+            <li>All factual claims — licence numbers, bonus terms, payment methods, published withdrawal windows — are verified against the operator&apos;s live website or licence register, not generated.</li>
             <li>AI is not used to invent test results, reviewer identities, or first-person experience claims.</li>
           </ul>
           <p>
-            We do not publish content presented as first-person casino testing that was not actually performed. If a section
-            of a page is descriptive rather than tested (e.g. provider history, game lore), it is treated as background context,
-            not a scored review claim.
+            All published claims must be traceable to publicly verifiable operator information or licence registers.
+            Where a section of a page is descriptive rather than an evaluation claim (e.g. provider history, game mechanics),
+            it is treated as background context, not a scored review claim.
           </p>
         </div>
       </section>
@@ -87,7 +88,7 @@ export default function EditorialPolicyPage() {
             material change is reported (licence change, terms change, ownership change, complaint cluster).
           </p>
           <p>
-            The &quot;last reviewed&quot; date on every review reflects the most recent first-hand testing pass, not a content edit.
+            The &quot;last reviewed&quot; date on every review reflects the most recent editorial verification pass, not a content edit.
           </p>
         </div>
       </section>

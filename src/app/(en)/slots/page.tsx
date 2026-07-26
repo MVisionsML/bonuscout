@@ -104,10 +104,10 @@ export default function SlotsIndexPage() {
       </div>
 
       <div className="bg-[#161820] border border-[#252830] rounded-2xl p-6 md:p-8 mb-10">
-        <h2 className="text-white font-black text-xl mb-4">How we review slots</h2>
+        <h2 className="text-white font-black text-xl mb-4">How we evaluate slots</h2>
         <div className="space-y-3 text-sm text-gray-400 leading-relaxed">
-          <p>Every slot in this list has been played by our team with real money — minimum 1,000 spins per title before publication. We verify the published RTP against game logs, classify volatility based on hit frequency and standard deviation of payouts, and test the bonus feature trigger rate across hundreds of free-spin entries.</p>
-          <p>Ratings are out of 10. We score on six axes: gameplay engagement, RTP fairness, bonus feature depth, max-win achievability, theme and audiovisual quality, and value of bonus-buy options where applicable. A 9+ rating means the slot we would actively recommend playing; 8.0–8.9 means strong title with one or two reservations; under 8.0 means decent but not a category leader.</p>
+          <p>Every slot in this list is evaluated on published specifications from the game studio and third-party review data: RTP percentage, volatility rating, hit frequency, feature trigger frequency and max-win ceiling. We do not perform first-party spin sampling; where readers want first-party test data, we recommend cross-referencing dedicated slot-testing sites (SlotCatalog, Casino Guru).</p>
+          <p>Ratings are out of 10 and reflect our editorial assessment based on the published data. We score on six axes: gameplay design, RTP fairness, bonus feature depth, max-win achievability, theme and audiovisual quality, and value of bonus-buy options where applicable. A 9+ rating is a category leader; 8.0–8.9 means a strong title with one or two reservations; under 8.0 means decent but not category-leading.</p>
         </div>
       </div>
 

@@ -54,7 +54,7 @@ export default async function ReviewPage({ params }: Props) {
   const faqs = [
     { q: `Is ${casino.name} legit and safe to play at?`, a: `Yes. ${casino.name} holds a license from ${casino.licenses.join(' and ')} and has been operating since ${casino.founded}. It uses SSL encryption and offers responsible gambling tools including deposit limits and self-exclusion.` },
     { q: `What is the ${casino.name} welcome bonus?`, a: `${casino.name} currently offers ${casino.bonus} for new players. The wagering requirement is ${casino.wagering}x and the minimum deposit to qualify is €${casino.minDeposit}. Always read the full terms before claiming.` },
-    { q: `How fast are ${casino.name} withdrawals?`, a: `${casino.name} processes withdrawals in ${casino.withdrawalTime}. ${casino.withdrawalTested ? 'Our team has personally tested and verified this withdrawal time.' : 'Our team is currently verifying withdrawal times.'} E-wallets are typically fastest.` },
+    { q: `How fast are ${casino.name} withdrawals?`, a: `${casino.name} publishes a ${casino.withdrawalTime} withdrawal window per its cashier terms. Actual timing varies by payment method and account verification status — e-wallets are typically fastest across the industry, cards and bank transfers slowest.` },
     { q: `What games are available at ${casino.name}?`, a: `${casino.name} offers ${casino.games.toLocaleString()}+ games from providers including ${casino.software.join(', ')}. The library includes slots, live dealer games, table games and more.` },
     { q: `What is the minimum deposit at ${casino.name}?`, a: `The minimum deposit at ${casino.name} is €${casino.minDeposit}. This is required to activate the welcome bonus. Multiple payment methods are accepted including credit cards, e-wallets and in some cases cryptocurrency.` },
   ]
@@ -161,7 +161,7 @@ export default async function ReviewPage({ params }: Props) {
             <h2 className="text-xl font-black text-white mb-4">{casino.name} — Overview</h2>
             <div className="prose prose-invert prose-sm max-w-none text-gray-400 leading-relaxed space-y-4">
               <p>{casino.name} is an online casino that has been operating since {casino.founded}, licensed by {casino.licenses.join(' and ')}. It offers a game library of {casino.games.toLocaleString()}+ titles from providers including {casino.software.join(', ')}.</p>
-              <p>Our team has personally tested {casino.name} by making real deposits, requesting real withdrawals, and contacting customer support at multiple times of day. Every score in this review reflects our direct experience — not marketing claims from the casino itself.</p>
+              <p>This review scores {casino.name} against BonusCout&apos;s published evaluation criteria — licence verification, bonus terms, payment methods, game library and third-party reputation. Every score is traceable to publicly verifiable operator information, not marketing claims.</p>
               <p>The current welcome offer is {casino.bonus}, with a {casino.wagering}x wagering requirement and a minimum deposit of €{casino.minDeposit}. This puts {casino.name} {casino.wagering <= 30 ? 'among the most competitive in terms of wagering' : casino.wagering <= 35 ? 'in line with the industry standard' : 'slightly above average for wagering requirements'} in our current comparison.</p>
             </div>
           </div>
@@ -213,7 +213,7 @@ export default async function ReviewPage({ params }: Props) {
               <div className="bg-[#0D0F14] rounded-lg p-4">
                 <div className="text-white font-black text-lg">{casino.withdrawalTime}</div>
                 <div className="text-xs text-gray-500">Withdrawal time</div>
-                {casino.withdrawalTested && <div className="text-green-400 text-xs mt-1">✓ Tested by our team</div>}
+                <div className="text-gray-500 text-xs mt-1">Per operator cashier terms</div>
               </div>
               <div className="bg-[#0D0F14] rounded-lg p-4">
                 <div className="text-white font-black text-lg">€{casino.minDeposit}</div>
@@ -221,7 +221,7 @@ export default async function ReviewPage({ params }: Props) {
               </div>
             </div>
             <div className="prose prose-invert prose-sm max-w-none text-gray-400 leading-relaxed space-y-3">
-              <p>{casino.withdrawalTested ? `Our team personally tested the withdrawal process at ${casino.name} and confirmed the ${casino.withdrawalTime} timeframe. We submitted a real withdrawal request and tracked it from submission to funds received.` : `The stated withdrawal timeframe at ${casino.name} is ${casino.withdrawalTime}. Our team is in the process of verifying this independently.`}</p>
+              <p>{casino.name} publishes a {casino.withdrawalTime} withdrawal window per its cashier terms. Actual timing varies by payment method and account verification status — e-wallets and crypto are typically fastest, cards and bank transfers slowest. For reader-verified timing data, cross-reference casino.guru or AskGamblers reports.</p>
               <p>Before your first withdrawal, {casino.name} will require identity verification (KYC) — typically a government-issued ID and proof of address. Complete this early to avoid delays when you want to withdraw.</p>
             </div>
           </div>

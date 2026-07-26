@@ -51,9 +51,9 @@ export default function HomePage() {
             Best Online Casino Bonuses &amp; Trusted Casino Reviews 2026
           </h1>
           <p className="text-gray-400 text-base leading-relaxed max-w-3xl">
-            BonusCout has tested <span className="text-white font-bold">{casinos.length} online casinos</span> using
-            real-money deposits, real withdrawal requests and timed support checks. Every ranking on this page
-            reflects what we found in testing — not what the casino paid for.
+            BonusCout evaluates <span className="text-white font-bold">{casinos.length} online casinos</span> against
+            published operator information — licence registers, bonus T&amp;Cs, cashier terms — and third-party reputation indices.
+            Every ranking on this page reflects our published evaluation criteria, not what the casino paid for.
           </p>
         </header>
 

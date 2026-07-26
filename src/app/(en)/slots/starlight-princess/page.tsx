@@ -92,7 +92,7 @@ export default function StarlightReview() {
 
         <div className="mb-6">
           <h3 className="text-white font-black mb-2">Tumbling Reels</h3>
-          <p className="text-gray-400 text-sm leading-relaxed">Identical mechanic to Gates of Olympus: winning symbols vanish and new ones tumble down to fill the gaps. The tumble continues until no new winning combinations form. Base-game tumble chains average 2.2 wins in our testing, slightly lower than Gates due to the absence of base-game multipliers driving extra value. The longest chain we recorded was 7 consecutive tumbles for a 240x stake payout — meaningful but not the four-figure runs that Gates can produce in the base game.</p>
+          <p className="text-gray-400 text-sm leading-relaxed">Identical mechanic to Gates of Olympus: winning symbols vanish and new ones tumble down to fill the gaps. The tumble continues until no new winning combinations form. Per the published math model, base-game tumble chains average around 2 wins — slightly lower than Gates due to the absence of base-game multipliers driving extra value. Extended runs of 5+ consecutive tumbles are possible but structurally rarer than Gates equivalents given the lower max-win ceiling.</p>
         </div>
 
         <div className="mb-6">
@@ -107,7 +107,7 @@ export default function StarlightReview() {
 
         <div className="mb-2">
           <h3 className="text-white font-black mb-2">Ante Bet and Bonus Buy</h3>
-          <p className="text-gray-400 text-sm leading-relaxed">The Ante Bet increases your stake by 25% and roughly doubles your scatter trigger frequency. RTP is unaffected. The Bonus Buy purchases free spins directly for 100x current bet, with RTP unchanged at 96.5%. Buy returns average 75–95x across thousands of tested entries — slightly negative on average but with the upside variance of the multiplier accumulation mechanic. Players who specifically prefer the position-restricted multiplier predictability often find Starlight Princess buys more satisfying than Gates of Olympus buys, even though the latter has higher peak payouts.</p>
+          <p className="text-gray-400 text-sm leading-relaxed">The Ante Bet increases your stake by 25% and roughly doubles your scatter trigger frequency. RTP is unaffected. The Bonus Buy purchases free spins directly for 100x current bet, with RTP unchanged at 96.5% — expected long-run return per €1 spent is around €0.97. Individual buy outcomes are high-variance and skew below the buy cost more often than above it, with the upside driven by the multiplier accumulation mechanic. Players who specifically prefer the position-restricted multiplier predictability often find Starlight Princess buys more satisfying than Gates of Olympus buys, even though the latter has higher peak payouts.</p>
         </div>
       </div>
 
