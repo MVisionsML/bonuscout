@@ -7,7 +7,7 @@ export default function FooterDe() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
           <div className="col-span-2 md:col-span-1">
             <span className="font-black text-white text-xl">Bonu<span className="text-[#F5A623]">$</span>cout<span className="text-gray-500 font-normal text-base">.com</span></span>
-            <p className="text-gray-500 text-xs leading-relaxed mt-3">Unabhängige Casino-Bonus-Tests. Wir testen jeden Bonus vor der Empfehlung.</p>
+            <p className="text-gray-500 text-xs leading-relaxed mt-3">Unabhängige Casino-Bonus-Bewertungen. Jeder Bonus wird aus den veröffentlichten AGB des Anbieters zusammengestellt, bevor wir ihn empfehlen.</p>
           </div>
           <div>
             <h4 className="text-white font-bold text-sm mb-4">Boni</h4>

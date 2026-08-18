@@ -11,7 +11,7 @@ export default function Footer() {
               <span className="font-black text-white text-xl">Bonu<span className="text-[#F5A623]">$</span>cout<span className="text-gray-500 font-normal text-base">.com</span></span>
             </div>
             <p className="text-gray-500 text-xs leading-relaxed">
-              Independent casino bonus reviews. We test every bonus before we recommend it.
+              Independent casino bonus reviews. Every bonus is compiled from the operator&apos;s published Terms &amp; Conditions before we recommend it.
             </p>
           </div>
 

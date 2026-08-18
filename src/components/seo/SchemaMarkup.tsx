@@ -47,7 +47,7 @@ export function WebsiteSchema() {
     '@type': 'WebSite',
     name: 'BonusCout',
     url: 'https://www.bonuscout.com',
-    description: 'Independent casino bonus reviews. We test every bonus before we recommend it.',
+    description: 'Independent casino bonus reviews. Every bonus is compiled from the operator\'s published Terms & Conditions before we recommend it.',
     publisher: {
       '@type': 'Organization',
       name: 'BonusCout',

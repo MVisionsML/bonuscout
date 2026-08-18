@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: 'BonusCout — Best Casino Bonuses & Reviews 2026',
     template: '%s | BonusCout'
   },
-  description: 'Independent casino bonus reviews. We test every bonus before we recommend it.',
+  description: 'Independent casino bonus reviews. Every bonus is compiled from the operator&apos;s published Terms & Conditions before we recommend it.',
   robots: { index: true, follow: true }
 }
 

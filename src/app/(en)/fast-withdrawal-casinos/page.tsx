@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Fast Withdrawal Casinos 2026 — Pay Out in Under 24 Hours | BonusCout',
-  description: 'Online casinos that actually pay out fast. We submit real withdrawals and time them from request to funds received — only operators clearing within 24 hours make the list.',
+  description: 'Online casinos with the fastest published withdrawal windows. Compiled from each operator&apos;s current cashier page — only operators publishing 24-hour clearance on at least one major payment method make the list.',
 }
 
 // Parse the human-written withdrawalTime string into a "max hours" number so we
@@ -45,9 +45,9 @@ export default function FastWithdrawalCasinosPage() {
       <div className="bg-[#161820] border border-[#F5A623]/20 rounded-xl p-5 mb-10">
         <p className="text-sm text-gray-400">
           <span className="text-white font-bold">How &quot;fast&quot; is defined here.</span>{' '}
-          We submit a real withdrawal of a small balance from a fully verified account (KYC already cleared) and time it
-          from &quot;submitted&quot; to funds received in the source account. Only casinos that clear within 24 hours on at
-          least one major payment method appear on this page.{' '}
+          The list is compiled from each operator&apos;s currently published withdrawal window on their cashier page.
+          Only casinos publishing a 24-hour clearance window on at least one major payment method appear on this page.
+          Verify current windows on the operator&apos;s cashier before depositing — schedules can change.{' '}
           <Link href="/how-we-rate" className="text-[#F5A623] hover:underline font-bold">See full methodology</Link>.
         </p>
       </div>
