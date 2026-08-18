@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Responsible Gambling — BonusScout',
+  title: 'Responsible Gambling — BonusCout',
   description: 'Responsible gambling information and resources. Set limits, take breaks and know where to get help if gambling becomes a problem.',
 }
 
@@ -16,7 +16,7 @@ export default function ResponsibleGamblingPage() {
       </div>
 
       <h1 className="text-3xl font-black text-white mb-4">Responsible Gambling</h1>
-      <p className="text-gray-400 mb-10 leading-relaxed">Gambling should be entertaining — not a source of financial stress. BonusScout is committed to promoting safe gambling practices.</p>
+      <p className="text-gray-400 mb-10 leading-relaxed">Gambling should be entertaining — not a source of financial stress. BonusCout is committed to promoting safe gambling practices.</p>
 
       <div className="space-y-6">
 

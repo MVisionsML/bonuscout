@@ -38,7 +38,7 @@ export default function DeKeinEinzahlungsbonusPage() {
 
         <h1 className="text-3xl md:text-4xl font-black text-white mb-4">Kein Einzahlungsbonus Holen</h1>
         <div className="flex items-center gap-3 text-sm text-gray-500 mb-8">
-          <span>4 Min. Lesezeit</span><span>·</span><span>Aktualisiert Juni 2026</span><span>·</span><span>BonusScout Team</span>
+          <span>4 Min. Lesezeit</span><span>·</span><span>Aktualisiert Juni 2026</span><span>·</span><span>BonusCout Team</span>
         </div>
 
         <div className="space-y-8">

@@ -16,9 +16,10 @@ export default function ArticlesLayout({ children }: { children: React.ReactNode
             <span className="text-white font-bold">Looking for detailed casino reviews?</span>{' '}
             Visit <a
               href="https://www.bonusreviewers.com"
-              rel="dofollow"
+              rel="nofollow noopener"
+              target="_blank"
               className="text-[#F5A623] hover:underline font-bold"
-            >BonusReviewers.com</a> for independently tested casino ratings.
+            >BonusReviewers.com</a> for independently reviewed casino analysis.
           </p>
         </div>
       </aside>

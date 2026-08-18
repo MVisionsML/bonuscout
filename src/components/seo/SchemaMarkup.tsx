@@ -45,12 +45,12 @@ export function WebsiteSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'BonusScout',
+    name: 'BonusCout',
     url: 'https://www.bonuscout.com',
     description: 'Independent casino bonus reviews. We test every bonus before we recommend it.',
     publisher: {
       '@type': 'Organization',
-      name: 'BonusScout',
+      name: 'BonusCout',
       url: 'https://www.bonuscout.com',
       logo: {
         '@type': 'ImageObject',
@@ -133,10 +133,10 @@ export function ArticleSchema({ article }: { article: ArticleSchemaProps }) {
     datePublished: article.datePublished,
     dateModified: article.dateModified || article.datePublished,
     articleSection: article.section || 'News',
-    author: { '@type': 'Organization', name: 'BonusScout', url: 'https://www.bonuscout.com' },
+    author: { '@type': 'Organization', name: 'BonusCout', url: 'https://www.bonuscout.com' },
     publisher: {
       '@type': 'Organization',
-      name: 'BonusScout',
+      name: 'BonusCout',
       logo: { '@type': 'ImageObject', url: 'https://www.bonuscout.com/logo.png' }
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': article.url }

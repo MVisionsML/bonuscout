@@ -43,7 +43,7 @@ export function listNewsArticles(): NewsArticle[] {
       title: data.title,
       date: data.date,
       category: data.category || 'Industry',
-      author: data.author || 'BonusScout Team',
+      author: data.author || 'BonusCout Team',
       excerpt: data.excerpt || '',
       coverImage: data.coverImage || '',
       coverImagePrompt: data.coverImagePrompt,

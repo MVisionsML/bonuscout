@@ -21,7 +21,7 @@ export default function FreeSpinsPage() {
         </div>
         <h1 className="text-4xl font-black text-white mb-3">Free Spins Bonuses 2026</h1>
         <p className="text-gray-400 text-lg max-w-2xl mb-6">
-          Free spins let you play real slot rounds at no cost. Most are included in welcome packages — but some casinos offer standalone free spin promotions.
+          Free spins let you play real slot rounds at no bonus cost. In our current index, none of the 19 operators run a <em>standalone</em> free-spin promotion — free spins ship as part of welcome packages instead. The list below shows every welcome package that includes free spins, with spin count and wagering compiled from each operator&apos;s published bonus terms.
         </p>
       </div>
 

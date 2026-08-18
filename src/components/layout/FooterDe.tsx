@@ -46,7 +46,7 @@ export default function FooterDe() {
         </div>
 
         <p className="text-xs text-gray-600 leading-relaxed">
-          Glücksspiel birgt Risiken. Spiel verantwortungsbewusst. Nur für Personen ab 18 Jahren. BonusScout.com ist eine unabhängige Affiliate-Website. &copy; {new Date().getFullYear()} BonusScout.com
+          Glücksspiel birgt Risiken. Spiel verantwortungsbewusst. Nur für Personen ab 18 Jahren. BonusCout.com ist eine unabhängige Affiliate-Website. &copy; {new Date().getFullYear()} BonusCout.com
         </p>
       </div>
     </footer>

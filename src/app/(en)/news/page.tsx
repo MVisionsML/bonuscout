@@ -25,7 +25,7 @@ export default function NewsIndexPage() {
     ]} />
     {articles.length > 0 && (
       <ItemListSchema
-        name="BonusScout Casino News"
+        name="BonusCout Casino News"
         items={articles.map(a => ({ name: a.title, url: `https://www.bonuscout.com/news/${a.slug}` }))}
       />
     )}

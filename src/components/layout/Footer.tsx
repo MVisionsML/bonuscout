@@ -37,7 +37,8 @@ export default function Footer() {
               <li>
                 <a
                   href="https://www.bonusreviewers.com"
-                  rel="dofollow"
+                  rel="nofollow noopener"
+                  target="_blank"
                   className="hover:text-[#F5A623] transition-colors"
                 >
                   Detailed Casino Reviews → bonusreviewers.com
@@ -68,8 +69,8 @@ export default function Footer() {
         </div>
 
         <p className="text-xs text-gray-600 leading-relaxed">
-          Gambling involves risk. Play responsibly. 18+ only. BonusScout.com is an independent affiliate website.
-          We may receive commission when you sign up through our links. &copy; {new Date().getFullYear()} BonusScout.com
+          Gambling involves risk. Play responsibly. 18+ only. BonusCout.com is an independent affiliate website.
+          We may receive commission when you sign up through our links. &copy; {new Date().getFullYear()} BonusCout.com
         </p>
       </div>
     </footer>

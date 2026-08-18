@@ -8,8 +8,8 @@ const geist = Geist({ subsets: ['latin'], display: 'swap' })
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.bonuscout.com'),
   title: {
-    default: 'BonusScout — Best Casino Bonuses & Reviews 2026',
-    template: '%s | BonusScout'
+    default: 'BonusCout — Best Casino Bonuses & Reviews 2026',
+    template: '%s | BonusCout'
   },
   description: 'Independent casino bonus reviews. We test every bonus before we recommend it.',
   robots: { index: true, follow: true }

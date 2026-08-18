@@ -26,7 +26,7 @@ export default function SlotsIndexPage() {
       { name: 'Slots', url: 'https://www.bonuscout.com/slots' }
     ]} />
     <ItemListSchema
-      name="BonusScout Slot Reviews"
+      name="BonusCout Slot Reviews"
       items={sorted.map(s => ({ name: s.name, url: `https://www.bonuscout.com/slots/${s.slug}` }))}
     />
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
