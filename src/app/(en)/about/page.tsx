@@ -2,8 +2,8 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About BonusScout — Independent Casino Bonus Reviews',
-  description: 'About BonusScout. We are an independent casino review site that tests every bonus before recommending it. Learn about our methodology and team.',
+  title: 'About BonusCout — Independent Casino Bonus Reviews',
+  description: 'About BonusCout. Independent casino bonus reviews compiled from published operator T&Cs, cashier pages and licensing records. Learn about our methodology and team.',
 }
 
 export default function AboutPage() {
@@ -15,14 +15,14 @@ export default function AboutPage() {
         <span className="text-gray-300">About Us</span>
       </div>
 
-      <h1 className="text-3xl font-black text-white mb-4">About BonusScout</h1>
+      <h1 className="text-3xl font-black text-white mb-4">About BonusCout</h1>
 
       <div className="space-y-6">
         <div className="bg-[#161820] border border-[#252830] rounded-xl p-6 md:p-8">
           <h2 className="font-black text-white mb-4">Who we are</h2>
           <div className="text-gray-400 text-sm leading-relaxed space-y-3">
-            <p>BonusScout is an independent casino review and comparison site. We test every casino on our list by making real deposits, requesting real withdrawals, and contacting customer support before publishing any review.</p>
-            <p>We are not owned by any casino operator. No casino can pay for a higher position in our rankings. Every score reflects what our team found during testing — including the things casinos would rather we didn&apos;t mention.</p>
+            <p>BonusCout is an independent casino review and comparison site. Every review is compiled from the operator&apos;s own published Terms &amp; Conditions, cashier page and licensing records. We do not make first-hand deposits, withdrawals or support-timing tests — documentary verification only.</p>
+            <p>We are not owned by any casino operator. No casino can pay for a higher position in our rankings. Every score reflects our published 10-dimension methodology applied to the operator&apos;s current published data — including the things casinos would rather we didn&apos;t highlight.</p>
           </div>
         </div>
 
@@ -32,13 +32,13 @@ export default function AboutPage() {
         </div>
 
         <div className="bg-[#161820] border border-[#252830] rounded-xl p-6 md:p-8">
-          <h2 className="font-black text-white mb-4">Our testing process</h2>
+          <h2 className="font-black text-white mb-4">Our review process</h2>
           <div className="space-y-3 text-sm text-gray-400">
             {[
-              { icon: '💳', title: 'Real deposits', desc: 'We deposit using multiple payment methods and verify that funds arrive correctly and promptly.' },
-              { icon: '⚡', title: 'Real withdrawals', desc: 'We request withdrawals and time them from submission to funds received — no estimates.' },
-              { icon: '📋', title: 'Bonus terms', desc: 'We read every line of the T&Cs including wagering, game restrictions, max bet and withdrawal caps.' },
-              { icon: '💬', title: 'Support testing', desc: 'We contact support at different times of day and grade response time and accuracy.' },
+              { icon: '💳', title: 'Published cashier terms', desc: 'Payment methods, minimum deposits, and cashier limits documented from each operator&apos;s published cashier page.' },
+              { icon: '⚡', title: 'Published withdrawal windows', desc: 'Withdrawal windows and per-payment-method processing schedules compiled from the operator&apos;s cashier terms.' },
+              { icon: '📋', title: 'Bonus terms', desc: 'Every line of the published T&Cs read — wagering, game restrictions, max bet and withdrawal caps.' },
+              { icon: '💬', title: 'Support channels', desc: 'Live chat, email and support-hour coverage documented from the operator&apos;s published support page.' },
             ].map(item => (
               <div key={item.title} className="flex gap-3">
                 <span className="text-xl flex-shrink-0">{item.icon}</span>

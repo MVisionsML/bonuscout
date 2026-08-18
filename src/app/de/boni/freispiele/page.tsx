@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Beste Casino Freispiele 2026 — Gratis Spins Angebote',
-  description: 'Die besten Casino Freispiele 2026. Gratis Spins auf echten Slots bei lizenzierten und getesteten Casinos. Alle Angebote geprüft und verglichen.',
+  description: 'Die besten Casino Freispiele 2026. Gratis Spins auf echten Slots bei lizenzierten Casinos — alle Angebote aus veröffentlichten Bonusbedingungen der Anbieter zusammengestellt.',
   alternates: { canonical: 'https://www.bonuscout.com/de/boni/freispiele' }
 }
 
@@ -62,7 +62,7 @@ export default function DeFreispielePage() {
       <p className="text-sm text-gray-500 mb-5">
         {dedicatedSpins.length > 0
           ? 'Diese Boni enthalten Freispiele als Teil eines Einzahlungspakets.'
-          : 'Diese Casinos bieten Freispiele als Teil ihres Willkommenspakets — wir haben alle getestet.'}
+          : 'Diese Casinos bieten Freispiele als Teil ihres Willkommenspakets — Bedingungen aus den veröffentlichten AGB der Anbieter zusammengestellt.'}
       </p>
       <div className="space-y-4 mb-10">
         {(dedicatedSpins.length > 0 ? withSpins : list).map((casino, index) => (

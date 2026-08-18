@@ -4,8 +4,8 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Best Casino Bonuses 2026 — Top Welcome Offers Ranked & Tested',
-  description: 'Compare the best casino welcome bonuses in 2026. We rank by real value after wagering — not just headline numbers. Expert tested.',
+  title: 'Best Casino Bonuses 2026 — Top Welcome Offers Ranked by Real Value',
+  description: 'Compare the best casino welcome bonuses in 2026. Ranked by real value after wagering, compiled from each operator&apos;s published bonus terms — not just headline numbers.',
   alternates: { canonical: 'https://www.bonuscout.com/best-casino-bonus' }
 }
 

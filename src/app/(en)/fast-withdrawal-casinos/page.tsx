@@ -37,8 +37,8 @@ export default function FastWithdrawalCasinosPage() {
 
       <h1 className="text-3xl md:text-4xl font-black text-white mb-4">Fast Withdrawal Casinos — 2026</h1>
       <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-        Online casinos that actually pay out in under 24 hours. The list below is built from real timed withdrawal tests
-        — not the marketing &quot;up to 24 hours&quot; copy on the operator&apos;s payments page.
+        Online casinos with the fastest published withdrawal windows. The list below is compiled from each operator&apos;s
+        current cashier page — verify the specific payment method and window on the operator site before depositing.
       </p>
 
       {/* Trust block */}

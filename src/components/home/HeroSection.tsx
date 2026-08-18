@@ -3,14 +3,14 @@ import { useEffect, useRef } from 'react'
 import Link from 'next/link'
 
 const TICKER_ITEMS = [
-  '19 Casinos Tested', 'Updated May 2026', '0x Wagering Available', 'Real Deposits & Withdrawals',
-  'Bonus Terms Verified', 'Independent Rankings', '24h Withdrawal Tested', 'Licensed Casinos Only',
-  '19 Casinos Tested', 'Updated May 2026', '0x Wagering Available', 'Real Deposits & Withdrawals',
-  'Bonus Terms Verified', 'Independent Rankings', '24h Withdrawal Tested', 'Licensed Casinos Only',
+  '19 Casinos Reviewed', 'Updated May 2026', '0x Wagering Available', 'Published Bonus Terms',
+  'Compiled from Operator T&Cs', 'Independent Rankings', 'Published Withdrawal Windows', 'Licensed Casinos Only',
+  '19 Casinos Reviewed', 'Updated May 2026', '0x Wagering Available', 'Published Bonus Terms',
+  'Compiled from Operator T&Cs', 'Independent Rankings', 'Published Withdrawal Windows', 'Licensed Casinos Only',
 ]
 
 const STATS = [
-  { value: '19', label: 'Casinos Tested' },
+  { value: '19', label: 'Casinos Reviewed' },
   { value: '0x', label: 'Lowest Wagering' },
   { value: '€8K', label: 'Biggest Bonus' },
   { value: '4h', label: 'Fastest Payout' },

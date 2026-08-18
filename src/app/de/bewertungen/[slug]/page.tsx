@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = casino.seoTitleDe
     ?? `${casino.name} Bonus 2026 — Willkommensangebot, Freispiele & Bonusbedingungen`
   const description = casino.seoDescriptionDe
-    ?? `Jeder aktive ${casino.name} Bonus an einem Ort: ${casino.bonus} Willkommensangebot bei ${casino.wagering}x Umsatzbedingungen, Freispiele und die vollständigen Bonusbedingungen — von unserem Team aufgeschlüsselt.`
+    ?? `Jeder aktive ${casino.name} Bonus an einem Ort: ${casino.bonus} Willkommensangebot bei ${casino.wagering}x Umsatzbedingungen, Freispiele und die vollständigen Bonusbedingungen — aus den veröffentlichten Anbieter-AGB aufgeschlüsselt.`
   // Hybrid-strategy metadata (2026-06-26): the DE side now mirrors the EN
   // C1 repositioning — bonuscout owns BONUS intent (welcome / no-deposit /
   // cashback / free spins) in both languages; bonusreviewers owns REVIEW /
@@ -82,7 +82,7 @@ export default async function DeCasinoReview({ params }: Props) {
               <span className="text-gray-500">/{casino.ratingMax}</span>
             </div>
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-green-500/10 text-green-400 border border-green-500/20 text-sm px-3 py-1 rounded-full font-medium">✓ Getestet & Verifiziert</span>
+              <span className="bg-green-500/10 text-green-400 border border-green-500/20 text-sm px-3 py-1 rounded-full font-medium">✓ Aus AGB &amp; Lizenzunterlagen</span>
               {casino.licenses.map(l => (
                 <span key={l} className="bg-[#252830] text-gray-400 border border-[#2E3040] text-sm px-3 py-1 rounded-full font-medium">{l}</span>
               ))}
@@ -121,7 +121,7 @@ export default async function DeCasinoReview({ params }: Props) {
         <h2 className="text-xl font-black text-white mb-4">{casino.name} — Überblick</h2>
         <div className="text-gray-400 text-sm leading-relaxed space-y-3">
           <p>{casino.name} ist ein Online-Casino, das seit {casino.founded} in Betrieb ist und von {casino.licenses.join(' und ')} lizenziert wird. Das Casino bietet eine Spielbibliothek mit {casino.games.toLocaleString()}+ Titeln von Anbietern wie {casino.software.join(', ')}.</p>
-          <p>Unser Team hat {casino.name} persönlich getestet — echte Einzahlungen, echte Auszahlungen und echte Tests des Kundensupports zu verschiedenen Tageszeiten. Jede Bewertung spiegelt unsere direkte Erfahrung wider.</p>
+          <p>Jede {casino.name}-Bewertung wird aus den vom Betreiber veröffentlichten Allgemeinen Geschäftsbedingungen, der Kassiererseite und den Lizenzunterlagen erstellt — dokumentarische Verifizierung, keine Erst-Test-Einzahlungen oder -Auszahlungen.</p>
           <p>Das aktuelle Willkommensangebot beträgt {casino.bonus} mit einer Umsatzbedingung von {casino.wagering}x und einer Mindesteinzahlung von €{casino.minDeposit}.</p>
         </div>
       </div>

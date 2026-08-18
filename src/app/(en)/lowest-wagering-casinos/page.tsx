@@ -49,7 +49,7 @@ export default function LowestWageringPage() {
           <div className="prose prose-invert prose-sm max-w-none text-gray-400 leading-relaxed space-y-3">
             <p>A wagering requirement (also called playthrough) is the number of times you must bet your bonus amount before you can withdraw any winnings derived from it. It is the single most important number to check when comparing casino bonuses.</p>
             <p>Example: You claim a €100 bonus with 35x wagering. You must wager €3,500 before withdrawing. If the wagering were 30x instead, you&apos;d only need to wager €3,000 — a €500 difference in required play.</p>
-            <p>Our team ranks casinos by wagering first, then by bonus value, to give you the clearest picture of actual bonus value rather than headline numbers.</p>
+            <p>Casinos are ranked by wagering first, then by bonus value, to give you the clearest picture of actual bonus value rather than headline numbers.</p>
           </div>
         </div>
 

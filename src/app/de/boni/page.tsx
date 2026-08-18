@@ -3,8 +3,8 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Beste Casino Boni 2026 — Alle Angebote Getestet',
-  description: 'Alle Casino Boni 2026 getestet und verglichen. Keine Einzahlung, Freispiele, Willkommensbonus und Cashback. Umsatzbedingungen geprüft.',
+  title: 'Beste Casino Boni 2026 — Aus veröffentlichten Anbieterbedingungen',
+  description: 'Alle Casino Boni 2026 aus den veröffentlichten Bonusbedingungen der Anbieter zusammengestellt. Bonus ohne Einzahlung, Freispiele, Willkommensbonus und Cashback — Umsatzbedingungen verglichen.',
   alternates: { canonical: 'https://www.bonuscout.com/de/boni' }
 }
 

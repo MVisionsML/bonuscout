@@ -11,8 +11,6 @@ export interface Casino {
   wagering: number
   minDeposit: number
   withdrawalTime: string
-  depositTested: boolean
-  withdrawalTested: boolean
   supportType: string
   licenses: string[]
   affiliateLink: string

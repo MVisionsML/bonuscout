@@ -40,11 +40,11 @@ export default function WelcomeBonusPage() {
           <div className="text-gray-500 text-xs">{welcome.find(c => c.wagering === Math.min(...welcome.map(x => x.wagering)))?.name}</div>
         </div>
         <div>
-          <div className="text-[#F5A623] font-bold mb-1">Deposit tested</div>
+          <div className="text-[#F5A623] font-bold mb-1">Welcome offers</div>
           <div className="text-white font-black text-2xl">
-            {welcome.filter(c => c.depositTested).length}/{welcome.length}
+            {welcome.length}
           </div>
-          <div className="text-gray-500 text-xs">casinos verified</div>
+          <div className="text-gray-500 text-xs">reviewed from operator T&amp;Cs</div>
         </div>
       </div>
 

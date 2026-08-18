@@ -100,18 +100,10 @@ export default function CasinoCard({ casino, rank }: CasinoCardProps) {
       </div>
 
       {/* Stats row */}
-      <div className="mt-4 grid grid-cols-2 md:grid-cols-5 gap-3 text-xs">
+      <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
         <div className="bg-[#0D0F14] rounded-lg p-2.5">
-          <div className="text-gray-500 mb-0.5">Deposit tested</div>
-          <div className={`font-bold ${casino.depositTested ? 'text-green-400' : 'text-gray-500'}`}>
-            {casino.depositTested ? 'Yes ✓' : 'Pending'}
-          </div>
-        </div>
-        <div className="bg-[#0D0F14] rounded-lg p-2.5">
-          <div className="text-gray-500 mb-0.5">Withdrawal tested</div>
-          <div className={`font-bold ${casino.withdrawalTested ? 'text-green-400' : 'text-yellow-400'}`}>
-            {casino.withdrawalTested ? 'Yes ✓' : 'Pending'}
-          </div>
+          <div className="text-gray-500 mb-0.5">Withdrawal window</div>
+          <div className="font-bold text-white">{casino.withdrawalTime}</div>
         </div>
         <div className="bg-[#0D0F14] rounded-lg p-2.5">
           <div className="text-gray-500 mb-0.5">Support</div>

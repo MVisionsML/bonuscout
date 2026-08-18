@@ -5,7 +5,7 @@ import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Best Cashback Casino 2026 — Get Your Losses Back',
-  description: 'Best cashback casino bonuses in 2026. Get a percentage of your net losses returned as bonus funds. All cashback offers tested and compared.',
+  description: 'Best cashback casino bonuses in 2026. Get a percentage of your net losses returned as bonus funds. All cashback offers compiled from published operator terms.',
   alternates: { canonical: 'https://www.bonuscout.com/best-cashback-casino' }
 }
 

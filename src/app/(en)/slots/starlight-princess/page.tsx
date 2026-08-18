@@ -8,7 +8,7 @@ const slot = getSlot('starlight-princess')!
 
 export const metadata: Metadata = {
   title: 'Starlight Princess Review 2026 — RTP 96.5%, 5,000x Max Win',
-  description: 'Full Starlight Princess review 2026. Pragmatic Play\'s anime celestial slot tested. 96.5% RTP, 5,000x max win, position-based multipliers — full verdict.',
+  description: 'Full Starlight Princess review 2026. Pragmatic Play\'s anime celestial slot reviewed. 96.5% RTP, 5,000x max win, position-based multipliers — full verdict.',
   alternates: { canonical: 'https://www.bonuscout.com/slots/starlight-princess' }
 }
 

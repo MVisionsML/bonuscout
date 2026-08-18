@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Beste Casino Cashback Bonus 2026 — Verluste Zurückbekommen',
-  description: 'Die besten Casino Cashback Boni 2026. Holen Sie sich 10–25% Ihrer Nettoverluste zurück. Niedrige Umsatzbedingungen — alle Angebote getestet.',
+  description: 'Die besten Casino Cashback Boni 2026. Holen Sie sich 10–25% Ihrer Nettoverluste zurück. Niedrige Umsatzbedingungen — alle Angebote aus veröffentlichten Anbieterbedingungen verglichen.',
   alternates: { canonical: 'https://www.bonuscout.com/de/boni/cashback' }
 }
 
@@ -80,7 +80,7 @@ export default function DeCashbackPage() {
       )}
 
       <h2 className="text-2xl font-black text-white mb-3">Weitere empfehlenswerte Boni</h2>
-      <p className="text-sm text-gray-500 mb-5">Wenn kein Cashback verfügbar ist, bieten diese Alternativen die fairsten Umsatzbedingungen, die wir getestet haben.</p>
+      <p className="text-sm text-gray-500 mb-5">Wenn kein Cashback verfügbar ist, bieten diese Alternativen die fairsten Umsatzbedingungen laut den veröffentlichten Bonusbedingungen der Anbieter.</p>
       <div className="space-y-4 mb-10">
         {others.map((casino, index) => (
           <div key={casino.id} className="bg-[#161820] border border-[#252830] hover:border-[#F5A623]/30 rounded-xl p-5 transition-all">

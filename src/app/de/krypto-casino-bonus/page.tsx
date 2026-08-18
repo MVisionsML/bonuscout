@@ -5,7 +5,7 @@ import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Bestes Krypto Casino Bonus 2026 — Bitcoin Casino Deutschland',
-  description: 'Die besten Krypto Casino Boni 2026. Bitcoin, Ethereum und kryptofreundliche Casinos mit den besten Willkommensangeboten. Alle getestet.',
+  description: 'Die besten Krypto Casino Boni 2026. Bitcoin, Ethereum und kryptofreundliche Casinos mit den besten Willkommensangeboten — alle aus veröffentlichten Anbieterbedingungen zusammengestellt.',
   alternates: { canonical: 'https://www.bonuscout.com/de/krypto-casino-bonus' }
 }
 
@@ -39,11 +39,11 @@ export default function DeKryptoCasinoPage() {
       <div className="bg-gradient-to-r from-orange-900/30 to-orange-800/10 border border-orange-500/20 rounded-2xl p-8 mb-8">
         <div className="text-xs text-[#F5A623] font-bold mb-2 uppercase tracking-wide">Aktualisiert Mai 2026</div>
         <h1 className="text-3xl md:text-4xl font-black text-white mb-3">Bestes Krypto Casino Bonus 2026</h1>
-        <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">Bitcoin- und kryptofreundliche Casinos mit den besten Bonusangeboten. Auszahlungszeiten und Umsatzbedingungen unabhängig geprüft.</p>
+        <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">Bitcoin- und kryptofreundliche Casinos mit den besten Bonusangeboten. Auszahlungsfenster und Umsatzbedingungen aus den veröffentlichten Anbieterbedingungen verglichen.</p>
         <div className="flex flex-wrap gap-4 mt-5 text-sm text-gray-400">
-          <span className="text-orange-400">✓ {cryptoCasinos.length} Krypto-Casinos getestet</span>
-          <span className="text-orange-400">✓ Auszahlungszeiten verifiziert</span>
-          <span className="text-orange-400">✓ Umsatzbedingungen geprüft</span>
+          <span className="text-orange-400">✓ {cryptoCasinos.length} Krypto-Casinos bewertet</span>
+          <span className="text-orange-400">✓ Auszahlungsfenster laut AGB</span>
+          <span className="text-orange-400">✓ Umsatzbedingungen verglichen</span>
         </div>
       </div>
 

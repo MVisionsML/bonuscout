@@ -32,7 +32,7 @@ export default function HacksawGamingPage() {
         <div className="bg-gradient-to-r from-yellow-900/20 to-yellow-800/10 border border-yellow-500/20 rounded-2xl p-8 mb-8">
           <h1 className="text-3xl md:text-4xl font-black text-white mb-3">Best Hacksaw Gaming Casinos 2026</h1>
           <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-            Play Wanted Dead or a Wild, Chaos Crew and more at the best Hacksaw Gaming casinos. All tested and ranked by our team.
+            Play Wanted Dead or a Wild, Chaos Crew and more at the best Hacksaw Gaming casinos. All reviewed and ranked from published operator T&amp;Cs.
           </p>
           <div className="flex flex-wrap gap-3 mt-5">
             {['Wanted Dead or a Wild', 'Chaos Crew', 'Stick Em', 'Cash Chips'].map(s => (

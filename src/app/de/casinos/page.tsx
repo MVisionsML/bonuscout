@@ -3,8 +3,8 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Beste Online Casinos 2026 — Getestet & Bewertet',
-  description: 'Die besten Online Casinos 2026 unabhängig getestet. Echte Einzahlungen, Auszahlungen und Bonusbedingungen geprüft. Aktualisiert Mai 2026.',
+  title: 'Beste Online Casinos 2026 — Aus veröffentlichten AGB & Lizenzunterlagen',
+  description: 'Die besten Online Casinos 2026 unabhängig bewertet — jede Bewertung erstellt aus den veröffentlichten AGB, Kassiererseiten und Lizenzunterlagen des Anbieters. Aktualisiert Mai 2026.',
   alternates: { canonical: 'https://www.bonuscout.com/de/casinos' }
 }
 
@@ -18,7 +18,7 @@ export default function DeCasinosPage() {
       </div>
 
       <h1 className="text-3xl md:text-4xl font-black text-white mb-3">Beste Online Casinos 2026</h1>
-      <p className="text-gray-400 mb-8 max-w-2xl">Jedes Casino wurde von unserem Team getestet — echte Einzahlungen, echte Auszahlungen, echte Bewertungen.</p>
+      <p className="text-gray-400 mb-8 max-w-2xl">Jedes Casino wird aus den vom Betreiber veröffentlichten Allgemeinen Geschäftsbedingungen, der Kassiererseite und den Lizenzunterlagen bewertet — dokumentarische Verifizierung, keine Erst-Test-Einzahlungen oder -Auszahlungen.</p>
 
       <div className="bg-[#161820] border border-[#252830] rounded-xl p-4 mb-8 flex items-start gap-3">
         <span className="text-[#F5A623] font-bold mt-0.5">✓</span>

@@ -4,8 +4,8 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Best Online Casinos 2026 — Tested & Reviewed',
-  description: 'We tested every casino on this list. Real deposit testing, withdrawal checks and bonus term reviews. Updated April 2026.',
+  title: 'Best Online Casinos 2026 — Reviewed from Published Terms & Licensing',
+  description: 'Every casino on this list is reviewed from its published Terms & Conditions, cashier page and licensing records. Bonus terms, wagering, and payment methods broken down side by side.',
 }
 
 export default function CasinosPage() {

@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = casino.seoTitle
     ?? `${casino.name} Bonus 2026 — Welcome Offer, Free Spins & Bonus Terms`
   const description = casino.seoDescription
-    ?? `Every active ${casino.name} bonus in one place: ${casino.bonus} welcome offer at ${casino.wagering}x wagering, free spins, and the full bonus terms broken down by our team.`
+    ?? `Every active ${casino.name} bonus in one place: ${casino.bonus} welcome offer at ${casino.wagering}x wagering, free spins, and the full bonus terms broken down from published operator T&Cs.`
   return {
     // Hybrid-strategy metadata (2026-06-22): title/H1/description deliberately
     // shifted from generic "Review" to bonus-targeted intent so this page no
@@ -139,15 +139,15 @@ export default async function ReviewPage({ params }: Props) {
           ))}
         </div>
 
-        {/* Tested stats */}
+        {/* At-a-glance stats */}
         <div className="grid grid-cols-3 gap-3 mb-8">
           {[
-            { label: 'Deposit tested', value: casino.depositTested ? 'Yes ✓' : 'Pending', ok: casino.depositTested },
-            { label: 'Withdrawal tested', value: casino.withdrawalTested ? 'Yes ✓' : 'Pending', ok: casino.withdrawalTested },
-            { label: 'Support', value: casino.supportType, ok: true },
+            { label: 'Bonus terms', value: 'Compiled from operator T&Cs' },
+            { label: 'Withdrawal window', value: casino.withdrawalTime + ' (published)' },
+            { label: 'Support', value: casino.supportType },
           ].map(s => (
             <div key={s.label} className="bg-[#161820] border border-[#252830] rounded-xl p-4 text-center">
-              <div className={`font-black ${s.ok ? 'text-green-400' : 'text-yellow-400'}`}>{s.value}</div>
+              <div className="font-black text-green-400 text-sm">{s.value}</div>
               <div className="text-xs text-gray-500 mt-1">{s.label}</div>
             </div>
           ))}
@@ -271,7 +271,7 @@ export default async function ReviewPage({ params }: Props) {
               ))}
             </div>
             <div className="prose prose-invert prose-sm max-w-none text-gray-400 leading-relaxed space-y-3">
-              <p>{casino.name} does not offer a dedicated mobile app. Instead, the casino runs entirely through your mobile browser — no download required. We tested on both iOS Safari and Chrome for Android and found the experience smooth and responsive.</p>
+              <p>{casino.name} does not offer a dedicated mobile app. Instead, the casino runs entirely through your mobile browser — no download required. The site is published as mobile-responsive per the operator; verify current app availability on the casino site before depositing.</p>
               <p>Approximately 85% of the desktop game library is available on mobile, including slots, live dealer games and table games from {casino.software.slice(0, 3).join(', ')}. Live dealer tables stream without issues on a stable connection. Account management, deposits and withdrawals all work from mobile.</p>
             </div>
           </div>
@@ -338,16 +338,16 @@ export default async function ReviewPage({ params }: Props) {
 
           {/* Cross-site CTA — sister-site coverage for the trust/withdrawal intent.
               Hybrid-strategy (2026-06-22): this page now targets the {brand} BONUS intent.
-              For the trust/withdrawal/KYC intent on the same brand, route readers to
+              For the trust/licence/verdict intent on the same brand, route readers to
               BonusReviewers — one contextual link, in-body, NOT a sitewide footer link. */}
           <div className="bg-gradient-to-br from-emerald-500/10 to-emerald-500/5 border border-emerald-500/20 rounded-xl p-6">
             <div className="flex items-start gap-4">
               <div className="text-3xl">🔍</div>
               <div className="flex-1">
-                <div className="text-xs uppercase tracking-wide text-emerald-400 font-bold mb-1">Trust &amp; Testing</div>
-                <h2 className="font-black text-white text-lg mb-2">Want withdrawal and trust testing for {casino.name}?</h2>
-                <p className="text-sm text-gray-400 mb-3">Our sister site BonusReviewers ran a real-money deposit, full KYC walkthrough and timed a withdrawal at {casino.name}. See the full test report.</p>
-                <a href={`https://www.bonusreviewers.com/reviews/${casino.slug}`} target="_blank" rel="noopener noreferrer"
+                <div className="text-xs uppercase tracking-wide text-emerald-400 font-bold mb-1">Trust &amp; Licence Analysis</div>
+                <h2 className="font-black text-white text-lg mb-2">Want the trust and licence analysis for {casino.name}?</h2>
+                <p className="text-sm text-gray-400 mb-3">Our sister site BonusReviewers publishes a full licence, operator and 10-dimension safety analysis of {casino.name} compiled from published T&amp;Cs and licensing records.</p>
+                <a href={`https://www.bonusreviewers.com/reviews/${casino.slug}`} target="_blank" rel="nofollow noopener noreferrer"
                   className="inline-block bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/40 text-emerald-400 font-bold px-4 py-2 rounded-lg text-sm transition-colors">
                   Read the full {casino.name} review on BonusReviewers →
                 </a>

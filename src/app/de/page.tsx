@@ -3,8 +3,8 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Beste Casino Boni 2026 — Getestet & Bewertet',
-  description: 'Die besten Casino Boni 2026 unabhängig getestet. Keine Einzahlung Boni, Freispiele, niedrigste Umsatzbedingungen und Willkommensboni verglichen. Aktualisiert Mai 2026.',
+  title: 'Beste Casino Boni 2026 — Aus veröffentlichten Anbieterbedingungen',
+  description: 'Die besten Casino Boni 2026 aus den veröffentlichten Bonusbedingungen der Anbieter zusammengestellt. Bonus ohne Einzahlung, Freispiele, niedrigste Umsatzbedingungen und Willkommensboni verglichen. Aktualisiert Mai 2026.',
   alternates: {
     canonical: 'https://www.bonuscout.com/de',
     languages: { 'en': 'https://www.bonuscout.com', 'de': 'https://www.bonuscout.com/de' }
@@ -25,16 +25,16 @@ export default function DeHomePage() {
           </div>
           <h1 className="text-4xl md:text-6xl font-black text-white mb-4 leading-tight">
             Beste Casino Boni<br />
-            <span className="text-[#F5A623]">Getestet Bevor Wir Empfehlen</span>
+            <span className="text-[#F5A623]">Aus veröffentlichten Anbieterbedingungen</span>
           </h1>
           <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
-            Wir zahlen echtes Geld ein, beantragen echte Auszahlungen und lesen alle Bonusbedingungen, bevor wir eine Bewertung veröffentlichen. {casinos.length} Casinos getestet.
+            Jede Bewertung wird aus den vom Betreiber veröffentlichten Allgemeinen Geschäftsbedingungen, der Kassiererseite und den Lizenzunterlagen erstellt. {casinos.length} Casinos aus veröffentlichten Anbieterbedingungen bewertet.
           </p>
 
           <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-500 mb-10">
             {[
-              { icon: '💳', label: 'Echte Einzahlungstests' },
-              { icon: '⚡', label: 'Auszahlungsgeschwindigkeit geprüft' },
+              { icon: '💳', label: 'Veröffentlichte Kassiererbedingungen' },
+              { icon: '⚡', label: 'Auszahlungsfenster laut AGB' },
               { icon: '📋', label: 'Bonusbedingungen manuell geprüft' },
               { icon: '🔄', label: 'Monatlich aktualisiert' },
             ].map(item => (
@@ -68,7 +68,7 @@ export default function DeHomePage() {
           <span className="text-[#F5A623] font-bold text-sm mt-0.5">✓</span>
           <p className="text-sm text-gray-400 leading-relaxed">
             <span className="text-white font-bold">Unsere Rankings sind nicht käuflich.</span>{' '}
-            Kein Casino kann für eine bessere Platzierung bezahlen. Jede Bewertung spiegelt unsere eigenen Testergebnisse wider.
+            Kein Casino kann für eine bessere Platzierung bezahlen. Jede Bewertung wendet unsere veröffentlichte 10-Dimensionen-Methodik auf die aktuellen veröffentlichten Daten des Anbieters an.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ export default function DeHomePage() {
         <div className="flex items-center justify-between mb-6">
           <div>
             <h2 className="text-2xl font-black text-white">Beste Casino Boni — Mai 2026</h2>
-            <p className="text-gray-500 text-sm mt-1">{casinos.length} Casinos getestet und bewertet</p>
+            <p className="text-gray-500 text-sm mt-1">{casinos.length} Casinos aus veröffentlichten AGB und Lizenzunterlagen bewertet</p>
           </div>
           <Link href="/de/casinos" className="text-[#F5A623] text-sm font-bold hover:underline">Alle anzeigen →</Link>
         </div>

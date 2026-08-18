@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 const SCORING = [
   { label: 'Licensing & Safety',  pct: 25, desc: 'License authority, encryption, fairness audits, ownership transparency.' },
   { label: 'Bonus Value',          pct: 20, desc: 'Wagering, max bet, game restrictions, expiry, withdrawal cap.' },
-  { label: 'Withdrawal Speed',     pct: 20, desc: 'Real timed withdrawal test from submission to funds received.' },
+  { label: 'Withdrawal Speed',     pct: 20, desc: 'Published withdrawal window per operator cashier — payment-method breakdown.' },
   { label: 'Payment Options',      pct: 15, desc: 'Card, e-wallet, crypto, bank transfer — fees, limits, processing.' },
   { label: 'Game Selection',       pct: 10, desc: 'Provider quality, live dealer, mobile compatibility, regional availability.' },
-  { label: 'Customer Support',     pct: 10, desc: 'Live chat and email tested at multiple times of day for response and accuracy.' },
+  { label: 'Customer Support',     pct: 10, desc: 'Live chat and email channels documented from the operator; hours and languages per published support page.' },
 ]
 
 const CATEGORY_HUBS = [
@@ -201,7 +201,7 @@ export default function HomePage() {
           <div className="flex items-center justify-between mb-6">
             <div>
               <h2 className="text-xl font-black text-white">Popular Slots</h2>
-              <p className="text-gray-500 text-sm mt-1">Top-rated slots reviewed by our team — full RTP, volatility and bonus mechanics breakdown</p>
+              <p className="text-gray-500 text-sm mt-1">Top-rated slots reviewed from published studio specs — full RTP, volatility and bonus mechanics breakdown</p>
             </div>
             <Link href="/slots" className="text-[#F5A623] text-sm font-bold hover:underline">See all slot reviews →</Link>
           </div>

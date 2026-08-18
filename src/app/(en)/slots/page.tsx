@@ -5,7 +5,7 @@ import { BreadcrumbSchema, ItemListSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Online Slot Reviews 2026 — RTP, Volatility & Max Win',
-  description: 'Independent online slot reviews. Real RTP, volatility ratings, max win multipliers, bonus features and where to play each title — all verified by our team.',
+  description: 'Independent online slot reviews. Published RTP, volatility ratings, max win multipliers, bonus features and where to play each title — all compiled from the studio&apos;s official game specs.',
   alternates: { canonical: 'https://www.bonuscout.com/slots' }
 }
 

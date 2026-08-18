@@ -3,8 +3,8 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Casino Reviews 2026 — Tested by Our Team',
-  description: 'In-depth casino reviews based on real testing. We deposit, withdraw and test support before publishing any review.',
+  title: 'Casino Reviews 2026 — Analyzed from Published Terms & Licensing',
+  description: 'In-depth casino reviews compiled from published Terms & Conditions, cashier pages and licensing records — 10-dimension analysis of each operator.',
 }
 
 export default function ReviewsPage() {
@@ -19,7 +19,7 @@ export default function ReviewsPage() {
       <div className="mb-8">
         <h1 className="text-3xl md:text-4xl font-black text-white mb-3">Casino Reviews</h1>
         <p className="text-gray-400 max-w-2xl">
-          Every review is based on real testing — not casino marketing material. For in-depth casino reviews with real deposit testing, see our sister site <a href="https://www.bonusreviewers.com" rel="dofollow" className="text-[#F5A623] hover:underline">BonusReviewers</a>.
+          Every review is compiled from the operator&apos;s published Terms &amp; Conditions, cashier page and licensing records — not casino marketing material. For further in-depth casino reviews, see our sister site <a href="https://www.bonusreviewers.com" rel="nofollow" className="text-[#F5A623] hover:underline">BonusReviewers</a>.
         </p>
       </div>
 

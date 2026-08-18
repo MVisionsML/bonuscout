@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
-  title: 'Best Crypto Casino Bonus 2026 — Bitcoin & Ethereum Casinos Tested',
+  title: 'Best Crypto Casino Bonus 2026 — Bitcoin & Ethereum Casinos Reviewed',
   description: 'Best crypto casino bonuses 2026. Bitcoin, Ethereum and crypto-friendly casinos ranked by bonus value, wagering and published withdrawal windows.',
   alternates: { canonical: 'https://www.bonuscout.com/crypto-casino-bonus' }
 }
@@ -43,11 +43,11 @@ export default function CryptoCasinoBonusPage() {
             Best Crypto Casino Bonus 2026
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-            Bitcoin and crypto-friendly casinos with the best bonus offers. We verify crypto deposit and withdrawal times independently and compare wagering requirements across all platforms.
+            Bitcoin and crypto-friendly casinos with the best bonus offers. Crypto deposit and withdrawal windows compared from each operator&apos;s published cashier page, wagering requirements broken down side by side.
           </p>
           <div className="flex flex-wrap gap-4 mt-5 text-sm text-gray-400">
-            <span className="text-orange-400">✓ {cryptoCasinos.length} crypto casinos tested</span>
-            <span className="text-orange-400">✓ Withdrawal times verified</span>
+            <span className="text-orange-400">✓ {cryptoCasinos.length} crypto casinos reviewed</span>
+            <span className="text-orange-400">✓ Withdrawal windows compared</span>
             <span className="text-orange-400">✓ Wagering requirements checked</span>
           </div>
         </div>

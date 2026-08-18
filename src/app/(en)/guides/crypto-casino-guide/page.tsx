@@ -282,7 +282,7 @@ export default function CryptoCasinoGuidePage() {
         {/* Best crypto casinos */}
         <div id="casinos" className="mb-10">
           <h2 className="text-2xl font-black text-white mb-2">Best Crypto Casinos 2026</h2>
-          <p className="text-gray-500 text-sm mb-6">Tested and ranked by our team — real deposits and withdrawals verified</p>
+          <p className="text-gray-500 text-sm mb-6">Reviewed and ranked from published operator T&amp;Cs — cashier windows, wagering and bonus terms compared</p>
           <div className="space-y-4">
             {cryptoCasinos.map((casino, index) => (
               <div key={casino.id} className="bg-[#161820] border border-orange-500/20 hover:border-orange-400/40 rounded-xl p-5 transition-all">

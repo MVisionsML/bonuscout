@@ -4,8 +4,8 @@ import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Free Spins Casino Bonuses 2026 — Real Free Spin Offers',
-  description: 'The best free spins casino bonuses in 2026. Spin for free on real slots at licensed, tested casinos. No fluff — just real offers.',
+  title: 'Free Spins Casino Bonuses 2026 — Reviewed Free Spin Offers',
+  description: 'The best free spins casino bonuses in 2026. Spin for free on real slots at licensed casinos — offers compiled from each operator&apos;s published bonus terms.',
 }
 
 export default function FreeSpinsPage() {

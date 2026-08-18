@@ -5,14 +5,14 @@ import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Stake Casino vs Blockspins 2026 — Best Crypto Casino?',
-  description: 'Stake Casino vs Blockspins compared. Both crypto casinos tested side by side. Wagering, withdrawals, games and bonuses compared. Which is better?',
+  description: 'Stake Casino vs Blockspins compared. Both crypto casinos reviewed side by side from published operator terms. Wagering, withdrawal windows, games and bonuses compared. Which is better?',
   alternates: { canonical: 'https://www.bonuscout.com/stake-vs-blockspins' }
 }
 
 const faqs = [
   { q: 'Is Stake Casino better than Blockspins?', a: 'For most players yes. Stake offers 0x wagering on promos, a larger game library and faster withdrawals. Blockspins is better for smaller crypto deposits and provably fair games specifically.' },
   { q: 'Do both Stake and Blockspins accept Bitcoin?', a: 'Yes. Both are crypto-native casinos accepting Bitcoin and other cryptocurrencies. Stake also accepts a wider range of altcoins.' },
-  { q: 'Which has faster crypto withdrawals?', a: 'Stake processes crypto withdrawals in 1-4 hours — among the fastest we have tested. Blockspins is comparable at 1-4 hours for Bitcoin withdrawals.' },
+  { q: 'Which has faster crypto withdrawals?', a: 'Stake publishes a 1-4 hour crypto withdrawal window on its cashier page. Blockspins publishes a comparable Bitcoin withdrawal window per its cashier terms. Verify current windows on each operator&apos;s cashier before depositing.' },
 ]
 
 export default function StakeVsBlockspinsPage() {
@@ -42,7 +42,7 @@ export default function StakeVsBlockspinsPage() {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-black text-white mb-3">Stake Casino vs Blockspins 2026</h1>
-        <p className="text-gray-400 mb-8">Two of the best crypto casinos compared. We tested both — here&apos;s what we found.</p>
+        <p className="text-gray-400 mb-8">Two of the best crypto casinos compared side by side — bonus, wagering and published withdrawal windows compiled from each operator&apos;s current T&amp;Cs.</p>
 
         <div className="grid grid-cols-2 gap-4 mb-8">
           {[stake, blockspins].map(casino => (

@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Bester Willkommensbonus Casino 2026',
-  description: 'Die besten Casino Willkommensboni 2026. Match-Boni, Einzahlungsboni und Erstangebote — bewertet nach Wert und Fairness. Alle Angebote getestet.',
+  description: 'Die besten Casino Willkommensboni 2026. Match-Boni, Einzahlungsboni und Erstangebote — bewertet nach Wert und Fairness aus veröffentlichten Bonusbedingungen der Anbieter.',
   alternates: { canonical: 'https://www.bonuscout.com/de/boni/willkommensbonus' }
 }
 
@@ -49,9 +49,9 @@ export default function DeWillkommensbonusPage() {
           <div className="text-gray-500 text-xs">{lowestCasino?.name}</div>
         </div>
         <div>
-          <div className="text-[#F5A623] font-bold mb-1">Einzahlung getestet</div>
-          <div className="text-white font-black text-2xl">{welcome.filter(c => c.depositTested).length}/{welcome.length}</div>
-          <div className="text-gray-500 text-xs">Casinos verifiziert</div>
+          <div className="text-[#F5A623] font-bold mb-1">Willkommensangebote</div>
+          <div className="text-white font-black text-2xl">{welcome.length}</div>
+          <div className="text-gray-500 text-xs">Aus veröffentlichten AGB der Anbieter</div>
         </div>
       </div>
 

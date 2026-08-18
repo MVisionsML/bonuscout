@@ -32,7 +32,7 @@ export default function PragmaticPlayPage() {
         <div className="bg-gradient-to-r from-red-900/20 to-red-800/10 border border-red-500/20 rounded-2xl p-8 mb-8">
           <h1 className="text-3xl md:text-4xl font-black text-white mb-3">Best Pragmatic Play Casinos 2026</h1>
           <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-            Play Gates of Olympus, Sweet Bonanza and Big Bass Bonanza at the best-rated Pragmatic Play casinos. All tested and verified by our team.
+            Play Gates of Olympus, Sweet Bonanza and Big Bass Bonanza at the best-rated Pragmatic Play casinos. All reviewed and ranked from published operator T&amp;Cs.
           </p>
           <div className="flex flex-wrap gap-3 mt-5">
             {['Gates of Olympus', 'Sweet Bonanza', 'Big Bass Bonanza', 'Book of Tut', 'Starlight Princess'].map(s => (

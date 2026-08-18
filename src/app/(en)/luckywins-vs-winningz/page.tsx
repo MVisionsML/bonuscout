@@ -5,14 +5,14 @@ import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'LuckyWins vs Winningz Casino 2026 — Which is Better?',
-  description: 'LuckyWins Casino vs Winningz Casino compared. Bonus, wagering, games and withdrawals tested side by side. Which casino is better in 2026?',
+  description: 'LuckyWins Casino vs Winningz Casino compared. Bonus, wagering, games and published withdrawal windows compared side by side from operator T&Cs. Which casino is better in 2026?',
   alternates: { canonical: 'https://www.bonuscout.com/luckywins-vs-winningz' }
 }
 
 const faqs = [
   { q: 'Is LuckyWins or Winningz better for bonuses?', a: 'LuckyWins offers a larger bonus at €8,000 + 500 Free Spins but with 40x wagering. Winningz offers €5,000 + 500 Free Spins at 35x wagering. For overall value, Winningz wins due to the lower wagering requirement.' },
-  { q: 'Which has faster withdrawals — LuckyWins or Winningz?', a: 'Both process withdrawals within 24-48 hours. Our team has tested both and found withdrawal speeds comparable. E-wallets are fastest at both casinos.' },
-  { q: 'Are both LuckyWins and Winningz safe?', a: 'Both hold Curaçao licenses and our team has verified their operations. Neither holds an MGA or UKGC license, which is the highest safety tier. Both are legitimate and pay out winnings.' },
+  { q: 'Which has faster withdrawals — LuckyWins or Winningz?', a: 'Both publish 24-48 hour withdrawal windows on their cashier pages. E-wallets and crypto are typically fastest at both operators per the published payment-method schedule.' },
+  { q: 'Are both LuckyWins and Winningz safe?', a: 'LuckyWins operates under a Tobique Gaming Commission licence (#0000002) — a low-tier but verifiable gaming licence. Winningz operates under Costa Rica corporate registration with no dedicated gaming licence stated in its footer or T&Cs. Neither holds an MGA or UKGC licence. Player fund handling and payout reliability should be independently checked (casino.guru, AskGamblers) before depositing.' },
 ]
 
 export default function LuckyWinsVsWinningzPage() {
@@ -45,7 +45,7 @@ export default function LuckyWinsVsWinningzPage() {
         <h1 className="text-3xl md:text-4xl font-black text-white mb-3">
           LuckyWins vs Winningz Casino 2026
         </h1>
-        <p className="text-gray-400 mb-8">We tested both casinos. Here&apos;s how they compare on bonus, wagering, games and withdrawals.</p>
+        <p className="text-gray-400 mb-8">Both casinos compared side by side on bonus, wagering, games and published withdrawal windows — compiled from each operator&apos;s current T&amp;Cs.</p>
 
         {/* Side by side header */}
         <div className="grid grid-cols-2 gap-4 mb-8">

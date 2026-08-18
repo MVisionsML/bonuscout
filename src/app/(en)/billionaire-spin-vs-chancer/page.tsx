@@ -5,14 +5,14 @@ import { FAQSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Billionaire Spin vs Chancer Casino 2026 — Which is Better?',
-  description: 'Billionaire Spin vs Chancer Casino compared side by side. Bonus, wagering, cashback and withdrawals tested. Which casino is better in 2026?',
+  description: 'Billionaire Spin vs Chancer Casino compared side by side. Bonus, wagering, cashback and withdrawal terms reviewed from published operator T&Cs. Which casino is better in 2026?',
   alternates: { canonical: 'https://www.bonuscout.com/billionaire-spin-vs-chancer' }
 }
 
 const faqs = [
   { q: 'Is Billionaire Spin or Chancer better for bonuses?', a: 'Chancer wins on wagering with 30x vs Billionaire Spin&apos;s 35x. However, Billionaire Spin includes 25% cashback alongside its welcome bonus — a unique advantage that makes it more valuable for players who expect to lose during the bonus period.' },
   { q: 'Which has the lowest wagering — Billionaire Spin or Chancer?', a: 'Chancer has the lowest wagering at 30x, making it one of the best in our entire comparison. Billionaire Spin is 35x which is still fair and offset by the cashback inclusion.' },
-  { q: 'Are both casinos safe to play at?', a: 'Both hold Curaçao licenses and our team has made real deposits and withdrawals at both. Neither holds an MGA or UKGC license, but both are legitimate and pay out winnings reliably.' },
+  { q: 'Are both casinos safe to play at?', a: 'Both hold Curaçao licenses per their published footers. Neither holds an MGA or UKGC license — Curaçao is a lower regulatory tier. Player fund handling and payout reliability should be independently checked (casino.guru, AskGamblers) before depositing.' },
 ]
 
 export default function BillionaireVsChancerPage() {
@@ -42,7 +42,7 @@ export default function BillionaireVsChancerPage() {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-black text-white mb-3">Billionaire Spin vs Chancer Casino 2026</h1>
-        <p className="text-gray-400 mb-8">Two casinos with the best wagering in our comparison. We tested both — here&apos;s how they stack up.</p>
+        <p className="text-gray-400 mb-8">Two casinos with the best wagering in our comparison. Bonus, wagering and cashback terms compared side by side from each operator&apos;s published T&amp;Cs.</p>
 
         <div className="grid grid-cols-2 gap-4 mb-8">
           {[billionaire, chancer].map(casino => (
