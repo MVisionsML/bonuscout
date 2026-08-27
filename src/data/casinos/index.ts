@@ -11,9 +11,13 @@ import { Casino } from '@/types'
 // 308 catches any /reviews/talismania or /reviews/wonaco-casino request that
 // slips through (from external referrers / old SERP entries), but internal
 // links MUST route via the helper so we never internally fire through a redirect.
+// 2026-08-27: talismania + wonaco-casino specialised from general-review
+// /articles/{slug}-casino-review URLs to bonus-only /articles/{slug}-bonus
+// URLs. Aligns with BC's declared bonuses-only scope. Same-domain redirects
+// only (no cross-domain 301 to BR — locked policy preserved).
 const CANONICAL_OVERRIDES: Record<string, string> = {
-  'talismania':    '/articles/talismania-casino-review',
-  'wonaco-casino': '/articles/wonaco-casino-review',
+  'talismania':    '/articles/talismania-bonus',
+  'wonaco-casino': '/articles/wonaco-casino-bonus',
 }
 export function casinoUrl(slug: string): string {
   return CANONICAL_OVERRIDES[slug] ?? `/reviews/${slug}`

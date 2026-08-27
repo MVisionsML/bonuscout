@@ -29,16 +29,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // as the EN /reviews/[slug] template after C1.
   // Target query family: "{brand} bonus", "{brand} willkommensbonus",
   // "{brand} freispiele", "{brand} bonus code", "{brand} bonusangebot".
+  // hreflang omission (2026-08-27): talismania + wonaco-casino EN counterparts
+  // are now bonus-only /articles/{slug}-bonus URLs (bonus-lane specialization),
+  // while these DE bewertungen pages still render general-review content. The
+  // two are no longer language variants of the same content, so we omit
+  // hreflang 'en' for these slugs — signalling a false language pair to Google
+  // would emit a bad hreflang signal. DE bonus-only twins are tracked in the
+  // audit action #4 (BC DE-gap remediation) to resolve the mismatch properly.
+  const SPECIALIZED_EN_ONLY = new Set(['talismania', 'wonaco-casino'])
+  const enHref = SPECIALIZED_EN_ONLY.has(slug)
+    ? undefined
+    : `https://www.bonuscout.com${casinoUrl(slug)}`
+  const languages: Record<string, string> = { 'de': `https://www.bonuscout.com/de/bewertungen/${slug}` }
+  if (enHref) languages['en'] = enHref
   return {
     title,
     description,
     alternates: {
       canonical: `https://www.bonuscout.com/de/bewertungen/${slug}`,
-      // hreflang must point at the CANONICAL EN URL for each brand —
-      // casinoUrl() returns /articles/{slug}-casino-review for the 2 reverse
-      // pairs (talismania, wonaco-casino) so hreflang doesn't advertise a
-      // redirecting URL to crawlers.
-      languages: { 'en': `https://www.bonuscout.com${casinoUrl(slug)}`, 'de': `https://www.bonuscout.com/de/bewertungen/${slug}` }
+      languages,
     }
   }
 }

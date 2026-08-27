@@ -58,30 +58,34 @@ const nextConfig: NextConfig = {
       { source: "/articles/winningz-casino-review",                                                    destination: "/reviews/winningz-casino",           permanent: true },
 
       // ── Hybrid-strategy article cleanup, phase 2 (2026-06-30) ────────────
-      // The 7 held /articles/<brand>-casino-review URLs (had >=50 impressions
-      // when phase 1 ran on 2026-06-22) are now mapped per the 90-day GSC
-      // inventory + position-differential analysis:
-      //
-      //  Forward (6 of 7): keep /reviews/{slug} as canonical, redirect
-      //  /articles/{slug}-casino-review → /reviews/{slug}. Standard direction.
-      //
-      //  Reverse (2 of 7): /reviews/talismania and /reviews/wonaco-casino
-      //  redirect to their /articles/ counterparts — those article URLs hold
-      //  materially better position (talismania 14.1 vs 32.9; wonaco 16.8 vs
-      //  28.3). Reverse direction preserves the accumulated authority on the
-      //  article URL rather than throwing it away.
-      //
+      // The 5 forward-mapped /articles/<brand>-casino-review URLs (had >=50
+      // impressions when phase 1 ran on 2026-06-22) redirect to /reviews/{slug}.
       // All sources land directly at their destination — no chains, no loops.
-      // Internal-link audit covered separately to ensure no <Link> still
-      // points at a redirected source.
       { source: "/articles/vegashero-casino-review",   destination: "/reviews/vegashero-casino",          permanent: true },
       { source: "/articles/spinfever-casino-review",   destination: "/reviews/spin-fever-casino",         permanent: true },
       { source: "/articles/jackpoty-casino-review",    destination: "/reviews/jackpoty",                  permanent: true },
       { source: "/articles/luckymax-casino-review",    destination: "/reviews/luckymax-casino",           permanent: true },
       { source: "/articles/crocoslots-casino-review",  destination: "/reviews/crocoslots",                permanent: true },
-      // Reverse pair: /articles/ rank > /reviews/ rank → /articles/ becomes canonical.
-      { source: "/reviews/talismania",                 destination: "/articles/talismania-casino-review", permanent: true },
-      { source: "/reviews/wonaco-casino",              destination: "/articles/wonaco-casino-review",     permanent: true },
+
+      // ── Bonus-lane specialization (2026-08-27) ───────────────────────────
+      // talismania + wonaco-casino specialised from general-review
+      // /articles/{slug}-casino-review URLs to bonus-only /articles/{slug}-bonus
+      // URLs. Aligns with BC's declared bonuses-only scope and resolves the
+      // review-lane cannibalization with BR (BR keeps /reviews/talismania and
+      // /reviews/wonaco-casino as the general-review lane). All slugs stay
+      // on-domain — no cross-domain 301, honouring the locked "three separate
+      // sites, no cross-domain 301s" policy. Content rewritten to hedged
+      // bonus-only structural framing (no fabricated specifics — Talismania
+      // and Wonaco are NOT in the 4-casino verified pilot). See
+      // src/app/(en)/articles/{talismania,wonaco-casino}-bonus/page.mdx.
+      //
+      // Both /reviews/{slug} rules previously reverse-canonicalised to
+      // /articles/{slug}-casino-review (phase-2, 2026-06-30). Now point
+      // directly at the new bonus URLs to preserve the single-hop chain.
+      { source: "/articles/talismania-casino-review",  destination: "/articles/talismania-bonus",         permanent: true },
+      { source: "/articles/wonaco-casino-review",      destination: "/articles/wonaco-casino-bonus",      permanent: true },
+      { source: "/reviews/talismania",                 destination: "/articles/talismania-bonus",         permanent: true },
+      { source: "/reviews/wonaco-casino",              destination: "/articles/wonaco-casino-bonus",      permanent: true },
 
       // ── Cannibalization cleanup, phase 3 REVERSED (2026-07-25) ───────────
       // The three cross-domain 301s that used to send /reviews/luckymax-casino,
