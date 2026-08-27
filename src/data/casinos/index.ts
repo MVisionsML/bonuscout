@@ -61,8 +61,10 @@ export const casinos: Casino[] = [
     cons: ['Curaçao license only', 'Newer brand'],
     games: 3000, software: ['Pragmatic Play', 'Evolution', 'NetEnt'],
     safetyIndex: 'medium', markets: ['global'], founded: 2025,
-    homepage: 'https://www.winningz.com', legalName: 'Simba N.V.',
-    licenseAuthority: 'Curaçao GCB', licenseNumber: 'OGL/2024/1788/1030'
+    homepage: 'https://www.winningz.com', legalName: 'Simba N.V.'
+    // licenseAuthority / licenseNumber intentionally omitted per line-27 convention.
+    // Winningz has no gaming licence stated in its T&Cs — see /luckywins-vs-winningz
+    // FAQ and BR /reviews/winningz-casino data (regulatoryStatus: "Not stated in T&C — regulator unverified").
   },
   {
     id: '5', name: 'Rooli Casino', slug: 'rooli-casino', logo: '🎰', logoUrl: '/logos/rooli.webp',
@@ -432,7 +434,9 @@ export const casinos: Casino[] = [
     cons: ['Curaçao license only', 'Complex bonus structure'],
     games: 2500, software: ['Pragmatic Play', 'Evolution', 'Hacksaw Gaming'],
     safetyIndex: 'medium', markets: ['global'], founded: 2023,
-    homepage: 'https://spinfever.com', legalName: 'Dama N.V.',
-    licenseAuthority: 'Curaçao eGaming (Antillephone N.V.)', licenseNumber: '8048/JAZ2020-13'
+    homepage: 'https://spinfever.com', legalName: 'Dama N.V.'
+    // licenseAuthority / licenseNumber intentionally omitted per line-27 convention.
+    // Spin Fever's licence has not been independently verified against the primary regulator register;
+    // BR /reviews/spinfever data (regulatoryStatus: "Licence not verified from primary source") confirms.
   }
 ]
