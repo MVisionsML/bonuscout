@@ -119,7 +119,7 @@ export default function HomePage() {
             ))}
           </div>
           <Link href="/how-we-rate" className="text-[#F5A623] text-sm font-bold hover:underline">
-            Read the full testing methodology →
+            Read the full review methodology →
           </Link>
         </section>
 
@@ -284,7 +284,7 @@ export default function HomePage() {
               <div className="text-[10px] uppercase tracking-[0.2em] text-gray-500 mb-1">Reviewed by</div>
               <div className="font-black text-white text-sm mb-1">The BonusCout editorial team</div>
               <p className="text-xs text-gray-500 leading-relaxed">
-                Tested, scored and updated by our in-house casino testing team.{' '}
+                Documented, scored and updated by our in-house editorial team.{' '}
                 <Link href="/team" className="text-[#F5A623] hover:underline">About the team</Link>
                 {' · '}
                 <Link href="/editorial-policy" className="text-[#F5A623] hover:underline">Editorial policy</Link>

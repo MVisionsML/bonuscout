@@ -98,7 +98,7 @@ export const casinos: Casino[] = [
     licenses: ['MGA'], affiliateLink: 'https://vgr.naralvin.com/?mid=300235_1802598',
     tag: 'MGA Licensed',
     bestFor: 'Players who prioritise MGA licensing, progressive jackpots like Mega Moolah and a structured VIP loyalty programme with tiered rewards',
-    verdict: 'VegasHero Casino holds an MGA license — the gold standard in online gambling regulation — which immediately sets it apart from most competitors in our comparison. The Microgaming partnership brings access to Mega Moolah and other progressive jackpot titles with life-changing prize pools. The €500 + 200 Free Spins welcome bonus at 35x wagering is fair and in line with the industry standard. Where VegasHero falls short is payment variety — the limited selection of deposit and withdrawal methods may frustrate players who rely on e-wallets or crypto. The 1,500-game library is also smaller than average, though the quality of Microgaming and Evolution titles partially compensates. The tiered loyalty programme rewards consistent play and is one of the better VIP structures we have tested at this price point.',
+    verdict: 'VegasHero Casino holds an MGA license — the gold standard in online gambling regulation — which immediately sets it apart from most competitors in our comparison. The Microgaming partnership brings access to Mega Moolah and other progressive jackpot titles with life-changing prize pools. The €500 + 200 Free Spins welcome bonus at 35x wagering is fair and in line with the industry standard. Where VegasHero falls short is payment variety — the limited selection of deposit and withdrawal methods may frustrate players who rely on e-wallets or crypto. The 1,500-game library is also smaller than average, though the quality of Microgaming and Evolution titles partially compensates. The tiered loyalty programme rewards consistent play and, based on the published tier structure, is one of the better VIP setups in our comparison at this price point.',
     pros: ['MGA licensed — highest regulatory standard in online gambling', 'Mega Moolah and progressive jackpot access via Microgaming', 'Structured tiered loyalty programme with real rewards', '35x wagering — fair and industry standard', 'Evolution live dealer tables with professional hosts', '24-48h withdrawal window published in operator cashier terms'],
     cons: ['Narrow payment options — no crypto, limited e-wallets', 'Smaller game library at 1,500 titles vs 3,000-6,000 at competitors', 'No Pragmatic Play or Hacksaw Gaming slots available', 'Free spins value below average compared to top-tier offers'],
     games: 1500, software: ['Microgaming', 'Evolution'],
@@ -195,7 +195,8 @@ export const casinos: Casino[] = [
     games: 2500, software: ['Pragmatic Play', 'Evolution', "Play'n GO"],
     safetyIndex: 'medium', markets: ['global'], founded: 2025,
     legalName: 'Terdersoft B.V.',
-    licenseAuthority: 'Curaçao GCB', licenseNumber: 'OGL/2024/1126/0521'
+    licenseAuthority: 'Curaçao GCB', licenseNumber: ''
+    // licenseNumber left empty per line-27 convention: not independently verified against the primary regulator register in this pass.
     // homepage intentionally omitted: canonical brand homepage not recoverable in research
     // (casino.guru reports "ceased operations"). Do not fabricate a URL.
   },
@@ -229,7 +230,7 @@ export const casinos: Casino[] = [
     licenses: ['Curaçao'], affiliateLink: 'https://stake.com/?c=Gz6a5jar',
     tag: 'Crypto Favorite',
     bestFor: 'Crypto players who want provably fair games and no wagering requirements',
-    verdict: "Stake is the most crypto-native full-service casino in this comparison — provably fair games, 0x wagering on promotional offers, and one of the fastest withdrawal pipelines we've tested.",
+    verdict: "Stake is the most crypto-native full-service casino in this comparison — provably fair games, 0x wagering on promotional offers, and one of the fastest published crypto withdrawal windows in our comparison per its cashier documentation.",
     pros: ['0x wagering on promos', 'Fastest withdrawals 1-4h', 'Provably fair games', 'Crypto native'],
     cons: ['Limited fiat options', 'Offer varies by user'],
     games: 3000, software: ['Stake Originals', 'Pragmatic Play', 'Evolution'],
@@ -391,7 +392,8 @@ export const casinos: Casino[] = [
     games: 2000, software: ['Pragmatic Play', 'Hacksaw Gaming', 'Evolution'],
     safetyIndex: 'medium', markets: ['global'], founded: 2024,
     homepage: 'https://talismania.com', legalName: 'Rabidi N.V.',
-    licenseAuthority: 'Curaçao GCB', licenseNumber: 'OGL/2023/103/0067'
+    // licenseNumber left empty per line-27 convention: not independently verified against the primary regulator register in this pass.
+    licenseAuthority: 'Curaçao GCB', licenseNumber: ''
   },
   {
     id: '18', name: 'Wonaco Casino', slug: 'wonaco-casino', logo: '🎪', logoUrl: '/logos/wonaco.webp',

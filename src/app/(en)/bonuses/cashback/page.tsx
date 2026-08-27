@@ -74,7 +74,7 @@ export default function CashbackPage() {
         Other Top Bonuses Worth Considering
       </h2>
       <p className="text-sm text-gray-500 mb-5">
-        If cashback isn&apos;t available in your region, these alternatives have the fairest wagering terms we&apos;ve tested.
+        If cashback isn&apos;t available in your region, these alternatives have the fairest wagering terms in our comparison per each operator&apos;s published bonus T&amp;Cs.
       </p>
       <div className="space-y-4 mb-14">
         {others.map((casino, index) => (

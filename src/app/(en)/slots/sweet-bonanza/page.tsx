@@ -121,7 +121,7 @@ export default function SweetBonanzaReview() {
         <div className="space-y-3 text-sm text-gray-400 leading-relaxed">
           <p>Sweet Bonanza has been one of the most-played slots in Europe since its 2019 release, and it has aged better than most contemporaries. The candy aesthetic remains fresh, the tumble mechanic delivers high base-game engagement, and the free-spins multiplier bombs produce some of the most replayable bonus rounds in the Pragmatic Play catalogue.</p>
           <p>Where Sweet Bonanza falls short of Gates of Olympus is in the multiplier-persistence trade-off. Gates accumulates multipliers across the bonus round; Sweet Bonanza resets per spin. This makes Sweet&apos;s peak hits higher in theory (21,175x vs Gates&apos;s 15,000x) but lower in expected frequency. For players who prefer steadier, more predictable bonus runs, Gates is a better fit. For players who want the rare lottery-style mega-hit, Sweet Bonanza delivers more upside variance.</p>
-          <p>Our rating is 8.5/10. The slot loses half a point versus Gates of Olympus because base-game returns are flatter — without multipliers in regular play, dry stretches feel longer. But the bonus round design is exceptional, and the 96.48% RTP holds in independent testing. A staple of any serious slot rotation.</p>
+          <p>Our rating is 8.5/10. The slot loses half a point versus Gates of Olympus because base-game returns are flatter — without multipliers in regular play, dry stretches feel longer. But the bonus round design is exceptional, and the 96.48% RTP is the Pragmatic Play published figure verified against the studio spec sheet. A staple of any serious slot rotation.</p>
         </div>
       </div>
 

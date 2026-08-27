@@ -105,7 +105,7 @@ export default async function ReviewPage({ params }: Props) {
                 <span className="text-gray-500">/{casino.ratingMax}</span>
               </div>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="bg-green-500/10 text-green-400 border border-green-500/20 text-sm px-3 py-1 rounded-full font-medium">✓ Tested & Verified</span>
+                <span className="bg-green-500/10 text-green-400 border border-green-500/20 text-sm px-3 py-1 rounded-full font-medium">✓ Documented &amp; Verified</span>
                 {casino.licenses.map(l => (
                   <span key={l} className="bg-[#252830] text-gray-400 border border-[#2E3040] text-sm px-3 py-1 rounded-full font-medium">{l}</span>
                 ))}
@@ -318,7 +318,7 @@ export default async function ReviewPage({ params }: Props) {
             </div>
             <div className="prose prose-invert prose-sm max-w-none text-gray-400 leading-relaxed space-y-3">
               <p>{casino.verdict}</p>
-              <p>{casino.wagering <= 30 ? `The ${casino.wagering}x wagering is genuinely among the best we have tested this quarter — a meaningful advantage over the 35-40x standard at most competitors.` : casino.wagering <= 35 ? `The ${casino.wagering}x wagering is fair and within the acceptable range. Not exceptional, but not a reason to avoid the casino.` : `The ${casino.wagering}x wagering is the main caveat. You will need to bet through significantly more before withdrawing bonus-derived winnings.`}</p>
+              <p>{casino.wagering <= 30 ? `The ${casino.wagering}x wagering is genuinely among the lowest in our comparison per the operator's published terms — a meaningful advantage over the 35-40x standard at most competitors.` : casino.wagering <= 35 ? `The ${casino.wagering}x wagering is fair and within the acceptable range. Not exceptional, but not a reason to avoid the casino.` : `The ${casino.wagering}x wagering is the main caveat. You will need to bet through significantly more before withdrawing bonus-derived winnings.`}</p>
               <p>{casino.name} is {casino.rating >= 4.2 ? 'a strong choice we actively recommend' : casino.rating >= 4.0 ? 'a solid option worth considering' : 'an acceptable option but not our first recommendation'}. Best for: {casino.bestFor}.</p>
             </div>
           </div>

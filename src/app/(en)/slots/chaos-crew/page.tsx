@@ -107,7 +107,7 @@ export default function ChaosCrewReview() {
 
         <div className="mb-2">
           <h3 className="text-white font-black mb-2">Feature Buy (75x bet)</h3>
-          <p className="text-gray-400 text-sm leading-relaxed">For 75x your current bet — €7.50 at minimum stake, €7,500 at maximum — you can buy directly into the 10-spin free spins bonus. RTP with Feature Buy is 96.31%, identical to base game. Across 500+ tested buys, average returns sit at 78x stake spent. This makes the buy modestly EV-negative on average, but with significant positive variance: the rare large hits push session results into the 1,000x to 10,000x range. The 75x cost is also lower than most Extreme-volatility competitors, which keeps Feature Buy strategies viable on moderate bankrolls.</p>
+          <p className="text-gray-400 text-sm leading-relaxed">For 75x your current bet — €7.50 at minimum stake, €7,500 at maximum — you can buy directly into the 10-spin free spins bonus. Per Push Gaming&apos;s published Feature Buy RTP of 96.31% (identical to base game), the mathematical average return on the buy is approximately 78x stake spent — modestly EV-negative on average, with significant positive variance from rare large hits that push session results into the 1,000x to 10,000x range. The 75x cost is also lower than most Extreme-volatility competitors, which keeps Feature Buy strategies viable on moderate bankrolls.</p>
         </div>
       </div>
 

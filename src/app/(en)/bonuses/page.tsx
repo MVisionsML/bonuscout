@@ -52,7 +52,7 @@ export default function BonusesPage() {
         </div>
         <h1 className="text-4xl font-black text-white mb-3">Casino Bonuses</h1>
         <p className="text-gray-400 text-lg max-w-2xl">
-          Every bonus on this site has been claimed and tested. We only list bonuses we&apos;d claim ourselves.
+          Every bonus on this site is documented directly from the operator&apos;s published T&amp;Cs. We only list bonuses that pass our documentary review.
         </p>
       </div>
 
