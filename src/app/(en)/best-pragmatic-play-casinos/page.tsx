@@ -13,7 +13,7 @@ const ppCasinos = casinos.filter(c => c.software.includes('Pragmatic Play'))
 
 const faqs = [
   { q: 'What are the most popular Pragmatic Play slots?', a: 'Gates of Olympus (96.5% RTP, 5,000x max win), Sweet Bonanza (96.48% RTP, 21,175x max win), Big Bass Bonanza (96.71% RTP), and Book of Tut are consistently the most played Pragmatic Play titles.' },
-  { q: 'Which casino has the best Pragmatic Play bonus?', a: 'LuckyWins Casino offers the largest overall bonus at €8,000 + 500 Free Spins and includes Pragmatic Play in its library. Winningz Casino at €5,000 + 500 Free Spins with 35x wagering offers better value per spin.' },
+  { q: 'Which casino has the best Pragmatic Play bonus?', a: 'Winningz Casino publishes the largest verified welcome package in our index at €5,000 + 500 Free Spins with 35x wagering, and its library includes Pragmatic Play. LuckyWins Casino also carries Pragmatic Play and publishes a verified 3x deposit playthrough; the current headline bonus figure applies per the operator’s current promotion T&Cs — verify on the operator site before claiming.' },
   { q: 'Does Pragmatic Play offer live casino games?', a: 'Yes. Pragmatic Play Live includes Lightning Roulette, Mega Sic Bo, and live game show titles alongside their slot portfolio. Many casinos in our list offer both Pragmatic Play slots and live dealer games.' },
 ]
 

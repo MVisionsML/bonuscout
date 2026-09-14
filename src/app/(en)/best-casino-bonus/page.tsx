@@ -14,7 +14,7 @@ const sorted = [...casinos].sort((a, b) => b.rating - a.rating)
 const top3 = [luckywins, ...sorted.filter(c => c.slug !== 'luckywins-casino')].slice(0, 3)
 
 const faqs = [
-  { q: 'What is the best casino bonus right now?', a: 'LuckyWins Casino offers the biggest bonus at €8,000 + 500 Free Spins, while Winningz Casino offers €5,000 + 500 Free Spins at a lower 35x wagering. For pure value vs wagering, Winningz is our top pick.' },
+  { q: 'What is the best casino bonus right now?', a: 'Winningz Casino publishes the largest verified welcome package in our index at €5,000 + 500 Free Spins with 35x wagering, and is our top pick for pure value vs wagering. LuckyWins publishes a verified 3x deposit playthrough — a rare low figure — but its current welcome headline applies per the operator’s current promotion T&Cs, so verify on the operator site before claiming.' },
   { q: 'How do I find the best casino bonus?', a: 'Compare three numbers: bonus amount, wagering requirement, and minimum deposit. A smaller bonus with lower wagering is often more valuable than a larger bonus with high wagering. Use our wagering calculator to compare.' },
   { q: 'What bonus type is best for players?', a: 'Cashback bonuses are technically the most player-friendly since they return a percentage of losses with minimal wagering. Welcome bonuses offer the most free funds upfront. No deposit bonuses are best for testing a casino risk-free.' },
 ]

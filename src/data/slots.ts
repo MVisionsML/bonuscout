@@ -19,7 +19,7 @@ export interface Slot {
 export const slots: Slot[] = [
   {
     slug: 'gates-of-olympus', name: 'Gates of Olympus', provider: 'Pragmatic Play',
-    rtp: 96.5, volatility: 'Very High', maxWin: 15000, minBet: 0.20, maxBet: 125,
+    rtp: 96.5, volatility: 'Very High', maxWin: 5000, minBet: 0.20, maxBet: 125,
     paylines: 'Pays Anywhere (8+ symbols)', releaseYear: 2021,
     theme: 'Greek mythology — Zeus and Mount Olympus',
     rating: 9.0,

@@ -33,21 +33,21 @@ export const casinos: Casino[] = [
   {
     id: '1', name: 'LuckyWins Casino', slug: 'luckywins-casino', logo: '🍀', logoUrl: '/logos/luckywins.webp',
     rating: 4.4, ratingMax: 5.0,
-    bonus: '€8,000 + 500 Free Spins',
+    bonus: 'Welcome bonus per current promotion',
     bonusType: 'welcome',
-    wagering: 40, minDeposit: 20,
+    wagering: 3, minDeposit: 20,
     withdrawalTime: '24h',
     supportType: 'Live chat',
-    licenses: ['Curaçao'], affiliateLink: 'https://playluckywins.com/j18a5d498',
-    tag: 'Biggest Bonus',
-    bestFor: 'Players who want the biggest welcome package on the market',
-    verdict: 'Excellent bonus value and a 4,000+ game library; the 40x wagering is the only real sticking point.',
-    pros: ['€8,000 welcome package', '500 free spins', '4,000+ games', 'Fast withdrawals'],
-    cons: ['40x wagering requirement', 'Curaçao license only'],
+    licenses: ['Tobique'], affiliateLink: 'https://playluckywins.com/j18a5d498',
+    tag: 'Verified Licence',
+    bestFor: 'Players who want a verified low-tier gaming licence with a low 3x deposit playthrough',
+    verdict: 'Novatrix SRL operates LuckyWins under a Tobique Gaming Commission licence (#0000002) — a real if low-tier gaming regulator, which sets LuckyWins apart from the many Curaçao-only or unlicensed brands in this space. The verified 3x deposit playthrough is the standout term: an honest, player-friendly figure that avoids the trap of trying to lock deposits behind extreme rollover. The bonus wagering multiplier and welcome-bonus headline number apply per the current promotion T&Cs — verify on the operator site before claiming, as we do not publish unverified figures.',
+    pros: ['Tobique Gaming Commission licence #0000002 — real (low-tier) regulator', '3x deposit playthrough verified — player-friendly', '4,000+ game library', 'Fast 24h withdrawals'],
+    cons: ['Low-tier licensing — not MGA/UKGC', 'Bonus headline and wagering multiplier per current promotion — not independently verified', 'UK, US, and many other territories restricted'],
     games: 4000, software: ['Pragmatic Play', 'Evolution', 'NetEnt'],
     safetyIndex: 'medium', markets: ['global'], founded: 2023,
-    homepage: 'https://www.luckywins.com', legalName: 'Dama N.V.',
-    licenseAuthority: 'Curaçao GCB', licenseNumber: 'OGL/2023/174/0082'
+    homepage: 'https://www.luckywins.com', legalName: 'Novatrix SRL',
+    licenseAuthority: 'Tobique Gaming Commission', licenseNumber: '0000002'
   },
   {
     id: '17', name: 'Winningz Casino', slug: 'winningz-casino', logo: '🏆', logoUrl: '/logos/winningz.webp',
@@ -92,28 +92,29 @@ export const casinos: Casino[] = [
   {
     id: '6', name: 'VegasHero Casino', slug: 'vegashero-casino', logo: '🦸', logoUrl: '/logos/vegashero.webp',
     seoTitle: 'VegasHero Casino Bonus 2026 — €500 + 200 Free Spins, Mega Moolah Access',
-    seoDescription: 'VegasHero Casino: €500 + 200 Free Spins at 35x wagering. Mega Moolah jackpot access via Microgaming, tiered VIP loyalty programme, MGA licensed. Bonus claim guide.',
+    seoDescription: 'VegasHero Casino: €500 + 200 Free Spins at 35x wagering. Mega Moolah jackpot access via Microgaming, tiered VIP loyalty programme. Bonus claim guide.',
     seoTitleDe: 'VegasHero Casino Bonus 2026 — €500 + 200 Freispiele, Mega Moolah Zugang',
-    seoDescriptionDe: 'VegasHero Casino: €500 + 200 Freispiele bei 35-facher Umsatzbedingung. Mega-Moolah-Jackpot über Microgaming, gestaffeltes VIP-Programm, MGA-lizenziert. Bonus-Guide.',
+    seoDescriptionDe: 'VegasHero Casino: €500 + 200 Freispiele bei 35-facher Umsatzbedingung. Mega-Moolah-Jackpot über Microgaming, gestaffeltes VIP-Programm. Bonus-Guide.',
     rating: 4.0, ratingMax: 5.0,
     bonus: '€500 + 200 Free Spins',
     bonusType: 'welcome',
     wagering: 35, minDeposit: 20,
     withdrawalTime: '24-48h',
     supportType: 'Live chat',
-    licenses: ['MGA'], affiliateLink: 'https://vgr.naralvin.com/?mid=300235_1802598',
-    tag: 'MGA Licensed',
-    bestFor: 'Players who prioritise MGA licensing, progressive jackpots like Mega Moolah and a structured VIP loyalty programme with tiered rewards',
-    verdict: 'VegasHero Casino holds an MGA license — the gold standard in online gambling regulation — which immediately sets it apart from most competitors in our comparison. The Microgaming partnership brings access to Mega Moolah and other progressive jackpot titles with life-changing prize pools. The €500 + 200 Free Spins welcome bonus at 35x wagering is fair and in line with the industry standard. Where VegasHero falls short is payment variety — the limited selection of deposit and withdrawal methods may frustrate players who rely on e-wallets or crypto. The 1,500-game library is also smaller than average, though the quality of Microgaming and Evolution titles partially compensates. The tiered loyalty programme rewards consistent play and, based on the published tier structure, is one of the better VIP setups in our comparison at this price point.',
-    pros: ['MGA licensed — highest regulatory standard in online gambling', 'Mega Moolah and progressive jackpot access via Microgaming', 'Structured tiered loyalty programme with real rewards', '35x wagering — fair and industry standard', 'Evolution live dealer tables with professional hosts', '24-48h withdrawal window published in operator cashier terms'],
-    cons: ['Narrow payment options — no crypto, limited e-wallets', 'Smaller game library at 1,500 titles vs 3,000-6,000 at competitors', 'No Pragmatic Play or Hacksaw Gaming slots available', 'Free spins value below average compared to top-tier offers'],
+    licenses: [], affiliateLink: 'https://vgr.naralvin.com/?mid=300235_1802598',
+    tag: 'Loyalty Programme',
+    bestFor: 'Players who prioritise Mega Moolah progressive jackpot access and a structured VIP loyalty programme with tiered rewards',
+    verdict: 'VegasHero Casino runs a Microgaming-backed platform with Mega Moolah and other progressive jackpot titles at its centre — the operator relaunched in 2025 under Lumina Holdings Limitada, which is a Costa Rica corporate registration rather than a verifiable gaming regulator, so licensing sits below competitors with MGA / Curaçao GCB coverage. The €500 + 200 Free Spins welcome bonus at 35x wagering is fair and in line with the industry standard. Where VegasHero falls short is payment variety — the limited selection of deposit and withdrawal methods may frustrate players who rely on e-wallets or crypto. The 1,500-game library is also smaller than average, though the quality of Microgaming and Evolution titles partially compensates. The tiered loyalty programme rewards consistent play and, based on the published tier structure, is one of the better VIP setups in our comparison at this price point.',
+    pros: ['Mega Moolah and progressive jackpot access via Microgaming', 'Structured tiered loyalty programme with real rewards', '35x wagering — fair and industry standard', 'Evolution live dealer tables with professional hosts', '24-48h withdrawal window published in operator cashier terms'],
+    cons: ['No verifiable gaming licence — Costa Rica corporate registration only', 'Narrow payment options — no crypto, limited e-wallets', 'Smaller game library at 1,500 titles vs 3,000-6,000 at competitors', 'No Pragmatic Play or Hacksaw Gaming slots available', 'Free spins value below average compared to top-tier offers'],
     games: 1500, software: ['Microgaming', 'Evolution'],
-    safetyIndex: 'high', markets: ['global'], founded: 2025,
+    safetyIndex: 'medium', markets: ['global'], founded: 2025,
     homepage: 'https://vegashero.com', legalName: 'Lumina Holdings Limitada'
     // Note: current live brand is a 2025 relaunch by Lumina Holdings under Costa Rica registration
     // (COS-13633-FG is corporate reg, not a gaming licence). Original 2017 MGA-licensed Genesis
-    // Global brand is defunct. License field intentionally omitted per Phase 0.1 rule:
-    // Costa Rica corporate registration ≠ verifiable gaming regulator.
+    // Global brand is defunct. License fields intentionally omitted per Phase 0.1 rule:
+    // Costa Rica corporate registration ≠ verifiable gaming regulator. licenses: [] and
+    // safetyIndex downgraded from 'high' to 'medium' to match BR's verified stance.
   },
   {
     id: '4', name: 'BinoBet Casino', slug: 'binobet-casino', logo: '🎲', logoUrl: '/logos/binobet.webp',
@@ -370,16 +371,18 @@ export const casinos: Casino[] = [
     wagering: 35, minDeposit: 20,
     withdrawalTime: '24-48h',
     supportType: 'Live chat',
-    licenses: ['Curaçao'], affiliateLink: 'https://roosterpartner.media/n1958594f0',
+    licenses: [], affiliateLink: 'https://roosterpartner.media/n1958594f0',
     tag: 'Sports + Casino',
     bestFor: 'High rollers and sports bettors who want a combined casino and sportsbook',
-    verdict: 'A genuine sportsbook-casino hybrid with a large welcome package — the multi-product offering is the main differentiator for players who bet on both.',
+    verdict: 'A sportsbook-casino hybrid with a large welcome package — the multi-product offering is the main differentiator for players who bet on both. Operator legal entity and gaming licence are not independently verified in this pass — check the operator site and independent trust ratings (casino.guru, AskGamblers) before depositing.',
     pros: ['$5,000 welcome package', '300 free spins', 'Sports + Casino hybrid', '35x wagering'],
-    cons: ['Curaçao license only', 'Complex bonus structure'],
+    cons: ['Operator legal entity and gaming licence not independently verified', 'Complex bonus structure'],
     games: 3000, software: ['Pragmatic Play', 'Evolution', 'Sportradar'],
     safetyIndex: 'medium', markets: ['global'], founded: 2023,
-    homepage: 'https://rooster.bet', legalName: 'Dama N.V.',
-    licenseAuthority: 'Curaçao GCB', licenseNumber: 'OGL/2023/174/0082'
+    homepage: 'https://rooster.bet'
+    // legalName / licenseAuthority / licenseNumber intentionally omitted per line-27 convention.
+    // Prior values (Dama N.V. / Curaçao GCB / OGL/2023/174/0082) were copy-pasted from Rooli
+    // and not independently verified against a primary regulator register for this operator.
   },
   {
     id: '16', name: 'TalisMania', slug: 'talismania', logo: '🔮', logoUrl: '/logos/talismania.webp',

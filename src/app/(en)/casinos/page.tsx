@@ -35,7 +35,7 @@ export default function CasinosPage() {
       </div>
 
       <div className="flex flex-wrap gap-2 mb-8">
-        {['All', 'Highest Bonus', 'Lowest Wagering', 'Crypto', 'MGA Licensed', 'Cashback'].map((f, i) => (
+        {['All', 'Highest Bonus', 'Lowest Wagering', 'Crypto', 'Cashback'].map((f, i) => (
           <button key={f} className={`px-4 py-2 rounded-full text-sm font-medium border transition-colors ${
             i === 0
               ? 'bg-[#F5A623] text-black border-[#F5A623] font-bold'

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 }
 
 const faqs = [
-  { q: 'Is LuckyWins or Winningz better for bonuses?', a: 'LuckyWins offers a larger bonus at €8,000 + 500 Free Spins but with 40x wagering. Winningz offers €5,000 + 500 Free Spins at 35x wagering. For overall value, Winningz wins due to the lower wagering requirement.' },
+  { q: 'Is LuckyWins or Winningz better for bonuses?', a: 'Winningz publishes a verified €5,000 + 500 Free Spins welcome at 35x bonus wagering, so its bonus terms are directly comparable. LuckyWins publishes a verified 3x deposit playthrough (an unusually low deposit-side requirement), but its current welcome-bonus headline applies per the operator’s current promotion T&Cs and is not independently verified in this pass. On published, comparable terms, Winningz has the more transparent bonus.' },
   { q: 'Which has faster withdrawals — LuckyWins or Winningz?', a: 'Both publish 24-48 hour withdrawal windows on their cashier pages. E-wallets and crypto are typically fastest at both operators per the published payment-method schedule.' },
   { q: 'Are both LuckyWins and Winningz safe?', a: 'LuckyWins operates under a Tobique Gaming Commission licence (#0000002) — a low-tier but verifiable gaming licence. Winningz operates under Costa Rica corporate registration with no dedicated gaming licence stated in its footer or T&Cs. Neither holds an MGA or UKGC licence. Player fund handling and payout reliability should be independently checked (casino.guru, AskGamblers) before depositing.' },
 ]
@@ -20,13 +20,13 @@ export default function LuckyWinsVsWinningzPage() {
   const winningz = casinos.find(c => c.slug === 'winningz-casino')!
 
   const criteria = [
-    { label: 'Welcome Bonus', lw: luckywins.bonus, wz: winningz.bonus, winner: 'lw' },
-    { label: 'Wagering', lw: `${luckywins.wagering}x`, wz: `${winningz.wagering}x`, winner: 'wz' },
+    { label: 'Welcome Bonus', lw: luckywins.bonus, wz: winningz.bonus, winner: 'wz' },
+    { label: 'Wagering', lw: `${luckywins.wagering}x deposit`, wz: `${winningz.wagering}x bonus`, winner: 'tie' },
     { label: 'Min Deposit', lw: `€${luckywins.minDeposit}`, wz: `€${winningz.minDeposit}`, winner: 'tie' },
     { label: 'Withdrawal Time', lw: luckywins.withdrawalTime, wz: winningz.withdrawalTime, winner: 'tie' },
     { label: 'Games', lw: `${luckywins.games.toLocaleString()}+`, wz: `${winningz.games.toLocaleString()}+`, winner: 'lw' },
     { label: 'Our Rating', lw: `${luckywins.rating}/5`, wz: `${winningz.rating}/5`, winner: 'lw' },
-    { label: 'License', lw: luckywins.licenses.join(', '), wz: winningz.licenses.join(', '), winner: 'tie' },
+    { label: 'License', lw: 'Tobique #0000002 (verified)', wz: 'Not stated in T&C', winner: 'lw' },
   ]
 
   return (
@@ -91,9 +91,10 @@ export default function LuckyWinsVsWinningzPage() {
         <div className="bg-[#161820] border border-[#F5A623]/20 rounded-xl p-6 mb-8">
           <h2 className="font-black text-white text-xl mb-4">Our Verdict — Which is Better?</h2>
           <div className="prose prose-invert prose-sm max-w-none text-gray-400 leading-relaxed space-y-3">
-            <p><span className="text-white font-bold">For bonus value vs wagering:</span> Winningz wins. The €5,000 + 500 Free Spins package at 35x is more attainable than LuckyWins&apos; €8,000 at 40x. The difference of 5x wagering is significant — on a €100 bonus, that&apos;s €500 more you need to wager.</p>
+            <p><span className="text-white font-bold">For bonus value vs wagering:</span> Winningz has the more transparent published package — €5,000 + 500 Free Spins at 35x bonus wagering, directly comparable to any competitor. LuckyWins publishes a verified 3x deposit playthrough (a rare, low deposit-side figure), but its current welcome-bonus headline applies per the operator&apos;s current promotion T&amp;Cs and isn&apos;t independently verified here, so it can&apos;t be directly compared on the headline number.</p>
             <p><span className="text-white font-bold">For game variety:</span> LuckyWins edges ahead with 4,000+ games vs Winningz&apos;s 3,000+. Both have strong Pragmatic Play and Evolution libraries.</p>
-            <p><span className="text-white font-bold">Overall:</span> If you want the best bonus value, go with Winningz. If you want the absolute largest bonus and don&apos;t mind the higher wagering, LuckyWins is the pick.</p>
+            <p><span className="text-white font-bold">For verified licensing:</span> LuckyWins holds a real (if low-tier) gaming licence — Tobique Gaming Commission #0000002 under Novatrix SRL. Winningz has no gaming licence stated in its T&amp;Cs (regulator unverified). For players who weight verifiable licensing at all, this is LuckyWins&apos; strongest signal.</p>
+            <p><span className="text-white font-bold">Overall:</span> If you want published, comparable bonus terms, go with Winningz. If you want a verified gaming licence and a low deposit-side playthrough (with the trade-off that the current bonus headline applies per operator T&amp;Cs), LuckyWins is the pick.</p>
           </div>
         </div>
 

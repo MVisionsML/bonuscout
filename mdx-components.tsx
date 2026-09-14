@@ -1,7 +1,7 @@
 import type { MDXComponents } from 'mdx/types'
 
 // Styles MDX content (from /articles/* page.mdx files and /news/* via MDXRemote) to match
-// BonusScout's dark theme. The override map is exported two ways:
+// BonusCout's dark theme. The override map is exported two ways:
 //   - `mdxComponents` const: for async server components that pass components explicitly to
 //     <MDXRemote> (calling useMDXComponents in an async function trips react-hooks lint).
 //   - `useMDXComponents` function: required by Next.js MDX integration to apply overrides
