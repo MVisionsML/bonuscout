@@ -4,10 +4,12 @@ import { casinos , casinoUrl } from '@/data/casinos'
 import { Metadata } from 'next'
 import { WebsiteSchema } from '@/components/seo/SchemaMarkup'
 import HeroSection from '@/components/home/HeroSection'
+import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Best Online Casino Bonuses 2026 | Trusted Casino Reviews',
   description: 'Compare trusted online casinos, welcome bonuses, free spins and no deposit offers. Expert reviews, safety checks and updated casino promotions 2026.',
+  alternates: alternatesFor('/'),
 }
 
 const SCORING = [

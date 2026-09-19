@@ -2,10 +2,12 @@ import Link from 'next/link'
 import CasinoCard from '@/components/casino/CasinoCard'
 import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
+import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Best Welcome Bonuses 2026 — Top Casino Deposit Bonuses',
   description: 'The best casino welcome bonuses in 2026. Match bonuses, deposit bonuses, and first deposit offers — ranked by value and fairness.',
+  alternates: alternatesFor('/bonuses/welcome'),
 }
 
 export default function WelcomeBonusPage() {

@@ -1,9 +1,10 @@
-import { casinos , casinoUrl } from '@/data/casinos'
+import { casinos, casinoUrl } from '@/data/casinos'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { CasinoOrganizationSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup'
+import { alternatesForReview } from '@/lib/i18n'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -24,13 +25,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = casino.seoDescription
     ?? `Every active ${casino.name} bonus in one place: ${casino.bonus} welcome offer at ${casino.wagering}x wagering, free spins, and the full bonus terms broken down from published operator T&Cs.`
   return {
-    // Hybrid-strategy metadata (2026-06-22): title/H1/description deliberately
-    // shifted from generic "Review" to bonus-targeted intent so this page no
-    // longer competes with bonusreviewers.com/reviews/{slug} on "{brand} review".
-    // Target query family: "{brand} bonus", "{brand} welcome offer", "{brand} free spins".
     title,
     description,
-    alternates: { canonical: `https://www.bonuscout.com/reviews/${casino.slug}` }
+    alternates: alternatesForReview({ slug, side: 'en' }),
   }
 }
 

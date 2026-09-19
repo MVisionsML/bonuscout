@@ -2,11 +2,12 @@ import Link from 'next/link'
 import { casinos , casinoUrl } from '@/data/casinos'
 import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
+import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Wagering Requirements Explained — Complete Guide 2026',
   description: 'Everything you need to know about casino wagering requirements. How they work, how to calculate them, which games count, and how to find the lowest wagering casinos.',
-  alternates: { canonical: 'https://www.bonuscout.com/guides/wagering-requirements-explained' }
+  alternates: alternatesFor('/guides/wagering-requirements-explained'),
 }
 
 const lowestWagering = [...casinos].sort((a, b) => a.wagering - b.wagering).slice(0, 5)

@@ -3,10 +3,12 @@ import Link from 'next/link'
 import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
+import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'No Deposit Casino Bonuses 2026 — Current State of the Market',
   description: 'The no-deposit bonus category has thinned across the market. Honest breakdown of why, what to look for, and welcome-bonus alternatives with free spins that work similarly.',
+  alternates: alternatesFor('/bonuses/no-deposit'),
 }
 
 const faqs = [

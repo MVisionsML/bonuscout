@@ -2,10 +2,12 @@ import Link from 'next/link'
 import CasinoCard from '@/components/casino/CasinoCard'
 import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
+import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Best Online Casinos 2026 — Reviewed from Published Terms & Licensing',
   description: 'Every casino on this list is reviewed from its published Terms & Conditions, cashier page and licensing records. Bonus terms, wagering, and payment methods broken down side by side.',
+  alternates: alternatesFor('/casinos'),
 }
 
 export default function CasinosPage() {

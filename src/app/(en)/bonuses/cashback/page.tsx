@@ -3,10 +3,12 @@ import Link from 'next/link'
 import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
+import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Best Casino Cashback Bonuses 2026 — Get Money Back on Losses',
   description: 'Find casinos offering 10-25% cashback on losses. Compare the best cashback casino bonuses with low wagering requirements. Updated weekly.',
+  alternates: alternatesFor('/bonuses/cashback'),
 }
 
 const faqs = [

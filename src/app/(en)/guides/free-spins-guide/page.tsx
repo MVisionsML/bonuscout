@@ -2,11 +2,12 @@ import Link from 'next/link'
 import { casinos , casinoUrl } from '@/data/casinos'
 import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
+import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Free Spins Guide 2026 — How Free Spins Work',
   description: 'Complete guide to casino free spins. How they work, what the winnings are worth, wagering on free spin wins, and which casinos offer the best free spins deals.',
-  alternates: { canonical: 'https://www.bonuscout.com/guides/free-spins-guide' }
+  alternates: alternatesFor('/guides/free-spins-guide'),
 }
 
 const freeSpinCasinos = casinos.filter(c => c.bonus.toLowerCase().includes('spin')).slice(0, 5)

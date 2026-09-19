@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
+import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Casino Reviews 2026 — Analyzed from Published Terms & Licensing',
   description: 'In-depth casino reviews compiled from published Terms & Conditions, cashier pages and licensing records — 10-dimension analysis of each operator.',
+  alternates: alternatesFor('/reviews'),
 }
 
 export default function ReviewsPage() {

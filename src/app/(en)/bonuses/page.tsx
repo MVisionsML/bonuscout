@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
+import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Casino Bonuses 2026 — No Deposit, Free Spins & Welcome Offers',
   description: 'Find the best casino bonuses in 2026. No deposit bonuses, free spins, welcome offers, and cashback — all compiled from published operator terms.',
+  alternates: alternatesFor('/bonuses'),
 }
 
 const bonusCategories = [

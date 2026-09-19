@@ -1,9 +1,10 @@
 import { MetadataRoute } from 'next'
 import { casinos, casinoUrl } from '@/data/casinos'
+import { URL_PAIRS, BASE } from '@/lib/i18n'
 import fs from 'node:fs'
 import path from 'node:path'
 
-const base = 'https://www.bonuscout.com'
+const base = BASE
 
 // Scans src/app/(en)/articles/ at build time. Every subdirectory containing a page.mdx
 // becomes /articles/<dirname>. The SEO-agent pipeline drops new articles here; this scan
@@ -31,6 +32,15 @@ function scanNews(): { slug: string; lastModified: Date }[] {
       const filePath = path.join(newsDir, f)
       return { slug: f.replace(/\.mdx$/, ''), lastModified: fs.statSync(filePath).mtime }
     })
+}
+
+// Reciprocal-language alternates for URLs whose translation pair is registered
+// in URL_PAIRS. Returns undefined for untranslated URLs so untranslated entries
+// stay clean (no empty languages block).
+function langsFor(pathname: string): { languages: Record<string, string> } | undefined {
+  const pair = URL_PAIRS.find(p => p.en === pathname || p.de === pathname)
+  if (!pair) return undefined
+  return { languages: { en: `${base}${pair.en}`, de: `${base}${pair.de}` } }
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -84,7 +94,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/billionaire-spin-vs-chancer`, priority: 0.8 },
     // /luckymax-vs-jackpoty removed 2026-07-22 — page deleted (hard-referenced
     // the removed luckymax slug); URL 308s to /reviews/jackpoty.
-  ].map(p => ({ ...p, lastModified: now, changeFrequency: 'monthly' as const }))
+  ].map(p => ({
+    ...p,
+    lastModified: now,
+    changeFrequency: 'monthly' as const,
+    alternates: langsFor(p.url === base ? '/' : p.url.replace(base, '')),
+  }))
 
   const dePages = [
     { url: `${base}/de`, priority: 1.0 },
@@ -104,25 +119,47 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/de/ratgeber/freispiele-guide`, priority: 0.85 },
     { url: `${base}/de/ratgeber/einzahlungsanforderungen-erklaert`, priority: 0.85 },
     { url: `${base}/de/ratgeber/kein-einzahlungsbonus-guide`, priority: 0.85 },
-  ].map(p => ({ ...p, lastModified: now, changeFrequency: 'monthly' as const }))
-
-  // Route each casino to its canonical URL — most resolve to /reviews/{slug},
-  // but talismania and wonaco-casino route to /articles/{slug}-casino-review
-  // per the 2026-06-30 redirect map. casinoUrl() returns the right path so
-  // we never put a URL in the sitemap that the next.config.ts 308s away from.
-  const enReviews = casinos.map(c => ({
-    url: `${base}${casinoUrl(c.slug)}`,
+  ].map(p => ({
+    ...p,
     lastModified: now,
     changeFrequency: 'monthly' as const,
-    priority: 0.85
+    alternates: langsFor(p.url.replace(base, '')),
   }))
 
-  const deReviews = casinos.map(c => ({
-    url: `${base}/de/bewertungen/${c.slug}`,
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.8
-  }))
+  // Casino reviews: EN + DE variants. SPECIALIZED_EN_ONLY slugs (talismania,
+  // wonaco-casino) have their EN counterpart pointing at /articles/{slug}-bonus
+  // and different-intent content on DE — the two sides are no longer language
+  // variants of the same content, so we omit sitemap-level reciprocal alternates
+  // for those slugs. Mirrors the alternatesForReview() suppression in @/lib/i18n.
+  const SPECIALIZED_EN_ONLY = new Set(['talismania', 'wonaco-casino'])
+
+  const enReviews = casinos.map(c => {
+    const enHref = `${base}${casinoUrl(c.slug)}`
+    const deHref = `${base}/de/bewertungen/${c.slug}`
+    return {
+      url: enHref,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.85,
+      alternates: SPECIALIZED_EN_ONLY.has(c.slug)
+        ? undefined
+        : { languages: { en: enHref, de: deHref } },
+    }
+  })
+
+  const deReviews = casinos.map(c => {
+    const enHref = `${base}${casinoUrl(c.slug)}`
+    const deHref = `${base}/de/bewertungen/${c.slug}`
+    return {
+      url: deHref,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+      alternates: SPECIALIZED_EN_ONLY.has(c.slug)
+        ? undefined
+        : { languages: { en: enHref, de: deHref } },
+    }
+  })
 
   const articles = scanArticles().map(a => ({
     url: `${base}/articles/${a.slug}`,

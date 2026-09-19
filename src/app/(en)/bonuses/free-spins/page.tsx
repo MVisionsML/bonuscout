@@ -2,10 +2,12 @@ import Link from 'next/link'
 import CasinoCard from '@/components/casino/CasinoCard'
 import { casinos } from '@/data/casinos'
 import { Metadata } from 'next'
+import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Free Spins Casino Bonuses 2026 — Reviewed Free Spin Offers',
   description: 'The best free spins casino bonuses in 2026. Spin for free on real slots at licensed casinos — offers compiled from each operator&apos;s published bonus terms.',
+  alternates: alternatesFor('/bonuses/free-spins'),
 }
 
 export default function FreeSpinsPage() {

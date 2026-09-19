@@ -2,11 +2,12 @@ import Link from 'next/link'
 import { casinos , casinoUrl } from '@/data/casinos'
 import { Metadata } from 'next'
 import { FAQSchema } from '@/components/seo/SchemaMarkup'
+import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Best Crypto Casino Bonus 2026 — Bitcoin & Ethereum Casinos Reviewed',
   description: 'Best crypto casino bonuses 2026. Bitcoin, Ethereum and crypto-friendly casinos ranked by bonus value, wagering and published withdrawal windows.',
-  alternates: { canonical: 'https://www.bonuscout.com/crypto-casino-bonus' }
+  alternates: alternatesFor('/crypto-casino-bonus'),
 }
 
 const cryptoCasinos = casinos.filter(c =>
