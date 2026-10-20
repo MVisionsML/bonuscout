@@ -6,7 +6,7 @@ import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Kein Einzahlungsbonus Guide 2026 — Schritt für Schritt sichern',
-  description: 'Kein Einzahlungsbonus richtig holen: Schritt-für-Schritt Anleitung, KYC, Maximalauszahlung und häufige Fehler. Aktualisiert Juni 2026.',
+  description: 'Kein Einzahlungsbonus richtig holen: Schritt-für-Schritt Anleitung, KYC, Maximalauszahlung und häufige Fehler.',
   alternates: alternatesFor('/de/ratgeber/kein-einzahlungsbonus-guide'),
 }
 
@@ -39,7 +39,7 @@ export default function DeKeinEinzahlungsbonusPage() {
 
         <h1 className="text-3xl md:text-4xl font-black text-white mb-4">Kein Einzahlungsbonus Holen</h1>
         <div className="flex items-center gap-3 text-sm text-gray-500 mb-8">
-          <span>4 Min. Lesezeit</span><span>·</span><span>Aktualisiert Juni 2026</span><span>·</span><span>BonusCout Team</span>
+          <span>4 Min. Lesezeit</span><span>·</span><span>BonusCout Team</span>
         </div>
 
         <div className="space-y-8">

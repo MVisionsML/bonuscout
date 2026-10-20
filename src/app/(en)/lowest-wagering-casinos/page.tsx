@@ -80,7 +80,7 @@ export default function LowestWageringPage() {
                   <div className="text-[#F5A623] font-bold text-sm mb-1">{casino.bonus}</div>
                   <div className="flex items-center gap-4 text-xs text-gray-500">
                     <span>Min: €{casino.minDeposit}</span>
-                    <span>{casino.licenses.join(', ')}</span>
+                    <span>{casino.licenses.join(', ') || 'Licence unverified'}</span>
                   </div>
                 </div>
                 {/* Wagering badge */}

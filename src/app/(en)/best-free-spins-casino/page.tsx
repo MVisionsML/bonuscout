@@ -62,7 +62,7 @@ export default function BestFreeSpinsPage() {
                   <div className="text-[#F5A623] font-bold text-sm">{casino.bonus}</div>
                   <div className="text-xs text-gray-500 mt-0.5">
                     Wagering: <span className={casino.wagering <= 30 ? 'text-green-400 font-bold' : casino.wagering <= 35 ? 'text-yellow-400 font-bold' : 'text-red-400 font-bold'}>{casino.wagering}x</span>
-                    {' · '}Min: €{casino.minDeposit} · {casino.licenses.join(', ')}
+                    {' · '}Min: €{casino.minDeposit} · {casino.licenses.join(', ') || 'Licence unverified'}
                   </div>
                 </div>
                 <div className="flex flex-col gap-2">

@@ -5,7 +5,7 @@ import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Beste Online Casinos 2026 — Aus veröffentlichten AGB & Lizenzunterlagen',
-  description: 'Die besten Online Casinos 2026 unabhängig bewertet — jede Bewertung erstellt aus den veröffentlichten AGB, Kassiererseiten und Lizenzunterlagen des Anbieters. Aktualisiert Mai 2026.',
+  description: 'Die besten Online Casinos 2026 unabhängig bewertet — jede Bewertung erstellt aus den veröffentlichten AGB, Kassiererseiten und Lizenzunterlagen des Anbieters.',
   alternates: alternatesFor('/de/casinos'),
 }
 
@@ -43,7 +43,7 @@ export default function DeCasinosPage() {
                 <div className="text-[#F5A623] font-bold text-sm">{casino.bonus}</div>
                 <div className="text-xs text-gray-500 mt-0.5">
                   Umsatz: <span className={casino.wagering <= 30 ? 'text-green-400 font-bold' : casino.wagering <= 35 ? 'text-yellow-400 font-bold' : 'text-red-400 font-bold'}>{casino.wagering}x</span>
-                  {' · '}Min: €{casino.minDeposit} · {casino.licenses.join(', ')}
+                  {' · '}Min: €{casino.minDeposit} · {casino.licenses.join(', ') || 'Lizenz nicht verifiziert'}
                 </div>
               </div>
               <div className="flex flex-col gap-2 flex-shrink-0">

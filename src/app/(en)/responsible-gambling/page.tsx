@@ -4,6 +4,7 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Responsible Gambling — BonusCout',
   description: 'Responsible gambling information and resources. Set limits, take breaks and know where to get help if gambling becomes a problem.',
+  alternates: { canonical: 'https://www.bonuscout.com/responsible-gambling' },
 }
 
 export default function ResponsibleGamblingPage() {

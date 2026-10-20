@@ -33,8 +33,8 @@ export default function FooterDe() {
             <h4 className="text-white font-bold text-sm mb-4">Info</h4>
             <ul className="space-y-2 text-xs text-gray-500">
               <li><Link href="/de/ratgeber" className="hover:text-[#F5A623]">Ratgeber</Link></li>
-              <li><Link href="/de/uber-uns" className="hover:text-[#F5A623]">Über Uns</Link></li>
-              <li><Link href="/de/verantwortungsvolles-spielen" className="hover:text-[#F5A623]">Verantwortungsvolles Spielen</Link></li>
+              <li><Link href="/about" className="hover:text-[#F5A623]">Über Uns (EN)</Link></li>
+              <li><Link href="/responsible-gambling" className="hover:text-[#F5A623]">Verantwortungsvolles Spielen (EN)</Link></li>
             </ul>
           </div>
         </div>

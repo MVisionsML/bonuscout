@@ -4,6 +4,7 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'About the BonusCout Editorial Team | Casino Reviews',
   description: 'About the BonusCout editorial team. How we organise our editorial evaluation work, the experience behind our reviews, and how to reach us.',
+  alternates: { canonical: 'https://www.bonuscout.com/team' },
 }
 
 export default function TeamPage() {

@@ -32,7 +32,6 @@ export default function Footer() {
               <li><Link href="/casinos" className="hover:text-[#F5A623] transition-colors">All Casinos</Link></li>
               <li><Link href="/reviews" className="hover:text-[#F5A623] transition-colors">Casino Reviews</Link></li>
               <li><Link href="/slots" className="hover:text-[#F5A623] transition-colors">Slot Reviews</Link></li>
-              <li><Link href="/casinos/new" className="hover:text-[#F5A623] transition-colors">New Casinos</Link></li>
               <li><Link href="/free-games" className="hover:text-[#F5A623] transition-colors">Free Games</Link></li>
               <li>
                 <a

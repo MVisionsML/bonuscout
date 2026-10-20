@@ -3,10 +3,10 @@ import { useEffect, useRef } from 'react'
 import Link from 'next/link'
 
 const TICKER_ITEMS = [
-  '19 Casinos Reviewed', 'Updated May 2026', '0x Wagering Available', 'Published Bonus Terms',
-  'Compiled from Operator T&Cs', 'Independent Rankings', 'Published Withdrawal Windows', 'Licensed Casinos Only',
-  '19 Casinos Reviewed', 'Updated May 2026', '0x Wagering Available', 'Published Bonus Terms',
-  'Compiled from Operator T&Cs', 'Independent Rankings', 'Published Withdrawal Windows', 'Licensed Casinos Only',
+  '19 Casinos Reviewed', '0x Wagering Available', 'Published Bonus Terms',
+  'Compiled from Operator T&Cs', 'Independent Rankings', 'Published Withdrawal Windows',
+  '19 Casinos Reviewed', '0x Wagering Available', 'Published Bonus Terms',
+  'Compiled from Operator T&Cs', 'Independent Rankings', 'Published Withdrawal Windows',
 ]
 
 const STATS = [
@@ -119,7 +119,7 @@ export default function HeroSection() {
           {/* Badge */}
           <div className="mb-5">
             <span className="text-[10px] uppercase tracking-[0.3em] text-gray-500 border border-[#1a1c24] px-4 py-1.5 rounded-full">
-              Independent Casino Reviews · May 2026
+              Independent Casino Reviews
             </span>
           </div>
 

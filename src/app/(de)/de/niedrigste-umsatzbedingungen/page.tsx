@@ -5,7 +5,7 @@ import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Niedrigste Umsatzbedingungen Casino 2026 — 30x und Weniger',
-  description: 'Casinos mit den niedrigsten Umsatzbedingungen 2026. Von 0x bis 30x — alle aus veröffentlichten Anbieterbedingungen verglichen. Aktualisiert Mai 2026.',
+  description: 'Casinos mit den niedrigsten Umsatzbedingungen 2026. Von 0x bis 30x — alle aus veröffentlichten Anbieterbedingungen verglichen.',
   alternates: alternatesFor('/de/niedrigste-umsatzbedingungen'),
 }
 
@@ -52,7 +52,7 @@ export default function DeNiedrigsteUmsatzPage() {
                   {casino.tag && <span className="text-xs bg-[#F5A623]/10 text-[#F5A623] border border-[#F5A623]/20 px-2 py-0.5 rounded-full font-bold">{casino.tag}</span>}
                 </div>
                 <div className="text-[#F5A623] font-bold text-sm">{casino.bonus}</div>
-                <div className="text-xs text-gray-500 mt-0.5">Min: €{casino.minDeposit} · {casino.licenses.join(', ')}</div>
+                <div className="text-xs text-gray-500 mt-0.5">Min: €{casino.minDeposit} · {casino.licenses.join(', ') || 'Lizenz nicht verifiziert'}</div>
               </div>
               <div className="flex-shrink-0 text-center mr-2">
                 <div className={`text-2xl font-black ${casino.wagering === 0 ? 'text-green-400' : casino.wagering <= 30 ? 'text-green-400' : casino.wagering <= 35 ? 'text-yellow-400' : 'text-red-400'}`}>

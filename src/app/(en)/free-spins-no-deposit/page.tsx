@@ -32,7 +32,6 @@ export default function FreeSpinsNoDepositPage() {
       </div>
 
       <div className="bg-gradient-to-r from-blue-900/40 to-blue-800/10 border border-blue-500/30 rounded-2xl p-8 mb-8">
-        <div className="text-xs text-blue-400 font-bold mb-2 uppercase tracking-wide">Updated June 2026</div>
         <h1 className="text-3xl md:text-4xl font-black text-white mb-3">Free Spins No Deposit — Real Math, No Marketing</h1>
         <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">Most &quot;50 free spins&quot; offers are worth €3–€8 in actual real money — not the €25 the marketing suggests. We calculate the real value of every offer below.</p>
       </div>

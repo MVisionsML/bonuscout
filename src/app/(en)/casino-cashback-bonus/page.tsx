@@ -32,7 +32,6 @@ export default function CashbackBonusPage() {
       </div>
 
       <div className="bg-gradient-to-r from-green-900/40 to-green-800/10 border border-green-500/30 rounded-2xl p-8 mb-8">
-        <div className="text-xs text-green-400 font-bold mb-2 uppercase tracking-wide">Updated June 2026</div>
         <h1 className="text-3xl md:text-4xl font-black text-white mb-3">Casino Cashback Bonus — Calculate Your Real Value</h1>
         <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">Cashback rates from 5% to 25%, weekly vs monthly payouts, and the hidden terms that cap your real return. Math, not marketing.</p>
       </div>

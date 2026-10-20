@@ -5,7 +5,7 @@ import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Beste Casino Boni 2026 — Aus veröffentlichten Anbieterbedingungen',
-  description: 'Die besten Casino Boni 2026 aus den veröffentlichten Bonusbedingungen der Anbieter zusammengestellt. Bonus ohne Einzahlung, Freispiele, niedrigste Umsatzbedingungen und Willkommensboni verglichen. Aktualisiert Mai 2026.',
+  description: 'Die besten Casino Boni 2026 aus den veröffentlichten Bonusbedingungen der Anbieter zusammengestellt. Bonus ohne Einzahlung, Freispiele, niedrigste Umsatzbedingungen und Willkommensboni verglichen.',
   alternates: alternatesFor('/de'),
 }
 
@@ -18,9 +18,6 @@ export default function DeHomePage() {
       {/* Hero */}
       <section className="bg-[#161820] border-b border-[#252830] py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="inline-block bg-[#F5A623]/10 border border-[#F5A623]/20 text-[#F5A623] text-xs font-bold px-3 py-1 rounded-full mb-5 uppercase tracking-widest">
-            Aktualisiert Mai 2026
-          </div>
           <h1 className="text-4xl md:text-6xl font-black text-white mb-4 leading-tight">
             Beste Casino Boni<br />
             <span className="text-[#F5A623]">Aus veröffentlichten Anbieterbedingungen</span>
@@ -73,7 +70,7 @@ export default function DeHomePage() {
         {/* Casino list */}
         <div className="flex items-center justify-between mb-6">
           <div>
-            <h2 className="text-2xl font-black text-white">Beste Casino Boni — Mai 2026</h2>
+            <h2 className="text-2xl font-black text-white">Beste Casino Boni 2026</h2>
             <p className="text-gray-500 text-sm mt-1">{casinos.length} Casinos aus veröffentlichten AGB und Lizenzunterlagen bewertet</p>
           </div>
           <Link href="/de/casinos" className="text-[#F5A623] text-sm font-bold hover:underline">Alle anzeigen →</Link>

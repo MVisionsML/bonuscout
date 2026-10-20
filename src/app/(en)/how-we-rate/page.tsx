@@ -4,6 +4,7 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'How We Evaluate Casinos — Scoring Methodology | BonusCout',
   description: 'How BonusCout scores online casinos: licensing, bonus value, published withdrawal windows, payments, games and support. The exact weight of each category and how we evaluate.',
+  alternates: { canonical: 'https://www.bonuscout.com/how-we-rate' },
 }
 
 const WEIGHTS = [

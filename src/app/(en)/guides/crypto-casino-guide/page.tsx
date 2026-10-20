@@ -6,7 +6,7 @@ import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Crypto Casino Guide 2026 — Bitcoin, Ethereum & Crypto Gambling',
-  description: 'Complete crypto casino guide 2026. Everything about Bitcoin casinos, accepted cryptocurrencies, advantages, how to deposit and the best crypto casino bonuses. Updated May 2026.',
+  description: 'Complete crypto casino guide 2026. Everything about Bitcoin casinos, accepted cryptocurrencies, advantages, how to deposit and the best crypto casino bonuses.',
   alternates: alternatesFor('/guides/crypto-casino-guide'),
 }
 
@@ -73,7 +73,6 @@ export default function CryptoCasinoGuidePage() {
 
         {/* Hero */}
         <div className="bg-gradient-to-r from-orange-900/30 to-orange-800/10 border border-orange-500/20 rounded-2xl p-8 mb-10">
-          <div className="text-xs text-[#F5A623] font-bold mb-2 uppercase tracking-wide">Updated May 2026</div>
           <h1 className="text-3xl md:text-4xl font-black text-white mb-3">
             Crypto Casino Guide 2026
           </h1>
@@ -299,7 +298,7 @@ export default function CryptoCasinoGuidePage() {
                     <div className="text-[#F5A623] font-bold">{casino.bonus}</div>
                     <div className="text-xs text-gray-500 mt-0.5">
                       Wagering: <span className={`font-bold ${casino.wagering === 0 ? 'text-green-400' : casino.wagering <= 30 ? 'text-green-400' : 'text-yellow-400'}`}>{casino.wagering}x</span>
-                      {' · '}Withdrawal: {casino.withdrawalTime} · {casino.licenses.join(', ')}
+                      {' · '}Withdrawal: {casino.withdrawalTime} · {casino.licenses.join(', ') || 'Licence unverified'}
                     </div>
                   </div>
                   <div className="flex flex-col gap-2 flex-shrink-0">

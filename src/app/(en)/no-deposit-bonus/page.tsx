@@ -32,7 +32,6 @@ export default function NoDepositBonusPage() {
       </div>
 
       <div className="bg-gradient-to-r from-[#F5A623]/10 to-[#F5A623]/5 border border-[#F5A623]/20 rounded-2xl p-8 mb-8">
-        <div className="text-xs text-[#F5A623] font-bold mb-2 uppercase tracking-wide">Updated June 2026</div>
         <h1 className="text-3xl md:text-4xl font-black text-white mb-3">No Deposit Bonus — Three Types Compared</h1>
         <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">Not all no deposit offers are equal. We compare the expected value of free spins, free chips, and freeroll tournaments — and which type fits which player.</p>
       </div>

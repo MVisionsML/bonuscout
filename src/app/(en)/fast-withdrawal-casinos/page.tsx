@@ -5,6 +5,7 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Fast Withdrawal Casinos 2026 — Pay Out in Under 24 Hours | BonusCout',
   description: 'Online casinos with the fastest published withdrawal windows. Compiled from each operator&apos;s current cashier page — only operators publishing 24-hour clearance on at least one major payment method make the list.',
+  alternates: { canonical: 'https://www.bonuscout.com/fast-withdrawal-casinos' },
 }
 
 // Parse the human-written withdrawalTime string into a "max hours" number so we

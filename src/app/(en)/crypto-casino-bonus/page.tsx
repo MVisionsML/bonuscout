@@ -39,7 +39,6 @@ export default function CryptoCasinoBonusPage() {
         </div>
 
         <div className="bg-gradient-to-r from-orange-900/30 to-orange-800/10 border border-orange-500/20 rounded-2xl p-8 mb-8">
-          <div className="text-xs text-[#F5A623] font-bold mb-2 uppercase tracking-wide">Updated May 2026</div>
           <h1 className="text-3xl md:text-4xl font-black text-white mb-3">
             Best Crypto Casino Bonus 2026
           </h1>
@@ -101,7 +100,7 @@ export default function CryptoCasinoBonusPage() {
         </div>
 
         {/* Top crypto casinos */}
-        <h2 className="text-2xl font-black text-white mb-2">Best Crypto Casino Bonuses — May 2026</h2>
+        <h2 className="text-2xl font-black text-white mb-2">Best Crypto Casino Bonuses 2026</h2>
         <p className="text-gray-500 text-sm mb-6">Ranked by wagering requirement, withdrawal speed and bonus value</p>
 
         <div className="space-y-4 mb-10">
@@ -129,7 +128,7 @@ export default function CryptoCasinoBonusPage() {
                     <span>Wagering: <span className={`font-bold ${casino.wagering === 0 ? 'text-green-400' : casino.wagering <= 30 ? 'text-green-400' : 'text-yellow-400'}`}>{casino.wagering}x</span></span>
                     <span>Withdrawal: <span className="text-white font-bold">{casino.withdrawalTime}</span></span>
                     <span>Games: <span className="text-white font-bold">{casino.games.toLocaleString()}+</span></span>
-                    <span>{casino.licenses.join(', ')}</span>
+                    <span>{casino.licenses.join(', ') || 'Licence unverified'}</span>
                   </div>
                 </div>
                 <div className="hidden md:flex flex-col gap-2 flex-shrink-0">
@@ -210,8 +209,6 @@ export default function CryptoCasinoBonusPage() {
           <div className="grid grid-cols-2 gap-3">
             {[
               { label: 'Best Crypto Casino Bonuses', href: '/articles/best-crypto-casino-bonus' },
-              { label: 'Blockspins Crypto Casino Review', href: '/articles/blockspins-crypto-casino-review' },
-              { label: 'BitStarz Casino Review', href: '/articles/bitstarz-casino-review-2026-bonuses-games-crypto-payments-honest-verdict' },
               { label: 'Crypto Casino Wagering Requirements', href: '/guides/wagering-requirements-explained' },
               { label: '10% Cashback Crypto Casinos', href: '/articles/best-10-percent-cashback-casinos' },
               { label: 'No Wagering Casinos', href: '/no-wagering-casinos' },

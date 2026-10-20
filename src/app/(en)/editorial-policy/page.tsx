@@ -4,6 +4,7 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Editorial Policy & AI Disclosure | BonusCout',
   description: 'How BonusCout writes, edits, and updates casino reviews. Affiliate disclosure, AI usage disclosure, fact-checking process and how to file a correction or complaint.',
+  alternates: { canonical: 'https://www.bonuscout.com/editorial-policy' },
 }
 
 export default function EditorialPolicyPage() {

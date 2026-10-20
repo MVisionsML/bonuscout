@@ -4,7 +4,7 @@ import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Casino Ratgeber 2026 — Experten Guides',
-  description: 'Experten Casino Ratgeber. Umsatzbedingungen erklärt, Kein Einzahlungsbonus holen, Freispiele Guide und Krypto Casino erklärt. Aktualisiert Mai 2026.',
+  description: 'Experten Casino Ratgeber. Umsatzbedingungen erklärt, Kein Einzahlungsbonus holen, Freispiele Guide und Krypto Casino erklärt.',
   alternates: alternatesFor('/de/ratgeber'),
 }
 

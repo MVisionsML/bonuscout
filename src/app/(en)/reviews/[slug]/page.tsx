@@ -6,6 +6,16 @@ import { Metadata } from 'next'
 import { CasinoOrganizationSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/SchemaMarkup'
 import { alternatesForReview } from '@/lib/i18n'
 
+// Head-to-head comparison pages that involve this casino (contextual internal link).
+const COMPARISONS: Record<string, { label: string; href: string }> = {
+  'luckywins-casino': { label: 'LuckyWins vs Winningz', href: '/luckywins-vs-winningz' },
+  'winningz-casino': { label: 'LuckyWins vs Winningz', href: '/luckywins-vs-winningz' },
+  'stake-casino': { label: 'Stake vs Blockspins', href: '/stake-vs-blockspins' },
+  'blockspins-casino': { label: 'Stake vs Blockspins', href: '/stake-vs-blockspins' },
+  'billionaire-spin': { label: 'Billionaire Spin vs Chancer', href: '/billionaire-spin-vs-chancer' },
+  'chancer-casino': { label: 'Billionaire Spin vs Chancer', href: '/billionaire-spin-vs-chancer' },
+}
+
 interface Props {
   params: Promise<{ slug: string }>
 }
@@ -49,7 +59,11 @@ export default async function ReviewPage({ params }: Props) {
   const relatedCasinos = casinos.filter(c => c.slug !== casino.slug).slice(0, 3)
 
   const faqs = [
-    { q: `Is ${casino.name} legit and safe to play at?`, a: `Yes. ${casino.name} holds a license from ${casino.licenses.join(' and ')} and has been operating since ${casino.founded}. It uses SSL encryption and offers responsible gambling tools including deposit limits and self-exclusion.` },
+    { q: `Is ${casino.name} licensed?`, a: casino.licenseAuthority && casino.licenseNumber
+      ? `${casino.name} is operated by ${casino.legalName} under a ${casino.licenseAuthority} licence, number ${casino.licenseNumber}. Check the number on the regulator's public register before you deposit.`
+      : casino.licenseAuthority
+        ? `${casino.name} lists a ${casino.licenseAuthority} licence${casino.legalName ? `, held by ${casino.legalName}` : ''}, but no licence number we could verify. Check the operator's site and the regulator's register before you deposit.`
+        : `We could not verify a gaming licence for ${casino.name} from its published terms or a public regulator register. Check the operator's site and the regulator's register before you deposit.` },
     { q: `What is the ${casino.name} welcome bonus?`, a: `${casino.name} currently offers ${casino.bonus} for new players. The wagering requirement is ${casino.wagering}x and the minimum deposit to qualify is €${casino.minDeposit}. Always read the full terms before claiming.` },
     { q: `How fast are ${casino.name} withdrawals?`, a: `${casino.name} publishes a ${casino.withdrawalTime} withdrawal window per its cashier terms. Actual timing varies by payment method and account verification status — e-wallets are typically fastest across the industry, cards and bank transfers slowest.` },
     { q: `What games are available at ${casino.name}?`, a: `${casino.name} offers ${casino.games.toLocaleString()}+ games from providers including ${casino.software.join(', ')}. The library includes slots, live dealer games, table games and more.` },
@@ -90,9 +104,6 @@ export default async function ReviewPage({ params }: Props) {
             <div className="flex-1">
               <div className="flex items-center gap-3 flex-wrap mb-2">
                 <h1 className="text-2xl md:text-3xl font-black text-white">{casino.name} Bonus 2026</h1>
-                <span className="text-xs bg-[#F5A623]/10 text-[#F5A623] border border-[#F5A623]/20 px-2 py-1 rounded-full font-bold">
-                  Verified May 2026
-                </span>
               </div>
               <div className="flex items-center gap-2 mb-3">
                 {[1,2,3,4,5].map(s => (
@@ -102,13 +113,12 @@ export default async function ReviewPage({ params }: Props) {
                 <span className="text-gray-500">/{casino.ratingMax}</span>
               </div>
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="bg-green-500/10 text-green-400 border border-green-500/20 text-sm px-3 py-1 rounded-full font-medium">✓ Documented &amp; Verified</span>
                 {casino.licenses.map(l => (
                   <span key={l} className="bg-[#252830] text-gray-400 border border-[#2E3040] text-sm px-3 py-1 rounded-full font-medium">{l}</span>
                 ))}
               </div>
               <div className="bg-[#F5A623]/5 border border-[#F5A623]/10 rounded-xl p-4 mb-4">
-                <div className="text-xs text-gray-500 mb-1">Current Offer — May 2026</div>
+                <div className="text-xs text-gray-500 mb-1">Welcome Offer</div>
                 <div className="text-[#F5A623] font-black text-xl">{casino.bonus}</div>
               </div>
               <a href={casino.affiliateLink} target="_blank" rel="nofollow noopener noreferrer"
@@ -157,7 +167,7 @@ export default async function ReviewPage({ params }: Props) {
           <div className="bg-[#161820] border border-[#252830] rounded-xl p-6 md:p-8">
             <h2 className="text-xl font-black text-white mb-4">{casino.name} — Overview</h2>
             <div className="prose prose-invert prose-sm max-w-none text-gray-400 leading-relaxed space-y-4">
-              <p>{casino.name} is an online casino that has been operating since {casino.founded}, licensed by {casino.licenses.join(' and ')}. It offers a game library of {casino.games.toLocaleString()}+ titles from providers including {casino.software.join(', ')}.</p>
+              <p>{casino.name} is an online casino that has been operating since {casino.founded}{casino.licenses.length > 0 ? `, licensed by ${casino.licenses.join(' and ')}` : ''}. It offers a game library of {casino.games.toLocaleString()}+ titles from providers including {casino.software.join(', ')}.</p>
               <p>This review scores {casino.name} against BonusCout&apos;s published evaluation criteria — licence verification, bonus terms, payment methods, game library and third-party reputation. Every score is traceable to publicly verifiable operator information, not marketing claims.</p>
               <p>The current welcome offer is {casino.bonus}, with a {casino.wagering}x wagering requirement and a minimum deposit of €{casino.minDeposit}. This puts {casino.name} {casino.wagering <= 30 ? 'among the most competitive in terms of wagering' : casino.wagering <= 35 ? 'in line with the industry standard' : 'slightly above average for wagering requirements'} in our current comparison.</p>
             </div>
@@ -168,7 +178,7 @@ export default async function ReviewPage({ params }: Props) {
             <h2 className="text-xl font-black text-white mb-4">{casino.name} Bonus — Full Breakdown</h2>
             <div className="bg-[#F5A623]/5 border border-[#F5A623]/10 rounded-xl p-4 mb-6">
               <div className="text-[#F5A623] font-black text-2xl mb-1">{casino.bonus}</div>
-              <div className="text-gray-400 text-sm">Current welcome offer — May 2026</div>
+              <div className="text-gray-400 text-sm">Welcome offer</div>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
               {[
@@ -380,6 +390,7 @@ export default async function ReviewPage({ params }: Props) {
                 { label: 'Lowest Wagering', href: '/lowest-wagering-casinos' },
                 { label: 'No Deposit Bonuses', href: '/bonuses/no-deposit' },
                 { label: 'Free Spins Offers', href: '/best-free-spins-casino' },
+                ...(COMPARISONS[casino.slug] ? [COMPARISONS[casino.slug]] : []),
               ].map(item => (
                 <Link key={item.href} href={item.href}
                   className="bg-[#0D0F14] border border-[#252830] hover:border-[#F5A623]/30 rounded-xl p-3 text-xs font-bold text-white hover:text-[#F5A623] transition-all text-center">

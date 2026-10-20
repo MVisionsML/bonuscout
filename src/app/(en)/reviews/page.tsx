@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { casinos } from '@/data/casinos'
+import { casinos, casinoUrl } from '@/data/casinos'
 import { Metadata } from 'next'
 import { alternatesFor } from '@/lib/i18n'
 
@@ -29,7 +29,7 @@ export default function ReviewsPage() {
         {casinos.map((casino) => (
           <Link
             key={casino.id}
-            href={"/reviews/" + casino.slug}
+            href={casinoUrl(casino.slug)}
             className="bg-[#161820] border border-[#252830] hover:border-[#F5A623]/40 rounded-xl p-5 transition-all group"
           >
             <div className="flex items-start gap-4">

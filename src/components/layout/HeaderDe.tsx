@@ -9,7 +9,7 @@ export default function HeaderDe() {
     { label: 'Online Casinos', href: '/de/casinos' },
     { label: 'Boni', href: '/de/boni' },
     { label: 'Casinos', href: '/de/bewertungen' },
-    { label: 'Gratis Spiele', href: '/de/gratis-spiele' },
+    { label: 'Gratis Spiele (EN)', href: '/free-games' },
     { label: 'Ratgeber', href: '/de/ratgeber' },
   ]
 

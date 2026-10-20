@@ -55,7 +55,6 @@ export default async function DeCasinoReview({ params }: Props) {
           <div className="flex-1">
             <div className="flex items-center gap-3 flex-wrap mb-2">
               <h1 className="text-2xl md:text-3xl font-black text-white">{casino.name} Bonus 2026</h1>
-              <span className="text-xs bg-[#F5A623]/10 text-[#F5A623] border border-[#F5A623]/20 px-2 py-1 rounded-full font-bold">Verifiziert Mai 2026</span>
             </div>
             <div className="flex items-center gap-2 mb-3">
               {[1,2,3,4,5].map(s => (
@@ -103,7 +102,7 @@ export default async function DeCasinoReview({ params }: Props) {
       <div className="bg-[#161820] border border-[#252830] rounded-xl p-6 md:p-8 mb-6">
         <h2 className="text-xl font-black text-white mb-4">{casino.name} — Überblick</h2>
         <div className="text-gray-400 text-sm leading-relaxed space-y-3">
-          <p>{casino.name} ist ein Online-Casino, das seit {casino.founded} in Betrieb ist und von {casino.licenses.join(' und ')} lizenziert wird. Das Casino bietet eine Spielbibliothek mit {casino.games.toLocaleString()}+ Titeln von Anbietern wie {casino.software.join(', ')}.</p>
+          <p>{casino.name} ist ein Online-Casino, das seit {casino.founded} in Betrieb ist{casino.licenses.length > 0 ? ` und von ${casino.licenses.join(' und ')} lizenziert wird` : ''}. Das Casino bietet eine Spielbibliothek mit {casino.games.toLocaleString()}+ Titeln von Anbietern wie {casino.software.join(', ')}.</p>
           <p>Jede {casino.name}-Bewertung wird aus den vom Betreiber veröffentlichten Allgemeinen Geschäftsbedingungen, der Kassiererseite und den Lizenzunterlagen erstellt — dokumentarische Verifizierung, keine Erst-Test-Einzahlungen oder -Auszahlungen.</p>
           <p>Das aktuelle Willkommensangebot beträgt {casino.bonus} mit einer Umsatzbedingung von {casino.wagering}x und einer Mindesteinzahlung von €{casino.minDeposit}.</p>
         </div>

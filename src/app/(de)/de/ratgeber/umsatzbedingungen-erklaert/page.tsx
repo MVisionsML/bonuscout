@@ -6,7 +6,7 @@ import { alternatesFor } from '@/lib/i18n'
 
 export const metadata: Metadata = {
   title: 'Umsatzbedingungen Erklärt 2026 — Vollständiger Guide',
-  description: 'Was sind Umsatzbedingungen? Wie berechnet man sie? Welche Casinos haben die niedrigsten? Vollständiger Guide mit Beispielen. Aktualisiert Mai 2026.',
+  description: 'Was sind Umsatzbedingungen? Wie berechnet man sie? Welche Casinos haben die niedrigsten? Vollständiger Guide mit Beispielen.',
   alternates: alternatesFor('/de/ratgeber/umsatzbedingungen-erklaert'),
 }
 
@@ -36,7 +36,7 @@ export default function DeUmsatzGuidePage() {
 
         <h1 className="text-3xl md:text-4xl font-black text-white mb-4">Umsatzbedingungen Erklärt</h1>
         <div className="flex items-center gap-3 text-sm text-gray-500 mb-8">
-          <span>5 Min. Lesezeit</span><span>·</span><span>Aktualisiert Mai 2026</span><span>·</span><span>BonusCout Team</span>
+          <span>5 Min. Lesezeit</span><span>·</span><span>BonusCout Team</span>
         </div>
 
         <div className="space-y-8">

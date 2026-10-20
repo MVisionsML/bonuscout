@@ -4,6 +4,7 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'About BonusCout — Independent Casino Bonus Reviews',
   description: 'About BonusCout. Independent casino bonus reviews compiled from published operator T&Cs, cashier pages and licensing records. Learn about our methodology and team.',
+  alternates: { canonical: 'https://www.bonuscout.com/about' },
 }
 
 export default function AboutPage() {

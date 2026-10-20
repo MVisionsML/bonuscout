@@ -81,7 +81,7 @@ export default function DeWillkommensbonusPage() {
                 <div className="text-xs text-gray-500 mt-0.5">
                   Umsatz: <span className={casino.wagering <= 30 ? 'text-green-400 font-bold' : casino.wagering <= 35 ? 'text-yellow-400 font-bold' : 'text-red-400 font-bold'}>{casino.wagering}x</span>
                   {' · '}Min: €{casino.minDeposit}
-                  {' · '}{casino.licenses.join(', ')}
+                  {' · '}{casino.licenses.join(', ') || 'Lizenz nicht verifiziert'}
                 </div>
               </div>
               <div className="flex flex-col gap-2 flex-shrink-0">
