@@ -7,6 +7,7 @@ import { FAQSchema, GameSchema, BreadcrumbSchema } from '@/components/seo/Schema
 const slot = getSlot('big-bass-bonanza')!
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Big Bass Bonanza Review 2026 — RTP 96.71%, 2,100x Max Win',
   description: 'Full Big Bass Bonanza review 2026. Pragmatic Play\'s fishing slot reviewed. 96.71% RTP, 2,100x max win, fisherman wilds collect money symbols — verdict.',
   alternates: { canonical: 'https://www.bonuscout.com/slots/big-bass-bonanza' }

@@ -24,7 +24,7 @@ const SCORING = [
 const CATEGORY_HUBS = [
   { href: '/best-casino-bonus',         label: 'Best Casino Bonus',        desc: 'Top welcome offers by deposit match and fairness.' },
   { href: '/crypto-casino-bonus',       label: 'Crypto Casinos',           desc: 'Bitcoin, Ethereum and stablecoin-friendly operators.' },
-  { href: '/no-deposit-bonus',          label: 'No Deposit Bonuses',       desc: 'Free bonus credit and free spins without a deposit.' },
+  { href: '/bonuses/no-deposit',          label: 'No Deposit Bonuses',       desc: 'Free bonus credit and free spins without a deposit.' },
   { href: '/bonuses/cashback',          label: 'Cashback Casinos',         desc: 'Casinos that refund a percentage of net losses.' },
   { href: '/lowest-wagering-casinos',   label: 'Low Wagering Casinos',     desc: 'Bonuses you can actually clear — 30x and under.' },
   { href: '/fast-withdrawal-casinos',   label: 'Fast Withdrawal Casinos',  desc: 'Casinos that pay out within 24 hours.' },

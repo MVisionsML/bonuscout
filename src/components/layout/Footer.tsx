@@ -31,8 +31,6 @@ export default function Footer() {
             <ul className="space-y-2 text-xs text-gray-500">
               <li><Link href="/casinos" className="hover:text-[#F5A623] transition-colors">All Casinos</Link></li>
               <li><Link href="/reviews" className="hover:text-[#F5A623] transition-colors">Casino Reviews</Link></li>
-              <li><Link href="/slots" className="hover:text-[#F5A623] transition-colors">Slot Reviews</Link></li>
-              <li><Link href="/free-games" className="hover:text-[#F5A623] transition-colors">Free Games</Link></li>
               <li>
                 <a
                   href="https://www.bonusreviewers.com"
@@ -55,7 +53,6 @@ export default function Footer() {
               <li><Link href="/how-we-rate" className="hover:text-[#F5A623] transition-colors">Review Methodology</Link></li>
               <li><Link href="/editorial-policy" className="hover:text-[#F5A623] transition-colors">Editorial Policy</Link></li>
               <li><Link href="/responsible-gambling" className="hover:text-[#F5A623] transition-colors">Responsible Gambling</Link></li>
-              <li><Link href="/news" className="hover:text-[#F5A623] transition-colors">Casino News</Link></li>
             </ul>
           </div>
         </div>

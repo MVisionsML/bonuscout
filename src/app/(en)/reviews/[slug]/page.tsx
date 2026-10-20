@@ -389,7 +389,7 @@ export default async function ReviewPage({ params }: Props) {
                 { label: 'Best Casino Bonus', href: '/best-casino-bonus' },
                 { label: 'Lowest Wagering', href: '/lowest-wagering-casinos' },
                 { label: 'No Deposit Bonuses', href: '/bonuses/no-deposit' },
-                { label: 'Free Spins Offers', href: '/best-free-spins-casino' },
+                { label: 'Free Spins Offers', href: '/bonuses/free-spins' },
                 ...(COMPARISONS[casino.slug] ? [COMPARISONS[casino.slug]] : []),
               ].map(item => (
                 <Link key={item.href} href={item.href}

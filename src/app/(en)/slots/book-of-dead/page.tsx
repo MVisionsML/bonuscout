@@ -7,6 +7,7 @@ import { FAQSchema, GameSchema, BreadcrumbSchema } from '@/components/seo/Schema
 const slot = getSlot('book-of-dead')!
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Book of Dead Review 2026 — RTP 96.21%, 5,000x Max Win',
   description: 'Full Book of Dead review 2026. Play\'n GO\'s Egyptian classic reviewed. 96.21% RTP, 5,000x max win, expanding symbols in free spins — definitive verdict.',
   alternates: { canonical: 'https://www.bonuscout.com/slots/book-of-dead' }
@@ -175,7 +176,7 @@ export default function BookOfDeadReview() {
             { label: 'All Slot Reviews', href: '/slots' },
             { label: 'Gates of Olympus Review', href: '/slots/gates-of-olympus' },
             { label: 'Sweet Bonanza Review', href: '/slots/sweet-bonanza' },
-            { label: 'Best Free Spins Casino', href: '/best-free-spins-casino' },
+            { label: 'Best Free Spins Casino', href: '/bonuses/free-spins' },
           ].map(item => (
             <Link key={item.href} href={item.href}
               className="bg-[#0D0F14] border border-[#252830] hover:border-[#F5A623]/30 rounded-xl p-4 text-sm font-bold text-white hover:text-[#F5A623] transition-all">

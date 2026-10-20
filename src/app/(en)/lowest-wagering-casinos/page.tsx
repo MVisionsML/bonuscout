@@ -124,8 +124,8 @@ export default function LowestWageringPage() {
             {[
               { label: 'No Wagering Casinos', href: '/no-wagering-casinos', desc: '0x wagering offers' },
               { label: 'Best Casino Bonus', href: '/best-casino-bonus', desc: 'Highest value offers' },
-              { label: 'Best Free Spins', href: '/best-free-spins-casino', desc: 'Most free spins' },
-              { label: 'Cashback Casinos', href: '/best-cashback-casino', desc: 'Get losses back' },
+              { label: 'Best Free Spins', href: '/bonuses/free-spins', desc: 'Most free spins' },
+              { label: 'Cashback Casinos', href: '/bonuses/cashback', desc: 'Get losses back' },
             ].map(item => (
               <Link key={item.href} href={item.href}
                 className="bg-[#0D0F14] border border-[#252830] hover:border-[#F5A623]/30 rounded-xl p-4 group transition-all">

@@ -6,7 +6,7 @@ export default function ArticlesLayout({ children }: { children: React.ReactNode
       <div className="text-sm text-gray-500 mb-6">
         <Link href="/" className="hover:text-[#F5A623]">Home</Link>
         <span className="mx-2">›</span>
-        <Link href="/news" className="hover:text-[#F5A623]">Articles</Link>
+        <span className="text-gray-300">Articles</span>
       </div>
       <article>{children}</article>
 

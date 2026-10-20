@@ -49,7 +49,7 @@ const nextConfig: NextConfig = {
       // Documented in seo-agent/output/redirect-map.json.
       { source: "/articles/billionaire-spin-casino-review",                                            destination: "/reviews/billionaire-spin",          permanent: true },
       { source: "/articles/binobet-casino-review",                                                     destination: "/reviews/binobet-casino",            permanent: true },
-      { source: "/articles/bitstarz-casino-review-2026-bonuses-games-crypto-payments-honest-verdict",  destination: "/articles/best-crypto-casino-bonus", permanent: true },
+      { source: "/articles/bitstarz-casino-review-2026-bonuses-games-crypto-payments-honest-verdict",  destination: "/crypto-casino-bonus", statusCode: 301 },
       { source: "/articles/blockspins-casino-review",                                                  destination: "/reviews/blockspins-casino",         permanent: true },
       { source: "/articles/blockspins-crypto-casino-review",                                           destination: "/reviews/blockspins-casino",         permanent: true },
       { source: "/articles/rooster-bet-casino-review",                                                 destination: "/reviews/rooster-bet",               permanent: true },
@@ -102,6 +102,17 @@ const nextConfig: NextConfig = {
       // page is restored in a separate change, remove this redirect at the
       // same time.
       { source: "/luckymax-vs-jackpoty",               destination: "/reviews/jackpoty",                                            permanent: true },
+
+      // ── Consolidation (2026-10-20 recovery audit) ─────────────────────────
+      // Duplicate-intent pages merged into the cluster owner. Genuine 301s.
+      { source: "/best-cashback-casino", destination: "/bonuses/cashback", statusCode: 301 },
+      { source: "/casino-cashback-bonus", destination: "/bonuses/cashback", statusCode: 301 },
+      { source: "/articles/best-casino-cashback-bonuses-2026-top-offers-how-they-work-expert-tips", destination: "/bonuses/cashback", statusCode: 301 },
+      { source: "/no-deposit-bonus", destination: "/bonuses/no-deposit", statusCode: 301 },
+      { source: "/news/best-no-deposit-bonuses-may-2026", destination: "/bonuses/no-deposit", statusCode: 301 },
+      { source: "/best-free-spins-casino", destination: "/bonuses/free-spins", statusCode: 301 },
+      { source: "/articles/best-willkommensbonus-casino", destination: "/bonuses/welcome", statusCode: 301 },
+      { source: "/articles/best-crypto-casino-bonus", destination: "/crypto-casino-bonus", statusCode: 301 },
     ]
   },
 }

@@ -111,7 +111,7 @@ export default function FreeSpinsGuide() {
                 </div>
               ))}
             </div>
-            <Link href="/best-free-spins-casino" className="inline-block text-sm text-[#F5A623] font-bold hover:underline">
+            <Link href="/bonuses/free-spins" className="inline-block text-sm text-[#F5A623] font-bold hover:underline">
               See all free spins casinos →
             </Link>
           </section>
@@ -137,7 +137,7 @@ export default function FreeSpinsGuide() {
               { label: 'Wagering Requirements Explained', href: '/guides/wagering-requirements-explained' },
               { label: 'How to Claim a No Deposit Bonus', href: '/guides/how-to-claim-no-deposit-bonus' },
               { label: 'Casino Bonus Terms Glossary', href: '/guides/casino-bonus-terms' },
-              { label: 'Best Free Spins Casino', href: '/best-free-spins-casino' },
+              { label: 'Best Free Spins Casino', href: '/bonuses/free-spins' },
             ].map(item => (
               <Link key={item.href} href={item.href} className="bg-[#0D0F14] border border-[#252830] hover:border-[#F5A623]/30 rounded-xl p-4 text-sm font-bold text-white hover:text-[#F5A623] transition-all">
                 {item.label} →

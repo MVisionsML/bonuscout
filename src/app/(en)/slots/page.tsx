@@ -4,6 +4,7 @@ import { slots } from '@/data/slots'
 import { BreadcrumbSchema, ItemListSchema } from '@/components/seo/SchemaMarkup'
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Online Slot Reviews 2026 — RTP, Volatility & Max Win',
   description: 'Independent online slot reviews. Published RTP, volatility ratings, max win multipliers, bonus features and where to play each title — all compiled from the studio&apos;s official game specs.',
   alternates: { canonical: 'https://www.bonuscout.com/slots' }
@@ -117,7 +118,7 @@ export default function SlotsIndexPage() {
           {[
             { label: 'Best Pragmatic Play Casinos', href: '/best-pragmatic-play-casinos' },
             { label: 'Best Hacksaw Gaming Casinos', href: '/best-hacksaw-gaming-casinos' },
-            { label: 'Best Free Spins Casino', href: '/best-free-spins-casino' },
+            { label: 'Best Free Spins Casino', href: '/bonuses/free-spins' },
             { label: 'Free Spins No Deposit', href: '/free-spins-no-deposit' },
           ].map(item => (
             <Link key={item.href} href={item.href}

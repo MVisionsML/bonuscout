@@ -84,7 +84,7 @@ export default function FreeSpinsPage() {
           <h2 className="font-black text-white text-sm mb-3 uppercase tracking-wide">Related categories &amp; resources</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm">
             <Link href="/best-casino-bonus" className="text-[#F5A623] hover:underline">Best Casino Bonus →</Link>
-            <Link href="/no-deposit-bonus" className="text-[#F5A623] hover:underline">No Deposit Bonuses →</Link>
+            <Link href="/bonuses/no-deposit" className="text-[#F5A623] hover:underline">No Deposit Bonuses →</Link>
             <Link href="/crypto-casino-bonus" className="text-[#F5A623] hover:underline">Crypto Casinos →</Link>
             <Link href="/bonuses/cashback" className="text-[#F5A623] hover:underline">Cashback Casinos →</Link>
             <Link href="/lowest-wagering-casinos" className="text-[#F5A623] hover:underline">Low Wagering →</Link>

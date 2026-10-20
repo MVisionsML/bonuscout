@@ -7,6 +7,7 @@ import { FAQSchema, GameSchema, BreadcrumbSchema } from '@/components/seo/Schema
 const slot = getSlot('chaos-crew')!
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Chaos Crew Review 2026 — RTP 96.31%, 10,000x Max Win',
   description: 'Full Chaos Crew review 2026. Hacksaw Gaming\'s cartoon urban slot reviewed. 96.31% RTP, 10,000x max win, coin-collect mechanic — Extreme volatility verdict.',
   alternates: { canonical: 'https://www.bonuscout.com/slots/chaos-crew' }

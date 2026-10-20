@@ -104,8 +104,7 @@ export default function FreeSpinsNoDepositPage() {
         <div className="grid grid-cols-2 gap-3">
           {[
             { label: 'Free Spins List', href: '/bonuses/free-spins' },
-            { label: 'Best Free Spins Casino', href: '/best-free-spins-casino' },
-            { label: 'No Deposit Bonus', href: '/no-deposit-bonus' },
+            { label: 'No Deposit Bonus', href: '/bonuses/no-deposit' },
             { label: 'All Bonuses', href: '/bonuses' },
           ].map(item => (
             <Link key={item.href} href={item.href}

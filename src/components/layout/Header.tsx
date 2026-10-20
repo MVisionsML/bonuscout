@@ -11,8 +11,6 @@ export default function Header() {
     { label: 'Casinos', href: '/reviews' },
     { label: 'Guides', href: '/guides' },
     { label: 'How We Rate', href: '/how-we-rate' },
-    { label: 'Free Games', href: '/free-games' },
-    { label: 'News', href: '/news' },
   ]
 
   const Logo = () => (

@@ -7,6 +7,7 @@ import { FAQSchema, GameSchema, BreadcrumbSchema } from '@/components/seo/Schema
 const slot = getSlot('gates-of-olympus')!
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: 'Gates of Olympus Review 2026 — RTP 96.5%, 5,000x Max Win',
   description: 'Full Gates of Olympus review 2026. Pragmatic Play\'s 6×5 tumbling-reels slot reviewed. 96.5% RTP, 5,000x max win, multipliers up to 500x — verdict and best casinos to play.',
   alternates: { canonical: 'https://www.bonuscout.com/slots/gates-of-olympus' }
